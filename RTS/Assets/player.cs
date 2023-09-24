@@ -18,7 +18,7 @@ public class player : MonoBehaviour
         tropas = 0;
     }
 
-    Vector2 GetPos()
+    public Vector2 GetPos()
     {
         float t = ((this.transform.position.z - 1.75f) % 1.75f);
         int x;
@@ -84,12 +84,11 @@ public class player : MonoBehaviour
             //}
 
 
-            mapa.destroy(GetPos(), camino);
+            //mapa.destroy(GetPos(), camino);
         }
-        if (Input.GetMouseButtonDown(1))
-        {
-            mapa.Construir(GetPos(), edificio);
-        }
+
+
+
             if (Input.GetKey(KeyCode.W))
         {
 

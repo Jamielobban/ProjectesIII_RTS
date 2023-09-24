@@ -1,0 +1,388 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'es' Physical Memory: 16153 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+52108
+Successfully changed project path to: C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [21740] Host "[IP] 192.168.96.1 [Port] 0 [Flags] 2 [Guid] 3545707080 [EditorId] 3545707080 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [21740] Host "[IP] 192.168.96.1 [Port] 0 [Flags] 2 [Guid] 3545707080 [EditorId] 3545707080 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 1499.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.3f1 (7cdc2969a641)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.2824
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011577 seconds.
+- Loaded All Assemblies, in  5.372 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.279 seconds
+Domain Reload Profiling: 5648ms
+	BeginReloadAssembly (4048ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (353ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (888ms)
+		LoadAssemblies (4045ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (880ms)
+			TypeCache.Refresh (878ms)
+				TypeCache.ScanAssembly (653ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (280ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (218ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  7.532 seconds
+Refreshing native plugins compatible for Editor in 6.02 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.675 seconds
+Domain Reload Profiling: 8202ms
+	BeginReloadAssembly (143ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (7281ms)
+		LoadAssemblies (6815ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (517ms)
+			TypeCache.Refresh (485ms)
+				TypeCache.ScanAssembly (437ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (676ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (513ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (308ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 6.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4955 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (349.3 KB). Loaded Objects now: 5419.
+Memory consumption went from 197.8 MB to 197.5 MB.
+Total: 4.136800 ms (FindLiveObjects: 0.411900 ms CreateObjectMapping: 0.419300 ms MarkObjects: 3.061400 ms  DeleteObjects: 0.243300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1157.002483 seconds.
+  path: Assets/mapa/Models/objects/New Material.mat
+  artifactKey: Guid(119829006d3a81c47b673347a0bcf2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/New Material.mat using Guid(119829006d3a81c47b673347a0bcf2ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046af125a00373d82098827a0a8237b3') in 0.007744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 37.640827 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Samples/barbarian.png
+  artifactKey: Guid(428dc5b7d48bde94a85f33cd4534a43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Samples/barbarian.png using Guid(428dc5b7d48bde94a85f33cd4534a43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80af4a487ffab81e319910402ae542bc') in 0.010231 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/barbarian_texture.png
+  artifactKey: Guid(b936a919b11efef45a3141665967f7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/barbarian_texture.png using Guid(b936a919b11efef45a3141665967f7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5342b62fb9c084e492128fd135b0bd5') in 0.003866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.008703 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/barbarian_texture.png
+  artifactKey: Guid(ce44e9466180541449ee122ca05d48bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/barbarian_texture.png using Guid(ce44e9466180541449ee122ca05d48bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d01f149cf87955041f7d3fbf75b333a') in 0.003641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs/DOTweenIcon.png
+  artifactKey: Guid(8da095e39e9b4df488dfd436f81116d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs/DOTweenIcon.png using Guid(8da095e39e9b4df488dfd436f81116d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7386afd23189bf45e6e22368a28ebd') in 0.002382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/CharacterOverview.png
+  artifactKey: Guid(7ad1186bb6fb4ac4bbeaca3c4bcab5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/CharacterOverview.png using Guid(7ad1186bb6fb4ac4bbeaca3c4bcab5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a27abc656a7cae0ab7730f1cbf2a43c') in 0.007690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer.png
+  artifactKey: Guid(7051dba417b3d53409f2918f1ea4938d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Footer.png using Guid(7051dba417b3d53409f2918f1ea4938d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5881609f3a4e5054ef8d9932984f44') in 0.003403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg
+  artifactKey: Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Demigiant/DOTween/Editor/Imgs/Header.jpg using Guid(78a59ca99f8987941adb61f9e14a06a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '448288daf0dab5da83aa4dbce3490d80') in 0.004061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006153 seconds.
+  path: Assets/mapa/KayKit Brand Resouces/KayKit_logo.png
+  artifactKey: Guid(bb7c030630ebce24cbbe09e4fb7872e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/KayKit Brand Resouces/KayKit_logo.png using Guid(bb7c030630ebce24cbbe09e4fb7872e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3c485194d3e3b56599d9772dca8dbc') in 0.003210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/KayKit Brand Resouces/KayKit_logo_black.png
+  artifactKey: Guid(debf667127673ed41a46e1e6d952e8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/KayKit Brand Resouces/KayKit_logo_black.png using Guid(debf667127673ed41a46e1e6d952e8f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '759b733cf43f4b629561cd58e237a3cd') in 0.001951 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/KayKit Brand Resouces/KayKit_logo_white.png
+  artifactKey: Guid(c04e6201e6ac435409318f6cb6c8df0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/KayKit Brand Resouces/KayKit_logo_white.png using Guid(c04e6201e6ac435409318f6cb6c8df0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1f9051891312a003fd743f44dd7751') in 0.003442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logoVariation_black.png
+  artifactKey: Guid(7ed77bb9f8b901144ba49bdd3a5888b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logoVariation_black.png using Guid(7ed77bb9f8b901144ba49bdd3a5888b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d316c6fe1f804e09ccdd6cc0b6da71') in 0.001838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logoVariation_red.png
+  artifactKey: Guid(c34ea748931ca9340812231e660ebaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logoVariation_red.png using Guid(c34ea748931ca9340812231e660ebaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f120d47f377685deb71d3e79c9a5f56') in 0.002584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_white.png
+  artifactKey: Guid(4ac27c40c5dc30c4ca2c0b5010d74b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_white.png using Guid(4ac27c40c5dc30c4ca2c0b5010d74b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84a0a794529d4bd82b277826e4ef54e') in 0.001586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Textures/knight_texture.png
+  artifactKey: Guid(c9e26e1367884d8408c058b4da356805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Textures/knight_texture.png using Guid(c9e26e1367884d8408c058b4da356805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210266971784f6c197a61b1414d1ea6e') in 0.003717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/mage_texture.png
+  artifactKey: Guid(2b1a8e60d9f91b84393b3b998954e71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/mage_texture.png using Guid(2b1a8e60d9f91b84393b3b998954e71c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98717fbf88454792885fb7d5ea95551d') in 0.002680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Overview.png
+  artifactKey: Guid(f7a9797b22ee150419a183cb70af166f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Overview.png using Guid(f7a9797b22ee150419a183cb70af166f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c87ab49d151ea8c264f3de3ec0b81684') in 0.006294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png
+  artifactKey: Guid(d9c71025ba1bd894dbfa8ebc39f347f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logoVariation_red.png using Guid(d9c71025ba1bd894dbfa8ebc39f347f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9831471b2f5663be6746fb889eb43cad') in 0.001777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logo.png
+  artifactKey: Guid(c1970d62c9dc6e442abda019479974b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logo.png using Guid(c1970d62c9dc6e442abda019479974b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bd53adba502cd10b8554be1900903d9') in 0.001641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/knight_texture.png
+  artifactKey: Guid(17c3aff03db8a144faf069484810c38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Characters/gltf/knight_texture.png using Guid(17c3aff03db8a144faf069484810c38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d04e5ae584a9b9c7cacc9ec04b027bf') in 0.002287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/knight_texture.png
+  artifactKey: Guid(bde6e54135d102047930fff470dd9af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/knight_texture.png using Guid(bde6e54135d102047930fff470dd9af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1236dfac1fef7688f1d1a96f7c18277') in 0.001942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/mage_texture.png
+  artifactKey: Guid(f91e23644967124469eaa5adbd8b027c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/gltf/mage_texture.png using Guid(f91e23644967124469eaa5adbd8b027c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac7888a2a62d2652d18af03914a7b54d') in 0.003689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/mapa/KayKit Brand Resouces/KayKit_logoVariation_red.png
+  artifactKey: Guid(01d82dde5ae5db34dafd2eaee860e4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/KayKit Brand Resouces/KayKit_logoVariation_red.png using Guid(01d82dde5ae5db34dafd2eaee860e4e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231af2302f6cb21e8ce1290be0432db5') in 0.002350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_red.png
+  artifactKey: Guid(d908204f061c435428757df78f2375a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/KayKit Brand Resouces/KayKit_logo_red.png using Guid(d908204f061c435428757df78f2375a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c117639924cb47eb5d05939b3525335') in 0.003008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Textures/barbarian_texture.png
+  artifactKey: Guid(2a68bb122a61221479f1e12bc65b9d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Textures/barbarian_texture.png using Guid(2a68bb122a61221479f1e12bc65b9d51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efdead735512aac547b4b82fc65e1d06') in 0.001796 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logo_red.png
+  artifactKey: Guid(e990cac3fbb943c43aae6ee7d4b7e02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/KayKit Brand Resouces/KayKit_logo_red.png using Guid(e990cac3fbb943c43aae6ee7d4b7e02c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868f109efc103d2e4116834ab2a2bd3d') in 0.001618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
