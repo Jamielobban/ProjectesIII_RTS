@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8099cc66d79b7428f97a31d9e860ae, type: 3}
   m_Name: WarriorUnit
   m_EditorClassIdentifier: 
-  isPlayerUnit: 0
   type: 1
   name: WorkerMan
-  unitPrefab: {fileID: 7587189924947352934, guid: ecce17982fd46ea4da4e92a649b45587,
+  playerUnitPrefab: {fileID: 7587189924947352934, guid: ecce17982fd46ea4da4e92a649b45587,
     type: 3}
-  cost: 0
-  attack: 0
-  health: 0
-  armor: 0
+  cost: 100
+  attack: 50
+  atkRange: 1
+  health: 100
+  armor: 2

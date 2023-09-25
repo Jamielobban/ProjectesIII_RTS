@@ -13,15 +13,23 @@ namespace LP.FDG.Units
             Warrior,
             Healer
         };
-        public bool isPlayerUnit;
 
+        [Space(15)]
+        [Header("Unit Settings")]
         public unitType type;
+
         public new string name;
 
-        public GameObject unitPrefab;
+        public GameObject playerUnitPrefab;
+        //public GameObject enemyUnitPrefab;
 
+
+        [Space(15)]
+        [Header ("Unit Base Stats")]
+        [Space (40)]
         public int cost;
         public int attack;
+        public int atkRange;
         public int health;
         public int armor;
     }
