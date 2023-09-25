@@ -8,29 +8,47 @@ public class MapaConstrucciones : MonoBehaviour
     GameObject[][] pos = new GameObject[28][];
     GameObject[][] Cons = new GameObject[28][];
     public bool construir;
+    public bool construirCamino;
+
     public player player;
     GameObject visualizacion;
+    public GameObject terreno;
+    GameObject visualizacionCamino;
+
     public Material rojo;
     public Material verde;
     bool color;
     bool crear;
 
+    GameObject actualHexagon;
     enum typeEdificio {archery,barracs,muralla1, muralla2, muralla3, muralla4,torre };
     typeEdificio edificio;
+
+    enum typeCamino { camino1, camino2, camino3, camino4  };
+    typeCamino camino;
 
     int tipo;
     public GameObject[] tiposEdificio;
     public GameObject[] edificioFinal;
+    public GameObject[] tiposTerreno;
+    Quaternion rot = new Quaternion();
+    Quaternion rot2 = new Quaternion();
 
+    public int mousePos;
     // Start is called before the first frame update
     void Start()
     {
+        actualHexagon = null;
+        mousePos = 0;
         tipo = 0;
         edificio = typeEdificio.archery;
         color = false;
+        visualizacionCamino = null;
         visualizacion = null;
         player = FindObjectOfType<player>();
         construir = false;
+        construirCamino = false;
+
         for (int i = 0; i <28; i++)
         {
             pos[i] = new GameObject[37];
@@ -82,17 +100,9 @@ public class MapaConstrucciones : MonoBehaviour
 
                 color = false;
             }
+            
 
-            if(Input.GetKeyDown(KeyCode.Q))
-            {
-                visualizacion.transform.Rotate(new Vector3(0, 60, 0));
-            }
 
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                visualizacion.transform.Rotate(new Vector3(0, -60, 0));
-
-            }
         }
     }
     void CambiarColor(Material a)
@@ -114,11 +124,13 @@ public class MapaConstrucciones : MonoBehaviour
     {
 
             Transform pos = null;
+            rot2 = visualizacion.transform.rotation;
+
             if (visualizacion != null)
-            {
-                pos = visualizacion.transform;
-                Destroy(visualizacion);
-            }
+                {
+                    pos = visualizacion.transform;
+                    Destroy(visualizacion);
+                }
 
             switch (edificio)
             {
@@ -174,39 +186,147 @@ public class MapaConstrucciones : MonoBehaviour
     {
         if (!crear)
         {
-            Quaternion rot = new Quaternion();
+            
             if (visualizacion != null)
             {
-                rot = visualizacion.transform.rotation;
+                rot2 = visualizacion.transform.rotation;
 
                 Destroy(visualizacion);
             }
             visualizacion = Instantiate(modelo, this.transform);
-            visualizacion.transform.rotation = rot;
+            visualizacion.transform.rotation = rot2;
             SeeColor(player.GetPos());
 
             crear = true;
         }
     }
+
+    void GetHexagon(Vector2 pos2, GameObject modelo)
+    {
+        if(!crear)
+        {
+            if (visualizacionCamino != null)
+            {
+                rot = visualizacionCamino.transform.rotation;
+
+                Destroy(visualizacionCamino);
+            }
+
+            visualizacionCamino = Instantiate(modelo, this.transform);
+            visualizacionCamino.transform.rotation = rot;
+
+            crear = true;
+
+            actualHexagon = pos[(int)pos2.x][(int)pos2.y];
+            actualHexagon.SetActive(false);
+            visualizacionCamino.transform.position = actualHexagon.transform.position + new Vector3(0, 0.25f, 0);
+        }
+        else
+        {
+            if(!GameObject.ReferenceEquals(actualHexagon, pos[(int)pos2.x][(int)pos2.y]))
+            {
+                actualHexagon.SetActive(true);
+                actualHexagon = pos[(int)pos2.x][(int)pos2.y];
+                actualHexagon.SetActive(false);
+                visualizacionCamino.transform.position = actualHexagon.transform.position + new Vector3(0, 0.25f, 0);
+
+            }
+
+            if (Input.GetMouseButtonDown(1))
+            {
+                mousePos = (int)Input.mousePosition.x;
+            }
+            if (Input.GetMouseButton(1))
+            {
+
+                if ((mousePos - (int)Input.mousePosition.x) < -50)
+                {
+                    visualizacionCamino.transform.Rotate(new Vector3(0, 60, 0));
+
+                    mousePos = (int)Input.mousePosition.x;
+                }
+                else if ((mousePos - (int)Input.mousePosition.x) > 50)
+                {
+                    visualizacionCamino.transform.Rotate(new Vector3(0, -60, 0));
+
+                    mousePos = (int)Input.mousePosition.x;
+                }
+
+
+
+            }
+            
+
+
+            }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(construirCamino)
         {
-            if (!construir)
+            switch (camino)
             {
-                construir = true;
+                case typeCamino.camino1:
+                    GetHexagon(player.GetPos(), tiposTerreno[0]);
+                    break;
+                case typeCamino.camino2:
+                    GetHexagon(player.GetPos(), tiposTerreno[1]);
+
+                    break;
+                case typeCamino.camino3:
+                    GetHexagon(player.GetPos(), tiposTerreno[2]);
+
+                    break;
+                case typeCamino.camino4:
+                    GetHexagon(player.GetPos(), tiposTerreno[3]);
+
+                    break;
+           
             }
-            else
+            if (Input.GetMouseButtonUp(0))
             {
-                if (!pos[(int)player.GetPos().x][(int)player.GetPos().y].CompareTag("camino"))
+                crear = false;
+
+                construirCamino = false;
+                if (visualizacionCamino != null)
                 {
-                    construir = false;
-                    Establecer(player.GetPos());
-                    crear = false;
+                    actualHexagon.SetActive(true);
+                    Destroy(visualizacionCamino);
                 }
             }
+
+            if ((int)Input.mouseScrollDelta.y != 0)
+            {
+                int a = (((int)camino) + (int)Input.mouseScrollDelta.y) % tiposTerreno.Length;
+                if (a < 0)
+                    a = tiposTerreno.Length + a;
+
+                camino = (typeCamino)a;
+                crear = false;
+            }
         }
+        else
+        {
+         if (Input.GetMouseButtonUp(0))
+                {
+                    if (!construir)
+                    {
+                        construir = true;
+                    }
+                    else
+                    {
+                        if (!pos[(int)player.GetPos().x][(int)player.GetPos().y].CompareTag("camino"))
+                        {
+                            construir = false;
+                            Establecer(player.GetPos());
+                            crear = false;
+                        }
+                    }
+                }
+        }
+       
 
         if (construir)
         {
@@ -256,7 +376,7 @@ public class MapaConstrucciones : MonoBehaviour
         
 
             Visualizar(player.GetPos());
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonUp(1))
             {
                 crear = false;
 
@@ -267,6 +387,57 @@ public class MapaConstrucciones : MonoBehaviour
                 }
             }
 
+            if (Input.GetMouseButtonDown(0))
+            {
+                mousePos = (int)Input.mousePosition.x;
+            }
+            if (Input.GetMouseButton(0))
+            {
+
+                if ((mousePos - (int)Input.mousePosition.x) < -50)
+                {
+                    visualizacion.transform.Rotate(new Vector3(0, 60, 0));
+
+                    mousePos = (int)Input.mousePosition.x;
+                }
+                else if ((mousePos - (int)Input.mousePosition.x) > 50)
+                {
+                    visualizacion.transform.Rotate(new Vector3(0, -60, 0));
+
+                    mousePos = (int)Input.mousePosition.x;
+                }
+
+
+
+            }
+
+        }
+        else
+        {
+            if(Input.GetMouseButtonUp(1))
+            {
+                if (!construirCamino)
+                {
+                    construirCamino = true;
+                }
+                else
+                {
+
+                        crear = false;
+                        construirCamino = false;
+                        rot = visualizacionCamino.transform.rotation;
+                        pos[(int)player.GetPos().x][(int)player.GetPos().y] = visualizacionCamino;
+                        visualizacionCamino.transform.position += new Vector3(0, -0.25f, 0);
+
+                        for (int i = 0; i < visualizacionCamino.transform.childCount; i++)
+                        {
+                            visualizacionCamino.transform.GetChild(i).gameObject.SetActive(true);
+                        }
+                        visualizacionCamino = null;
+                        Destroy(actualHexagon);
+                    
+                }
+            }
         }
     }
 }

@@ -10,10 +10,17 @@ public class player : MonoBehaviour
     public MapaConstrucciones mapa;
     public GameObject camino;
     public GameObject edificio;
+    int mousePos;
+    public float rotationSpeed;
+    public float movementSpeed;
+    public float maxSpeed;
+    public float normalSpeed;
 
     // Start is called before the first frame update
     void Start()
     {
+        movementSpeed = normalSpeed;
+        mousePos = 0;
         mapa = FindObjectOfType<MapaConstrucciones>();
         tropas = 0;
     }
@@ -58,60 +65,59 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(2))
         {
-            //RaycastHit hit;
-            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            //if (Physics.Raycast(ray, out hit))
-            //{
-            //    // Check if hit.transform is door, 
-            //    if (hit.transform.gameObject.CompareTag("personas"))
-            //    {
-            //        if(hit.transform.parent != null)
-            //        {
-            //            hit.transform.SetParent(null);
-            //            tropas--;
-            //            reordenar();
-            //        }
-            //        else
-            //        {
-            //            tropas++;
-            //            añadir(hit.transform.gameObject);
+            mousePos = (int)Input.mousePosition.x;
+        }
+        if (Input.GetMouseButton(2))
+        {
 
-            //        }
+            int pos = mousePos - (int)Input.mousePosition.x;
 
-            //    }
-            //}
-
-
-            //mapa.destroy(GetPos(), camino);
+            this.transform.Rotate(new Vector3(0, -pos*Time.deltaTime* rotationSpeed, 0));
+            mousePos = (int)Input.mousePosition.x;
         }
 
 
-
+        Vector3 vel = new Vector3();
             if (Input.GetKey(KeyCode.W))
         {
 
-            this.transform.position += this.transform.forward * 5 * Time.deltaTime;
+            vel += this.transform.forward * 5 * Time.deltaTime;
 
         }
         if (Input.GetKey(KeyCode.S))
         {
-            this.transform.position -= this.transform.forward * 5 * Time.deltaTime;
+            vel -= this.transform.forward * 5 * Time.deltaTime;
 
         }
         if (Input.GetKey(KeyCode.A))
         {
-            this.transform.position -= this.transform.right * 5 * Time.deltaTime;
+            vel -= this.transform.right * 5 * Time.deltaTime;
 
         }
         if (Input.GetKey(KeyCode.D))
         {
-            this.transform.position += this.transform.right * 5 * Time.deltaTime;
+            vel += this.transform.right * 5 * Time.deltaTime;
 
         }
+        this.transform.position += vel.normalized* Time.deltaTime*movementSpeed;
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.CompareTag("triggerCamino"))
+        {
+            movementSpeed = maxSpeed; 
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("triggerCamino"))
+        {
+            movementSpeed = normalSpeed;
+        }
+    }
     void reordenar()
     {
         Transform[] posi = new Transform[tropas];
