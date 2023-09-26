@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class MapaConstrucciones : MonoBehaviour
@@ -122,6 +123,8 @@ public class MapaConstrucciones : MonoBehaviour
 
         Cons[(int)pos2.x][(int)pos2.y].transform.position = pos.position;
         Cons[(int)pos2.x][(int)pos2.y].transform.rotation = pos.rotation;
+
+        this.gameObject.GetComponentInChildren<NavMeshSurface>().BuildNavMesh();
     }
     void Establecer(Vector2 pos2)
     {
