@@ -78,13 +78,15 @@ public class MapaConstrucciones : MonoBehaviour
         if(Cons[(int)pos2.x][(int)pos2.y] == null)
         {
             Cons[(int)pos2.x][(int)pos2.y] = Instantiate(a, this.transform);
-            Cons[(int)pos2.x][(int)pos2.y].transform.position = pos[(int)pos2.x][(int)pos2.y].transform.position + new Vector3(0,1,0);
+
+            Cons[(int)pos2.x][(int)pos2.y].transform.position = pos[(int)pos2.x][(int)pos2.y].transform.position + new Vector3(0,2,0);
         }
     }
     void Visualizar(Vector2 pos2)
     {
         if (Cons[(int)pos2.x][(int)pos2.y] == null)
         {
+
             visualizacion.transform.position = pos[(int)pos2.x][(int)pos2.y].transform.position + new Vector3(0, 1, 0);
 
             if(pos[(int)pos2.x][(int)pos2.y].CompareTag("camino") && !color)
@@ -117,6 +119,7 @@ public class MapaConstrucciones : MonoBehaviour
     void EstablecerModelo(Vector2 pos2, GameObject modelo, Transform pos)
     {
         Cons[(int)pos2.x][(int)pos2.y] = Instantiate(modelo, this.transform);
+
         Cons[(int)pos2.x][(int)pos2.y].transform.position = pos.position;
         Cons[(int)pos2.x][(int)pos2.y].transform.rotation = pos.rotation;
     }
