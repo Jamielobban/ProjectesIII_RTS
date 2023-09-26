@@ -17,9 +17,14 @@ namespace LP.FDG.InputManager {
         private bool isDragging = false;
 
         private Vector3 mousePos;
-        void Start()
+
+        private void Awake()
         {
             instance = this;
+        }
+        private void Start()
+        {
+            //instance = this;
         }
 
         private void OnGUI()

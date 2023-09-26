@@ -16,8 +16,12 @@ MonoBehaviour:
   name: WorkerMan
   playerUnitPrefab: {fileID: 7587189924947352934, guid: ecce17982fd46ea4da4e92a649b45587,
     type: 3}
-  cost: 250
-  attack: 25
-  atkRange: 10
-  health: 50
-  armor: 0
+  enemyUnitPrefab: {fileID: 8968726597057402868, guid: 834544fccfb1e3144b57125d787533e9,
+    type: 3}
+  baseStats:
+    cost: 250
+    aggroRange: 10
+    atkRange: 10
+    attack: 25
+    health: 50
+    armor: 0

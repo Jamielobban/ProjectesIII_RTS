@@ -14,16 +14,21 @@ namespace LP.FDG.Player
         public Transform playerUnits;
 
         public Transform enemyUnits;
-        // Start is called before the first frame update
-        void Start()
+
+        private void Awake()
         {
             instance = this;
+        }
+        // Start is called before the first frame update
+        private void Start()
+        {
+            //instance = this;
             Units.UnitHandler.instance.SetBasicUnitStats(playerUnits);
-           //S Units.UnitHandler.instance.SetBasicUnitStats(enemyUnits);
+            Units.UnitHandler.instance.SetBasicUnitStats(enemyUnits);
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             InputHandler.instance.HandleUnitMovement();
         }

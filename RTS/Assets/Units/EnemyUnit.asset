@@ -12,12 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8099cc66d79b7428f97a31d9e860ae, type: 3}
   m_Name: EnemyUnit
   m_EditorClassIdentifier: 
-  isPlayerUnit: 0
   type: 0
   name: EnemyMan
-  unitPrefab: {fileID: 8968726597057402868, guid: 834544fccfb1e3144b57125d787533e9,
+  playerUnitPrefab: {fileID: 7587189924947352934, guid: ecce17982fd46ea4da4e92a649b45587,
     type: 3}
-  cost: 0
-  attack: 0
-  health: 0
-  armor: 0
+  enemyUnitPrefab: {fileID: 8968726597057402868, guid: 834544fccfb1e3144b57125d787533e9,
+    type: 3}
+  baseStats:
+    cost: 100
+    aggroRange: 10
+    atkRange: 1
+    attack: 1
+    health: 2
+    armor: 2

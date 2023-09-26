@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading;
 using UnityEngine;
-
+using LP.FDG.Player;
 
 namespace LP.FDG.Units
 {
@@ -14,11 +14,19 @@ namespace LP.FDG.Units
         [SerializeField]
         private BasicUnit worker, warrior, healer;
 
-        private void Start()
+
+        public LayerMask pUnitLayer, eUnitLayer;
+        
+        private void Awake()
         {
             instance = this;
         }
-        public (int cost, int attack, int atkRange, int health, int armor) GetBasicUnitStats(string type)
+        private void Start()
+        {
+            eUnitLayer = LayerMask.NameToLayer("EnemyUnits");
+            pUnitLayer = LayerMask.NameToLayer("Units"); 
+        }
+        public (float cost,float aggroRange, float attack, float atkRange, float health, float armor) GetBasicUnitStats(string type)
         {
             BasicUnit unit;
             switch (type)
@@ -34,36 +42,48 @@ namespace LP.FDG.Units
                     break;
                 default:
                     Debug.Log($"Unit Type: { type } could not be found");
-                    return (0,0,0,0,0);
+                    return (0,0,0,0,0,0);
             }
-            return (unit.cost,unit.attack,unit.atkRange,unit.health,unit.armor);
+            return (unit.baseStats.cost,unit.baseStats.aggroRange,unit.baseStats.attack,unit.baseStats.atkRange,unit.baseStats.health,unit.baseStats.armor);
         }
 
         public void SetBasicUnitStats(Transform type)
         {
+
+            Transform pUnits = PlayerManager.instance.playerUnits;
+            Transform eUnits = PlayerManager.instance.enemyUnits;
             foreach (Transform child in type)
             {
                 foreach (Transform unit in child)
                 {
                     string unitName = child.name.Substring(0,child.name.Length - 1).ToLower();
                     var stats = GetBasicUnitStats(unitName);
-                    Player.PlayerUnit pU;
+                    
                     //Player.PlayerUnit pU = unit.GetComponent<Player.PlayerUnit>();
-                    if (type == FDG.Player.PlayerManager.instance.playerUnits)
+                    if (type == pUnits)
                     {
-                        pU = unit.GetComponent<Player.PlayerUnit>();
+                        Player.PlayerUnit pU = unit.GetComponent<Player.PlayerUnit>();
 
                         //set unnits
-                        pU.cost = stats.cost;
-                        pU.attack = stats.attack;
-                        pU.atkRange = stats.atkRange;
-                        pU.health = stats.health;
-                        pU.armor = stats.armor;
+                        pU.baseStats.cost = stats.cost;
+                        pU.baseStats.aggroRange = stats.aggroRange;
+                        pU.baseStats.attack = stats.attack;
+                        pU.baseStats.atkRange = stats.atkRange;
+                        pU.baseStats.health = stats.health;
+                        pU.baseStats.armor = stats.armor;
 
                     }
-                    else if(type == FDG.Player.PlayerManager.instance.enemyUnits)
+                    else if(type == eUnits)
                     {
-                        //set stats 
+                        Enemy.EnemyUnit eU = unit.GetComponent<Enemy.EnemyUnit>();
+
+                        //set unnits
+                        eU.baseStats.cost = stats.cost;
+                        eU.baseStats.aggroRange = stats.aggroRange;
+                        eU.baseStats.attack = stats.attack;
+                        eU.baseStats.atkRange = stats.atkRange;
+                        eU.baseStats.health = stats.health;
+                        eU.baseStats.armor = stats.armor;
                     }
 
 
