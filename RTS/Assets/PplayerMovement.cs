@@ -10,8 +10,9 @@ public class PplayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
+    //UnityEditor.TransformWorldPlacementJSON:{"position":{"x":11.489999771118164,"y":7.571428298950195,"z":-17.75},"rotation":{"x":0.3826834261417389,"y":0.0,"z":0.0,"w":0.9238795638084412},"scale":{"x":1.0,"y":1.0,"z":1.0}}
 
     // Update is called once per frame
     void Update()
