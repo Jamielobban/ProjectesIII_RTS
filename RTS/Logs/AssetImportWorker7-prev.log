@@ -1,0 +1,2356 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'es' Physical Memory: 16153 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+60195
+Successfully changed project path to: C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20640] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 4115173485 [EditorId] 4115173485 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20640] Host "[IP] 172.26.112.1 [Port] 0 [Flags] 2 [Guid] 4115173485 [EditorId] 4115173485 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 13.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.3f1 (7cdc2969a641)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 with Max-Q Design (ID=0x1f12)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.2824
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009636 seconds.
+- Loaded All Assemblies, in  0.378 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.278 seconds
+Domain Reload Profiling: 653ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (162ms)
+		LoadAssemblies (94ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (138ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (278ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (214ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.809 seconds
+Refreshing native plugins compatible for Editor in 5.22 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.648 seconds
+Domain Reload Profiling: 1453ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (585ms)
+		LoadAssemblies (329ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (315ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (271ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (649ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (490ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (118ms)
+			ProcessInitializeOnLoadAttributes (286ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 5.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4911 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (0.7 MB). Loaded Objects now: 5398.
+Memory consumption went from 194.8 MB to 194.1 MB.
+Total: 3.580600 ms (FindLiveObjects: 0.375200 ms CreateObjectMapping: 0.373700 ms MarkObjects: 2.508900 ms  DeleteObjects: 0.322100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5610.236776 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_knightHead.obj
+  artifactKey: Guid(e94991947a81b1f409418a1628c23800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_knightHead.obj using Guid(e94991947a81b1f409418a1628c23800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc65e025930a13a63ee1c93d29d7de9') in 0.222311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/character_mage.fbx
+  artifactKey: Guid(a7267b54ff0190f49b00d24148248f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/character_mage.fbx using Guid(a7267b54ff0190f49b00d24148248f7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f16aa7a8cbe5c764a69dc04d12023e99') in 0.193658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/dae/character_mage.dae
+  artifactKey: Guid(571345b1060ac1047a23f600ea8f4570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/dae/character_mage.dae using Guid(571345b1060ac1047a23f600ea8f4570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59436ebcfb64c4a40051bbb56922d732') in 0.150535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 42
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueBody.obj
+  artifactKey: Guid(ad83ebce083e72045b917e8efe920d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueBody.obj using Guid(ad83ebce083e72045b917e8efe920d30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c1741d37c3b5f15a94761b572cc6a4') in 0.049849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Cheer.fbx
+  artifactKey: Guid(4f268dee3cc44244e8a703b4637df035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Cheer.fbx using Guid(4f268dee3cc44244e8a703b4637df035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc6c83583d4d774ca287be414816f27f') in 0.041241 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueHead.obj
+  artifactKey: Guid(78f9307381633fd4d80be1efcba7300a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueHead.obj using Guid(78f9307381633fd4d80be1efcba7300a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1735516cc7547ca26a85b4cfea95aea8') in 0.034659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_common_empty.dae
+  artifactKey: Guid(cbb7543ce5f131143be4d6607dfdc45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_common_empty.dae using Guid(cbb7543ce5f131143be4d6607dfdc45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f045a3f191bd413d618eb4d4e2d02ec') in 0.045238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/chest_rare.obj
+  artifactKey: Guid(74ff2299038d5c74796de5af9e1e1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/chest_rare.obj using Guid(74ff2299038d5c74796de5af9e1e1779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f761e00cf646c00708118453eef1d3cd') in 0.031339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/chest_uncommon_mimic.obj
+  artifactKey: Guid(e4aa4bbcc09e50d409d5961fc0e8d9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/chest_uncommon_mimic.obj using Guid(e4aa4bbcc09e50d409d5961fc0e8d9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d1605721ca735c7d20c1ba7a707b71') in 0.044546 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare.fbx
+  artifactKey: Guid(2f0c8ade0b5f4394ab5b925625ae3580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare.fbx using Guid(2f0c8ade0b5f4394ab5b925625ae3580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbb54a4b4d0d000e2e7ba4a0148974e') in 0.032444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon_mimic.fbx
+  artifactKey: Guid(2424ce6551785514dbeb9213af7e30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon_mimic.fbx using Guid(2424ce6551785514dbeb9213af7e30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2097c1818eb5cd60f14fc35c4cc4bd8') in 0.047635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/chestTop_common_empty.dae
+  artifactKey: Guid(a72dc3dc7b6822e4dbe251b5038289bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/chestTop_common_empty.dae using Guid(a72dc3dc7b6822e4dbe251b5038289bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd1061f21c42ffeaa714ec44d7373bb') in 0.036075 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_common_empty.obj
+  artifactKey: Guid(e6a78a536edcb524b9f208871907fb36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_common_empty.obj using Guid(e6a78a536edcb524b9f208871907fb36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '836800d9ddfee53a80b4c1b961f2fe22') in 0.039129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_common.dae
+  artifactKey: Guid(7a788931e7e456c48961501c87e87a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_common.dae using Guid(7a788931e7e456c48961501c87e87a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df2be43189fb43b9bdb4c21523b5959') in 0.045399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common_empty.fbx
+  artifactKey: Guid(5db3e55b3eb79e2468c7c5403ccc6928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common_empty.fbx using Guid(5db3e55b3eb79e2468c7c5403ccc6928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af3dc1e206d00e3e7f1200157483479f') in 0.042727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare_mimic.fbx
+  artifactKey: Guid(d1d3b6a47838e4f4196c3f0d5fd6306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare_mimic.fbx using Guid(d1d3b6a47838e4f4196c3f0d5fd6306f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c80d0a123aa085b5962ea8ee411e83e') in 0.032114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_uncommon_mimic.obj
+  artifactKey: Guid(98400331be436b84ba643abf4b31ea58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_uncommon_mimic.obj using Guid(98400331be436b84ba643abf4b31ea58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6af2fa236c41f9e37f4d84d082cc46') in 0.047622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Climbing.fbx
+  artifactKey: Guid(2209d6fbfea61624d959391dde90b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Climbing.fbx using Guid(2209d6fbfea61624d959391dde90b62c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb67cbb2e2fe4dca4d625d50b4f03b54') in 0.032275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/coinsLarge.dae
+  artifactKey: Guid(ab86574bdcb70584a87527eca7d78ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/coinsLarge.dae using Guid(ab86574bdcb70584a87527eca7d78ba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bee134855a65de34e830b4090a4592') in 0.023324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsSmall.fbx
+  artifactKey: Guid(26fedb8e0510c6f49952af46a4dea548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsSmall.fbx using Guid(26fedb8e0510c6f49952af46a4dea548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98370a60f58c59c4268405f8ed947eee') in 0.024776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/crate.obj
+  artifactKey: Guid(ce409cdfd5fb8a14897900bafaf9b124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/crate.obj using Guid(ce409cdfd5fb8a14897900bafaf9b124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3dd1207302fd1c153329e691500257f') in 0.036789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsMedium.fbx
+  artifactKey: Guid(288f2627ef8b01f4ab362592319a930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsMedium.fbx using Guid(288f2627ef8b01f4ab362592319a930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5108ae7cef82a9f195ed8a37e92171ff') in 0.025128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coin.fbx
+  artifactKey: Guid(0c2727714849b0144aba96cbffacdb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coin.fbx using Guid(0c2727714849b0144aba96cbffacdb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f818f834b0176b11296732dac3d93ab7') in 0.021864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/coin.dae
+  artifactKey: Guid(5712c18c1c640a94b836494c74c1ab69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/coin.dae using Guid(5712c18c1c640a94b836494c74c1ab69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2950dad3905421a90a677bfa5265ee75') in 0.023839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/crateDark.obj
+  artifactKey: Guid(2bbee4ca6eed0fb41a4f8139754292ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/crateDark.obj using Guid(2bbee4ca6eed0fb41a4f8139754292ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a4227e00a5509e75ea95fd3356e54e8') in 0.033827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/cratePlatform_medium.obj
+  artifactKey: Guid(5c2918378c11fe745ae2a6f461523e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/cratePlatform_medium.obj using Guid(5c2918378c11fe745ae2a6f461523e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed93fc25fe3687c20b146b1a04a38b1') in 0.033093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.224491 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_medium.fbx
+  artifactKey: Guid(bb87bff6d276a75458129311a5c3c67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_medium.fbx using Guid(bb87bff6d276a75458129311a5c3c67d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd9f3f1b120fd6167c3440ce284d852c') in 0.034909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_large.fbx
+  artifactKey: Guid(80b060abbcaff5240a1fd3bd2eca9117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_large.fbx using Guid(80b060abbcaff5240a1fd3bd2eca9117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812421b51f784bd3c66ee5e7c329e34f') in 0.039545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/cratePlatform_large.obj
+  artifactKey: Guid(5d66fe850e12a974f8488b9b173ad14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/cratePlatform_large.obj using Guid(5d66fe850e12a974f8488b9b173ad14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25caa6e80f2949b6c56c483f630a0682') in 0.040408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.004329 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/coin.obj
+  artifactKey: Guid(8387dedfc84488941b9be7020a3a6427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/coin.obj using Guid(8387dedfc84488941b9be7020a3a6427) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3ca6e0a2f8f56ad397813acada9cb8e') in 0.028375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/crossbow_common.dae
+  artifactKey: Guid(528c39a82dd1d2e448675aec0feaca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/crossbow_common.dae using Guid(528c39a82dd1d2e448675aec0feaca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9373df934d07c0007b996db15c35b08b') in 0.027760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/crossbow_rare.obj
+  artifactKey: Guid(ce5bf1c71e18a9e489dc6b9723b59aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/crossbow_rare.obj using Guid(ce5bf1c71e18a9e489dc6b9723b59aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '564c67998532b7ed3b4f52a00ea4f1d2') in 0.030966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_uncommon.dae
+  artifactKey: Guid(eb5704d6dc6b188428879e20dafcfe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_uncommon.dae using Guid(eb5704d6dc6b188428879e20dafcfe2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09589fb1ad0b1ba09102cd2df4d766d7') in 0.040535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueArmLeft.obj
+  artifactKey: Guid(7caacddaa6189ac4f8e3d83b3f3ca482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueArmLeft.obj using Guid(7caacddaa6189ac4f8e3d83b3f3ca482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a42ca41dfe219c0000c816847439dc') in 0.037468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/dagger_common.dae
+  artifactKey: Guid(81868d51337dad8498f63a9bb5c30c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/dagger_common.dae using Guid(81868d51337dad8498f63a9bb5c30c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06559904d398f21580c2ba9558e55be3') in 0.031065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Dance.fbx
+  artifactKey: Guid(9b2147ec9936b5b4c82fcfe2e9556877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/Dance.fbx using Guid(9b2147ec9936b5b4c82fcfe2e9556877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d425dd9afbaa15d8df15bd46643a3ea') in 0.028125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_forestA.fbx
+  artifactKey: Guid(3ca95e7205dd3a849a04936994165d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_forestA.fbx using Guid(3ca95e7205dd3a849a04936994165d90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f11220db33ac67db5c33b856b4067c') in 0.037333 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_forestB.fbx
+  artifactKey: Guid(d570ec2bdd5edc6409822e962b8aa959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_forestB.fbx using Guid(d570ec2bdd5edc6409822e962b8aa959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbd839bff24e9f9fa3c16f64a3c568c') in 0.039539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/objects/dae/detail_forestB.dae
+  artifactKey: Guid(a40c2f8cb2851dc408770fe4a800405f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/dae/detail_forestB.dae using Guid(a40c2f8cb2851dc408770fe4a800405f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c485999773da3b7ad8618a5456d2f08') in 0.037382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/DashLeft.fbx
+  artifactKey: Guid(4c8e5bc665646ad488a97eff5865654f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/DashLeft.fbx using Guid(4c8e5bc665646ad488a97eff5865654f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f23ba34f8d3fa64e2d0c56468f61d6d3') in 0.034029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/mapa/Models/objects/obj/detail_forestB.obj
+  artifactKey: Guid(70bf9eefeb2dbb540a1b9c979670ef80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/obj/detail_forestB.obj using Guid(70bf9eefeb2dbb540a1b9c979670ef80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f2bef97894cb99c9bfd4976229200e') in 0.041798 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_common.fbx
+  artifactKey: Guid(f85ed92bd09b1e146bf2bf3e537fde9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_common.fbx using Guid(f85ed92bd09b1e146bf2bf3e537fde9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd975e16e003320c88576404a78cfcb6c') in 0.033749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare.fbx
+  artifactKey: Guid(0947b8f5c8dd013419f9421e34889909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare.fbx using Guid(0947b8f5c8dd013419f9421e34889909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd242ff2f2ebc16fbb9b75d1b556a1308') in 0.031596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon.fbx
+  artifactKey: Guid(d6e2db23a9955c44380c69936f068ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon.fbx using Guid(d6e2db23a9955c44380c69936f068ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3dfe030911e3d4e3bd2db882aeff3e1') in 0.043700 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueHair.obj
+  artifactKey: Guid(51927ce74abfa62459854a9299627566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/character_rogueHair.obj using Guid(51927ce74abfa62459854a9299627566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce88d26fccbae4b2ace33305c383e05') in 0.029927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/dagger_rare.obj
+  artifactKey: Guid(2e0d341748645274183ce0b7c14ae076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/dagger_rare.obj using Guid(2e0d341748645274183ce0b7c14ae076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4697f9a22cd092072ec8720d0ab257be') in 0.049552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_uncommon.obj
+  artifactKey: Guid(ae4ceb9658aa8a8488b179455804ee37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/chestTop_uncommon.obj using Guid(ae4ceb9658aa8a8488b179455804ee37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a499a43bebf265479dc540309060debc') in 0.035286 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_rare_mimic.dae
+  artifactKey: Guid(000070b3d3628214f8e59cc73ee7b2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/chest_rare_mimic.dae using Guid(000070b3d3628214f8e59cc73ee7b2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d69f72f0f40fd5004c66c680597f5f8') in 0.041255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/coinsMedium.obj
+  artifactKey: Guid(ce505e5f3c9393548bcef0104f4e8b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/coinsMedium.obj using Guid(ce505e5f3c9393548bcef0104f4e8b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9f723b75a42e221ad9d62b244baa86a') in 0.030810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/dagger_rare.dae
+  artifactKey: Guid(6f007685f58317d43a2543e28207a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/dagger_rare.dae using Guid(6f007685f58317d43a2543e28207a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58fea6d37a2a2ea4c5670c3792b8fd05') in 0.047938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/detail_forestA.obj
+  artifactKey: Guid(e1357bd92b12577448d0c53dc2cff595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/detail_forestA.obj using Guid(e1357bd92b12577448d0c53dc2cff595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd343d986a91ba6050226ffa2ad4ab3a') in 0.048523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_rare.fbx
+  artifactKey: Guid(b5a798f3637743248b3808c9718cc0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_rare.fbx using Guid(b5a798f3637743248b3808c9718cc0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bfe7cd8df6fd0dfec1973c1e74aa5ba') in 0.036209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/crossbow_uncommon.dae
+  artifactKey: Guid(4cdcfbeed6aa47e499421ec1ba9eeac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/crossbow_uncommon.dae using Guid(4cdcfbeed6aa47e499421ec1ba9eeac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7796ba445afbe7c0ade1e1a0094dbc') in 0.035247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/crossbow_1handed.fbx
+  artifactKey: Guid(008ae52c7acb6fe44b6f279f5056e1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/crossbow_1handed.fbx using Guid(008ae52c7acb6fe44b6f279f5056e1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c84c2faff8dd171b3d697e86edfdff') in 0.033137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_uncommon.fbx
+  artifactKey: Guid(4487ed952c2073a499b2e5e062e71a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_uncommon.fbx using Guid(4487ed952c2073a499b2e5e062e71a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '621a4c5cc241f77f4c95a6023ec88e49') in 0.033955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/objects/objects/dae/detail_forestA.dae
+  artifactKey: Guid(058b0cf576351644b8d580e4b1963234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/dae/detail_forestA.dae using Guid(058b0cf576351644b8d580e4b1963234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a217f8c2d7a4bddf888b9e2cb953e6') in 0.033392 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/objects/objects/dae/detail_rocks_small.dae
+  artifactKey: Guid(a3225fa8bfee9d946b0317f84bba4594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/dae/detail_rocks_small.dae using Guid(a3225fa8bfee9d946b0317f84bba4594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8984d820a54ffff6ace49f29be4d6c37') in 0.026632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_rocks_small.fbx
+  artifactKey: Guid(2f810d057bd3c3e449377b98bb4496d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_rocks_small.fbx using Guid(2f810d057bd3c3e449377b98bb4496d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aae9233bbf27b1ff983b4a61bc78e2d') in 0.023342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/mapa/Models/objects/dae/detail_treeA.dae
+  artifactKey: Guid(028945e88ab8a8e4f9c647c754f6ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/dae/detail_treeA.dae using Guid(028945e88ab8a8e4f9c647c754f6ce37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f884a16fc6d61ad87f6b3cfc78c5602') in 0.034753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/detail_rocks_small.obj
+  artifactKey: Guid(1265a62ff6684d946bf48798af55cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/detail_rocks_small.obj using Guid(1265a62ff6684d946bf48798af55cf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e61a2d420b0e502e1958db3a1e3edb') in 0.030267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/door.dae
+  artifactKey: Guid(f82e3644da62f4a49b7f054f9549311d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/door.dae using Guid(f82e3644da62f4a49b7f054f9549311d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091f70ea1785947c4370a80a77cc14fc') in 0.032223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_treeA.fbx
+  artifactKey: Guid(d51d3f5c25604074e95c23a5df6319ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_treeA.fbx using Guid(d51d3f5c25604074e95c23a5df6319ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c0518063c90292de418d773b5ca7b5') in 0.036352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/objects/obj/detail_rocks.obj
+  artifactKey: Guid(99680bece4d7dde4994f6293a8f2a1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/obj/detail_rocks.obj using Guid(99680bece4d7dde4994f6293a8f2a1c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f0755171a61f260efc9e43a1565968') in 0.026313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/door_gate.fbx
+  artifactKey: Guid(e38761f6a3905fb44ad6897b37022d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/door_gate.fbx using Guid(e38761f6a3905fb44ad6897b37022d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1efafe89b3c032326a1d18cec01a72d5') in 0.029919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/Models/objects/obj/farm_plot.obj
+  artifactKey: Guid(1c440793a130fa9448facb26523af589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/obj/farm_plot.obj using Guid(1c440793a130fa9448facb26523af589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb285cccb5f3a6080ca2e35dc18fa111') in 0.051144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/enemyUnit.prefab
+  artifactKey: Guid(834544fccfb1e3144b57125d787533e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/enemyUnit.prefab using Guid(834544fccfb1e3144b57125d787533e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84204a090cee842ca9a99af4a5f33b3f') in 0.036256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/farm_wheat.obj
+  artifactKey: Guid(e4d58abdbdee92a43be48e2bda421805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/farm_wheat.obj using Guid(e4d58abdbdee92a43be48e2bda421805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9b9c518ea31f339ae9051b4c9b49fa') in 0.045657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_treeB.fbx
+  artifactKey: Guid(8ed669c4ed26c8348a8294e794d49aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_treeB.fbx using Guid(8ed669c4ed26c8348a8294e794d49aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55585d2863f15370565d68121671423') in 0.036619 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/door_gate.obj
+  artifactKey: Guid(fa809a3dd9dfa75429e379a364b98f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/door_gate.obj using Guid(fa809a3dd9dfa75429e379a364b98f1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bc5212c019cd7dd4d7316bb59b19c5') in 0.040931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/detail_treeC.obj
+  artifactKey: Guid(ce61e05c7b710494ba1ff61d4473fafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/detail_treeC.obj using Guid(ce61e05c7b710494ba1ff61d4473fafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf9b8caf97f068f6ae91a8ccef7ec89') in 0.038434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/door.obj
+  artifactKey: Guid(ac17454cf9e1fe54bbcaf3b8f1fbfb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/door.obj using Guid(ac17454cf9e1fe54bbcaf3b8f1fbfb25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311e152c2c1633313a576cdfbeffd563') in 0.040374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/objects/dae/detail_treeB.dae
+  artifactKey: Guid(bb7ae2620a682c24492972a4cf3ccd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/dae/detail_treeB.dae using Guid(bb7ae2620a682c24492972a4cf3ccd78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df086158be3085061496752d5d7e6bb4') in 0.036115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/mapa/Models/objects/dae/detail_hill.dae
+  artifactKey: Guid(13a81b0d7ccdad8458b16967d7ca03b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/dae/detail_hill.dae using Guid(13a81b0d7ccdad8458b16967d7ca03b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1df538b4c00db4a5689c1e3a49b327e2') in 0.052191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/dagger.fbx
+  artifactKey: Guid(caddde080363d6b42964a1b66204664f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/dagger.fbx using Guid(caddde080363d6b42964a1b66204664f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '913692aac5009b82fff4e615ae85c46d') in 0.033467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/objects/objects/fbx/detail_hill.fbx
+  artifactKey: Guid(d5cd0a739f2aea64fb1a527520b90741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/fbx/detail_hill.fbx using Guid(d5cd0a739f2aea64fb1a527520b90741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c65a0f5bd69ea4bb63bec459e3a177bc') in 0.057721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_uncommon.fbx
+  artifactKey: Guid(e0229201096f6cb48950baf7d799ef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_uncommon.fbx using Guid(e0229201096f6cb48950baf7d799ef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f4f308a894f45f694b2f89f3e282b2') in 0.044022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare_mimic.fbx
+  artifactKey: Guid(e6c9fcfa66d1b89418a4813a37260a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare_mimic.fbx using Guid(e6c9fcfa66d1b89418a4813a37260a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364af3c4a4225de9e4591dc208798873') in 0.054853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsLarge.fbx
+  artifactKey: Guid(e8fe12d0a8017524ca17089c30a89193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsLarge.fbx using Guid(e8fe12d0a8017524ca17089c30a89193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5187559d327ba36211f96f250ca6c474') in 0.035850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/objects/obj/detail_treeA.obj
+  artifactKey: Guid(a558d9d8b5fe4f9418cbc177155fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/obj/detail_treeA.obj using Guid(a558d9d8b5fe4f9418cbc177155fb62a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b17349e4c10b7ce38a2a5cdd1a880ec') in 0.051032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/objects/obj/detail_hill.obj
+  artifactKey: Guid(498a34200e302a84487c6f837b3f8ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/obj/detail_hill.obj using Guid(498a34200e302a84487c6f837b3f8ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352c3a74ab3f6140a91e826adadb0173') in 0.054832 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/mapa/Models/objects/objects/dae/detail_treeC.dae
+  artifactKey: Guid(20248ee09d500204d9f9e77c1465f02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/dae/detail_treeC.dae using Guid(20248ee09d500204d9f9e77c1465f02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae138c1535ef64969ea3dff5e80a0a78') in 0.033496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/crateDark.dae
+  artifactKey: Guid(e7cafe23bb22c7945adf7a2126efa2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/crateDark.dae using Guid(e7cafe23bb22c7945adf7a2126efa2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7e66886848bf6c529cf99156fe44fa7') in 0.032603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 4.320431 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/floorDecoration_tilesSmall.dae
+  artifactKey: Guid(a01b492c552a57d4b8aed2228eaf5cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/floorDecoration_tilesSmall.dae using Guid(a01b492c552a57d4b8aed2228eaf5cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ea2e913dc8dd50964acad53c9db866') in 0.027496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/floorDecoration_woodLeft.obj
+  artifactKey: Guid(4a3d6a6a8c6989d49b4d5a0f2d6cc2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/floorDecoration_woodLeft.obj using Guid(4a3d6a6a8c6989d49b4d5a0f2d6cc2c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38bbf309f746c12c01dba2f073f9728f') in 0.046541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 3.026349 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/hammer_rare.dae
+  artifactKey: Guid(b92f44ee2e3282c4d8c91967b5ba151c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/hammer_rare.dae using Guid(b92f44ee2e3282c4d8c91967b5ba151c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d19da2391c767b5669f74f74a4d0b60') in 0.100457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.019117 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/HeavyAttack.fbx
+  artifactKey: Guid(0707daeb2fd8f7b449ce20fe13ad5e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/Single Animations/HeavyAttack.fbx using Guid(0707daeb2fd8f7b449ce20fe13ad5e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8d4bd5f7adc85a2e3b49118b6d8c5d') in 0.061540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.960662 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadA.obj
+  artifactKey: Guid(0bb4b285b7e677f49a8b20e0c4ab0c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadA.obj using Guid(0bb4b285b7e677f49a8b20e0c4ab0c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932e15a4b60ba0a600b0b2b52d10c72f') in 0.039688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadA_detail.obj
+  artifactKey: Guid(750e6e1bf56dbde438120b34b79c6bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadA_detail.obj using Guid(750e6e1bf56dbde438120b34b79c6bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a10e9180cd6dc5e5b5c6ab173c36ab6') in 0.040458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.358508 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadB_detail.fbx
+  artifactKey: Guid(2a8819f3fa8c08844a3ee17373f604c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadB_detail.fbx using Guid(2a8819f3fa8c08844a3ee17373f604c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da3efbb9f7000b7c4b52d5f9302c734') in 0.042391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.088309 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadD.obj
+  artifactKey: Guid(540180b73f054f1418ed1b588b0ac352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadD.obj using Guid(540180b73f054f1418ed1b588b0ac352) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0611459d1f428bdea0ede997d6ceeca') in 0.037589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadD_detail.obj
+  artifactKey: Guid(7470d1a5a2d00584a83db21ab99942f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadD_detail.obj using Guid(7470d1a5a2d00584a83db21ab99942f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a384d96a1e05d28dfd90c980476854') in 0.042634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.544826 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadE_detail.obj
+  artifactKey: Guid(5631997defa224541a5050838b4fd0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadE_detail.obj using Guid(5631997defa224541a5050838b4fd0f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d5a83cb9158426e73b09b60cbd4fd5') in 0.053027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.118679 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadG.obj
+  artifactKey: Guid(c8ad537403bc212438a55e32f3c89a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadG.obj using Guid(c8ad537403bc212438a55e32f3c89a7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f2a89df18bcc5b08c8d6b710a5a347') in 0.047341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_forest_roadG_detail.dae
+  artifactKey: Guid(ad47cbf4ce7a3624880d0fb818ae1420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_forest_roadG_detail.dae using Guid(ad47cbf4ce7a3624880d0fb818ae1420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78c10d1a7dc6c8dcdcc56bc9fd2c0998') in 0.043154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.550314 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadH_detail.obj
+  artifactKey: Guid(be474e6173241ad4dbfdc9bde01faa8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadH_detail.obj using Guid(be474e6173241ad4dbfdc9bde01faa8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3bfcae15d504a41613da8b6a8d4cc79') in 0.055004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadI.fbx
+  artifactKey: Guid(31016184273a458468491361048a8ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadI.fbx using Guid(31016184273a458468491361048a8ddb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c8fb9ce22e1db1405b35e40923954ba') in 0.029732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.017781 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadJ.fbx
+  artifactKey: Guid(f60ed420a111d2042a5f854ecc684110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_roadJ.fbx using Guid(f60ed420a111d2042a5f854ecc684110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b830a2aaa721504bf8fed8e81ab1890') in 0.034260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadK.obj
+  artifactKey: Guid(ec75e6ec423008d4995a40676ef56174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadK.obj using Guid(ec75e6ec423008d4995a40676ef56174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cc2df4a8bb03075d4a2a3b14b283f8e') in 0.044470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.017709 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadL.obj
+  artifactKey: Guid(1344a46952d1cb94b817e5c5ce0aea4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadL.obj using Guid(1344a46952d1cb94b817e5c5ce0aea4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ac439e8690fabdfb4c1f5ff46d8514') in 0.039082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_forest_roadL_detail.dae
+  artifactKey: Guid(e7037818264a72647ad4cc550bfcb966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_forest_roadL_detail.dae using Guid(e7037818264a72647ad4cc550bfcb966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4676c2d70adcbfd576bc3c2a07115679') in 0.038534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.303882 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_roadM_detail.obj
+  artifactKey: Guid(ab8f09c449f35284694e36ee5b09a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_roadM_detail.obj using Guid(ab8f09c449f35284694e36ee5b09a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a843530a5ec5dad08a86f094498980') in 0.050849 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_forest_transitionA.dae
+  artifactKey: Guid(58306b3f0254eb74bbb36f4db561736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_forest_transitionA.dae using Guid(58306b3f0254eb74bbb36f4db561736e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d143fe660783965c344a547de544d7') in 0.036232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.048394 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterA.fbx
+  artifactKey: Guid(3b0cc28a38bf39c4bbea24296c53a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterA.fbx using Guid(3b0cc28a38bf39c4bbea24296c53a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735793a7b761f88defcdfbbde992f025') in 0.041204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_waterA_empty.obj
+  artifactKey: Guid(65e9d5237717b004892a519eed0cdf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_waterA_empty.obj using Guid(65e9d5237717b004892a519eed0cdf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b7dc6fbbc689b1c5d1cddf748332e2') in 0.033822 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.330364 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterB_detail.fbx
+  artifactKey: Guid(8bf51792d30eaf94c95094bab60c5b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterB_detail.fbx using Guid(8bf51792d30eaf94c95094bab60c5b58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2ed7a747fef1d4a2a3e92b5650ff33') in 0.044534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_forest_waterB_detail.dae
+  artifactKey: Guid(092c3b286a1a8e54caa1028538701c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_forest_waterB_detail.dae using Guid(092c3b286a1a8e54caa1028538701c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4149b47050e43ae9edbc09429dd874') in 0.034273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.019739 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterC_detail.fbx
+  artifactKey: Guid(449e8715f90d88547a417261451ce027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterC_detail.fbx using Guid(449e8715f90d88547a417261451ce027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc060f59549c2528337180465825cd3') in 0.041209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_forest_waterD.obj
+  artifactKey: Guid(79c6d1071d25360419ecb10b5af47ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_forest_waterD.obj using Guid(79c6d1071d25360419ecb10b5af47ca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c96cd7c2b87e7613e083eeb64456a53') in 0.038026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_forest_waterD_empty.dae
+  artifactKey: Guid(48c7fc0bf60990d4e82b290d49b6d9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_forest_waterD_empty.dae using Guid(48c7fc0bf60990d4e82b290d49b6d9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d3297de6f255e43009cc2c349fc434') in 0.055053 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterD_detail.fbx
+  artifactKey: Guid(5a213211a6a72e24f9a2f28281735c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_forest_waterD_detail.fbx using Guid(5a213211a6a72e24f9a2f28281735c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7580c86e5a55e1bc6c942bd17fe625d3') in 0.039029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.293564 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadA.fbx
+  artifactKey: Guid(98feba2bfa49d5347b6abbdf83bab3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadA.fbx using Guid(98feba2bfa49d5347b6abbdf83bab3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf8568bfdf485d750c0d36f318e02fb') in 0.037532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_roadA_detail.obj
+  artifactKey: Guid(70e3ddb2a4a60a742894a09c5b250856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_roadA_detail.obj using Guid(70e3ddb2a4a60a742894a09c5b250856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5118a29a397fa4a2724a2ee1083e74cb') in 0.046142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.016981 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_roadB_detail.obj
+  artifactKey: Guid(bc15aaf887df1934abacd5d4570d68bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_roadB_detail.obj using Guid(bc15aaf887df1934abacd5d4570d68bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b4997fc8d05d6df959b9bb07a71eed') in 0.048533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadC.fbx
+  artifactKey: Guid(e476c86f0d664fd408ac8b6738934fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadC.fbx using Guid(e476c86f0d664fd408ac8b6738934fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597d85ba38fe44c5dd30b45ef8d22fcb') in 0.029046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.015051 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_roadD.dae
+  artifactKey: Guid(655763c98b1c32d4b8104492824b1d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_roadD.dae using Guid(655763c98b1c32d4b8104492824b1d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a2037052101e321099b7bf4059de0a3') in 0.033066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadD_detail.fbx
+  artifactKey: Guid(9228164be33aab64192e8cecd212df80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadD_detail.fbx using Guid(9228164be33aab64192e8cecd212df80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b828c442240a5e41ccda1f9ccd911422') in 0.041530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.872116 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadF.fbx
+  artifactKey: Guid(20572a2bf6850af478407c1aa5d28075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadF.fbx using Guid(20572a2bf6850af478407c1aa5d28075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ee2369ba289ec8a023c126e0aa7417') in 0.039345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_roadF_detail.obj
+  artifactKey: Guid(4f6983edb5feab54182171d154a51867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_roadF_detail.obj using Guid(4f6983edb5feab54182171d154a51867) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1277dbab1eff645fc54bac565886866') in 0.057540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.016013 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadG_detail.fbx
+  artifactKey: Guid(f4087e45982a55f4da0d258c50f2a662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadG_detail.fbx using Guid(f4087e45982a55f4da0d258c50f2a662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8faf96b391670acedfce09307c89d8c') in 0.045509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_roadH_detail.dae
+  artifactKey: Guid(46a8067aeef19cb418cf8bca26501ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_roadH_detail.dae using Guid(46a8067aeef19cb418cf8bca26501ec0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cec6961397b5896807d2308a8e3c867') in 0.044753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.309768 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadI.fbx
+  artifactKey: Guid(099321b64680e7a4ab95a63d77b758bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadI.fbx using Guid(099321b64680e7a4ab95a63d77b758bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a4325b3c5f374d87f73a9bcf8a72c6') in 0.031746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_roadI_detail.obj
+  artifactKey: Guid(a8a71b5636701f949958ed3b81f8003b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_roadI_detail.obj using Guid(a8a71b5636701f949958ed3b81f8003b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e812fd6669713e5b7fa1dcdc621f3c4') in 0.049575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.023716 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadK.fbx
+  artifactKey: Guid(19f7f41dd23f3a34a9ec30fcea3d0964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadK.fbx using Guid(19f7f41dd23f3a34a9ec30fcea3d0964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef02e570d0d9a00bd397ddc5cbdd49a') in 0.032786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_roadK_detail.dae
+  artifactKey: Guid(2cce06b54f9236b42b3910d46ffeef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_roadK_detail.dae using Guid(2cce06b54f9236b42b3910d46ffeef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244d8154a4916679f6cc2e0c6bb74861') in 0.043522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.053245 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_roadL_detail.dae
+  artifactKey: Guid(f9fe3ea805b61284c806614fda66229c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_roadL_detail.dae using Guid(f9fe3ea805b61284c806614fda66229c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7947d7f8f16380be611c4525d0ac2f59') in 0.044560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadM.fbx
+  artifactKey: Guid(62968b5fc0c16a1409725744fa7ca2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_roadM.fbx using Guid(62968b5fc0c16a1409725744fa7ca2e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e16af943dce95e380a338552e52b61') in 0.035299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.205784 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_transitionA.obj
+  artifactKey: Guid(bd355168c48e270488b2021776a7d8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_transitionA.obj using Guid(bd355168c48e270488b2021776a7d8d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d32d024c8205d7f4d75b32c0e3478e') in 0.048631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_waterA.dae
+  artifactKey: Guid(0754734a554a87a4e845f09695d79fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_waterA.dae using Guid(0754734a554a87a4e845f09695d79fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aefebcab98ca00e6265b1a34b81ced5') in 0.035903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.018855 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_waterA_empty.obj
+  artifactKey: Guid(e3022d0e6e17ba4448196daa9040d976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_waterA_empty.obj using Guid(e3022d0e6e17ba4448196daa9040d976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42d75bcd458a8705a1aee3525c11c50') in 0.030204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_rock_waterB.obj
+  artifactKey: Guid(df2b7d93943c65b409c577671026bb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_rock_waterB.obj using Guid(df2b7d93943c65b409c577671026bb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1447e52ef4714807732cba654f52fd1b') in 0.035216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_waterB_empty.fbx
+  artifactKey: Guid(00dbda4a6d831034ba9eb942c853073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_waterB_empty.fbx using Guid(00dbda4a6d831034ba9eb942c853073f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c636fb7c1fb4a2ee806df6175461f4') in 0.027516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_waterB_empty.dae
+  artifactKey: Guid(8aec7e2653ea03a4789d75a70ed3ac71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_waterB_empty.dae using Guid(8aec7e2653ea03a4789d75a70ed3ac71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f7b06e792fbdafb8e8cfa4de5b6be07') in 0.026844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.005856 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_rock_waterC_detail.dae
+  artifactKey: Guid(4ea712436cd0184439cb5037e6e57c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_rock_waterC_detail.dae using Guid(4ea712436cd0184439cb5037e6e57c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3fb3de6c49a6b6060f0c36b8259fa1') in 0.035571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_rock_waterD_detail.fbx
+  artifactKey: Guid(e06f7462dd95c884d860196bd9b874a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_rock_waterD_detail.fbx using Guid(e06f7462dd95c884d860196bd9b874a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0747d1d5304fff8611468b5c0631a55') in 0.041232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.185364 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand.fbx
+  artifactKey: Guid(6376bae50010cd8428bd73bcafaa6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand.fbx using Guid(6376bae50010cd8428bd73bcafaa6a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db71986dd7247aa032c1377d0d5ccbc') in 0.025509 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_detail.dae
+  artifactKey: Guid(88614ee09912e894d887ffb6e96eb2d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_detail.dae using Guid(88614ee09912e894d887ffb6e96eb2d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa8e4c7136cdfb0e3ef396fc243cad3') in 0.038379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.028720 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadA_detail.fbx
+  artifactKey: Guid(db2dc0e7e694e2a4d8f59e80c72eef5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadA_detail.fbx using Guid(db2dc0e7e694e2a4d8f59e80c72eef5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47258f45343ccfec22b03b4bf554839f') in 0.039631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadB_detail.obj
+  artifactKey: Guid(9980bc24fb7f3e2479a9933de80713ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadB_detail.obj using Guid(9980bc24fb7f3e2479a9933de80713ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226256fd033a51fcaee84f83c7945d6a') in 0.040256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.014127 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadC.fbx
+  artifactKey: Guid(ee6281a8a8afbb84fa882777d8d37cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadC.fbx using Guid(ee6281a8a8afbb84fa882777d8d37cf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf922b15d46e419db01fddb01de98a0') in 0.030048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadD.obj
+  artifactKey: Guid(9564a2ec9a04746439abbc999c105580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadD.obj using Guid(9564a2ec9a04746439abbc999c105580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75961b69be6b8d37d2bebce149ee2807') in 0.044404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.289135 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadE.fbx
+  artifactKey: Guid(42b9f7da62baaa049aa9eb2e21b52d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadE.fbx using Guid(42b9f7da62baaa049aa9eb2e21b52d0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f5d18821a02510634b300be067da19') in 0.036524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_roadE.dae
+  artifactKey: Guid(f8c7eea72867b1e409da67c70125c40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_roadE.dae using Guid(f8c7eea72867b1e409da67c70125c40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79757231692d20ae8b956a342f7ca6f1') in 0.037858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.027030 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadF_detail.obj
+  artifactKey: Guid(fd80c5b335178eb4a828e8ab167bbf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadF_detail.obj using Guid(fd80c5b335178eb4a828e8ab167bbf06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4187c61436d82f78f5556b0f15c7022') in 0.045107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadG_detail.obj
+  artifactKey: Guid(89eb952236a610a41b3536bffb2f66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadG_detail.obj using Guid(89eb952236a610a41b3536bffb2f66f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f0f64185a82b5965bf671f151e1fce') in 0.049008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_roadH_detail.dae
+  artifactKey: Guid(a0baa369c1a20db4f970b02ac22f7d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_roadH_detail.dae using Guid(a0baa369c1a20db4f970b02ac22f7d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a8ae2d26262d3c7f1cfb5e326f804c') in 0.041328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.013259 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadI_detail.fbx
+  artifactKey: Guid(b7f856d9af2512145bc930050623dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_roadI_detail.fbx using Guid(b7f856d9af2512145bc930050623dda5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f708b4528bab8b8b93062bfec5788e') in 0.038114 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadJ.obj
+  artifactKey: Guid(df2f03c0d2aeb1440a883cfb4be60717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadJ.obj using Guid(df2f03c0d2aeb1440a883cfb4be60717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c22a90a2918e590c39a5ec1d827257') in 0.037159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_roadK_detail.dae
+  artifactKey: Guid(6201f3951e531ae4cae86e549d8d3db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_roadK_detail.dae using Guid(6201f3951e531ae4cae86e549d8d3db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bcd3d91a08f090a0531322d9ca74fd') in 0.038151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadM.obj
+  artifactKey: Guid(91cf6e589b33d5b409e812b1788a7684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadM.obj using Guid(91cf6e589b33d5b409e812b1788a7684) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a1478c901c1d90915701cf71ff72463') in 0.035455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_transitionA.dae
+  artifactKey: Guid(9786ad1ec70f32245b4a18385f37f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_transitionA.dae using Guid(9786ad1ec70f32245b4a18385f37f574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9122ede7c9b2ef7d9c300666972c0a') in 0.041105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_roadL.obj
+  artifactKey: Guid(2f26c4c78665cd047b7b5c554d346568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_roadL.obj using Guid(2f26c4c78665cd047b7b5c554d346568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7445881ee81249e6b7755fe5ac63239d') in 0.039513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.101582 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_waterA.dae
+  artifactKey: Guid(b5d28664518680a4d8015bc4f0f0f80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_waterA.dae using Guid(b5d28664518680a4d8015bc4f0f0f80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3f613fcac19c254f26c4bb4d91094b') in 0.034959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_waterA_detail.dae
+  artifactKey: Guid(2a718cb4dedbb9c4794f50420fb18388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_waterA_detail.dae using Guid(2a718cb4dedbb9c4794f50420fb18388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08660f5dbdab518f0deb41babc306e1') in 0.039373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.020546 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_sand_waterB.dae
+  artifactKey: Guid(03170d4c792bae448926f1ca03e4b783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_sand_waterB.dae using Guid(03170d4c792bae448926f1ca03e4b783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e22eef8ee8997eaf1b52de7a62bbac7') in 0.031674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterB_empty.fbx
+  artifactKey: Guid(ac82ab8e95a17c54dbc5c1da44e7e2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterB_empty.fbx using Guid(ac82ab8e95a17c54dbc5c1da44e7e2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17a233b3ec899bcdf84904f02257114') in 0.025650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/mapa/Models/tiles/hex/obj/hex_sand_waterC_detail.obj
+  artifactKey: Guid(e18f974e1cdd4c04190f2606f16969cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/obj/hex_sand_waterC_detail.obj using Guid(e18f974e1cdd4c04190f2606f16969cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36889d3b664475c926ce633c3124616') in 0.048182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterC_detail.fbx
+  artifactKey: Guid(f448032ea143a0f45aa28f09cdfca337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterC_detail.fbx using Guid(f448032ea143a0f45aa28f09cdfca337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e2021f1cbb4853cfba4d7217e92490') in 0.032762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.004552 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterD_detail.fbx
+  artifactKey: Guid(893d409411acfd3409d931a32765ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterD_detail.fbx using Guid(893d409411acfd3409d931a32765ee77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc8041b83ccc0e6de66226b9da1d86f') in 0.040737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/mapa/Models/tiles/hex/dae/hex_water.dae
+  artifactKey: Guid(d8e21379015d03542aae621bbe227f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/dae/hex_water.dae using Guid(d8e21379015d03542aae621bbe227f5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af3c0b689cca0b6e6e344e3a1a8ed8b7') in 0.023630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_water_detail.fbx
+  artifactKey: Guid(dc5b91d1493e0e44090e06f9b1fb4b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_water_detail.fbx using Guid(dc5b91d1493e0e44090e06f9b1fb4b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3accb1db454316ceedc4a7c4db44b59') in 0.038196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterD_empty.fbx
+  artifactKey: Guid(3109dcd5a803f4140a85d589b9a598d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/hex/fbx/hex_sand_waterD_empty.fbx using Guid(3109dcd5a803f4140a85d589b9a598d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2995f301dc39b0339d36193297359a8d') in 0.026948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.361910 seconds.
+  path: Assets/KayKit Character Animations 1.2/Animations/fbx/KayKit Animated Character_v1.2.fbx
+  artifactKey: Guid(90550be04b07e274f89e1d87fff18156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Animations/fbx/KayKit Animated Character_v1.2.fbx using Guid(90550be04b07e274f89e1d87fff18156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665dd2a1fc54e932684f0cea99012e13') in 0.048526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 0.050516 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/dae/extra heads/knightHeadB.dae
+  artifactKey: Guid(f45082add51416d449a6d0b400722e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/dae/extra heads/knightHeadB.dae using Guid(f45082add51416d449a6d0b400722e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9078c3f9d063f782b3de93d49c12d13') in 0.035879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.012129 seconds.
+  path: Assets/Low Poly Medieval Kit/Meshes/Ladders.fbx
+  artifactKey: Guid(dddb0a39fa815f744a7d8c27f6b5680c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Medieval Kit/Meshes/Ladders.fbx using Guid(dddb0a39fa815f744a7d8c27f6b5680c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d6cb01bfa23a3211db5184a4cc621b') in 0.066710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.597043 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/lootSackB.fbx
+  artifactKey: Guid(e3ae875b845400d4db42652ae9847b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/lootSackB.fbx using Guid(e3ae875b845400d4db42652ae9847b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab9eea4181a41fb38bfedd40abb31f1') in 0.036658 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/mapa/Models/objects/objects/dae/lumbermill.dae
+  artifactKey: Guid(7022333fb60c40548ad74fe46418a84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/dae/lumbermill.dae using Guid(7022333fb60c40548ad74fe46418a84a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f2b8cfde2d5b0cec182486d6f4e8218') in 0.075143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.019291 seconds.
+  path: Assets/Low Poly Medieval Kit/Meshes/Mace.fbx
+  artifactKey: Guid(6bdf049cadfdebd4682d4360c4d96ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Medieval Kit/Meshes/Mace.fbx using Guid(6bdf049cadfdebd4682d4360c4d96ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f00a47cf54c720af1bc7660259546d6') in 0.023539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/extra heads/mageHairA.obj
+  artifactKey: Guid(ba16fbfb5ab6660479b3cd77ca218dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/extra heads/mageHairA.obj using Guid(ba16fbfb5ab6660479b3cd77ca218dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b63dee27bb22b28896142277d798e834') in 0.056594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.551169 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/mageHeadA.fbx
+  artifactKey: Guid(5e31850d48266ac479c2a4d988b45517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/mageHeadA.fbx using Guid(5e31850d48266ac479c2a4d988b45517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c088008d1dbfcc5680c4e31a298e78ca') in 0.036155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/mageHeadB.fbx
+  artifactKey: Guid(aca80e17102ecb542a059cd4d5e8a338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/mageHeadB.fbx using Guid(aca80e17102ecb542a059cd4d5e8a338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd463aacacf4b19146a24df97853f1ef4') in 0.045508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.021115 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/market.obj
+  artifactKey: Guid(8d1a3a0fb7f8fda43be6d579f4c1223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/market.obj using Guid(8d1a3a0fb7f8fda43be6d579f4c1223f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9498f7ea819ae2b356f33017db0612f') in 0.057068 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/mill.obj
+  artifactKey: Guid(26565d61ac1c53f42a1f0181ea05133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/mill.obj using Guid(26565d61ac1c53f42a1f0181ea05133f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0babb8858a871e3464f7bfa88c36bdc3') in 0.053989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Low Poly Medieval Kit/Meshes/Mine.fbx
+  artifactKey: Guid(47b32f81d95922942bc1497361dfc314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Medieval Kit/Meshes/Mine.fbx using Guid(47b32f81d95922942bc1497361dfc314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da882f00f2480eae60412982125e909') in 0.046039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/objects/objects/obj/mine.obj
+  artifactKey: Guid(ca61757b6a465f44b96413d87f6bac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/objects/objects/obj/mine.obj using Guid(ca61757b6a465f44b96413d87f6bac19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5437b07a6e33dd43e2d074b5951edd86') in 0.073398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.814939 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/mug.obj
+  artifactKey: Guid(b883d83284f3eef45931f570c27150a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/mug.obj using Guid(b883d83284f3eef45931f570c27150a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32060343c40d479a194305d73be6bc8b') in 0.042431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.050130 seconds.
+  path: Assets/Low Poly Medieval Kit/Meshes/Pickaxe.fbx
+  artifactKey: Guid(be8fe5afb32d9f04d89007e60df40c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Medieval Kit/Meshes/Pickaxe.fbx using Guid(be8fe5afb32d9f04d89007e60df40c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '206577462670a65f0bbf9c09d2d6cfe5') in 0.026132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.059301 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/pillar_broken.obj
+  artifactKey: Guid(d37a0f50ebfda4f4199ccd20147efc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/pillar_broken.obj using Guid(d37a0f50ebfda4f4199ccd20147efc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bcdf3abda27b0a123f90e5a9984fa01') in 0.042142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.003312 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/plate.obj
+  artifactKey: Guid(ed363d88497975d49bed3b03a546ed07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/plate.obj using Guid(ed363d88497975d49bed3b03a546ed07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c28ddaebc05f9a31480eb1187d9bb1') in 0.030430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/plateHalf.dae
+  artifactKey: Guid(89aa59ca0a693c6498d21ae277acd5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/plateHalf.dae using Guid(89aa59ca0a693c6498d21ae277acd5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f6b9df333329f958675646ab3a528e7') in 0.036501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.767484 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/potA_decorated.obj
+  artifactKey: Guid(3934c7d2789705f439cb3a9277e8dbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/potA_decorated.obj using Guid(3934c7d2789705f439cb3a9277e8dbc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd884f0dfc234636dfc091c222602f1') in 0.050444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.295183 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/potC_decorated.dae
+  artifactKey: Guid(f93bf6a5e01f5a34ab71d4b1d2f2d7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/potC_decorated.dae using Guid(f93bf6a5e01f5a34ab71d4b1d2f2d7ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5661b6d41e7dd5eadd98fa79302b64') in 0.038997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.427512 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/potionLarge_red.obj
+  artifactKey: Guid(f12442c6409789448821333518c3b76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/potionLarge_red.obj using Guid(f12442c6409789448821333518c3b76f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b647e1ce6521ea0dd55e67fa7f8f26') in 0.058558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/potionMedium_blue.fbx
+  artifactKey: Guid(ea7e54b3d8aedc0498b2a433363ae0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/potionMedium_blue.fbx using Guid(ea7e54b3d8aedc0498b2a433363ae0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779f5d1e3352ea30260bef4c6de66cc2') in 0.054008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.007827 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/potionMedium_red.fbx
+  artifactKey: Guid(2c340a96bd4bc8c4bb3f683d9c301755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/potionMedium_red.fbx using Guid(2c340a96bd4bc8c4bb3f683d9c301755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405ad49c3dbbd9a840a28b2d47ab6635') in 0.040634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/potionSmall_blue.dae
+  artifactKey: Guid(c5dcd3f61582ba844b56c910df59340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/potionSmall_blue.dae using Guid(c5dcd3f61582ba844b56c910df59340c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946dc8bec4515d6f0e60b7d99f114838') in 0.042340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/pots.dae
+  artifactKey: Guid(91b91f8aa5c1d1d46a1b19092f237102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/pots.dae using Guid(91b91f8aa5c1d1d46a1b19092f237102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1723cf57d3854bd1b7c4d5679d9f64') in 0.035040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/pots.fbx
+  artifactKey: Guid(3dd18278108ed6341b9bb08a42080b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/pots.fbx using Guid(3dd18278108ed6341b9bb08a42080b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63426ea3fcb408ddfb8fb313ac6c7b8f') in 0.033732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Character Animations 1.2/Models/obj/PrototypePete_armRight.obj
+  artifactKey: Guid(57bcaadebb457d84d92d945615613fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Character Animations 1.2/Models/obj/PrototypePete_armRight.obj using Guid(57bcaadebb457d84d92d945615613fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43605c54812e39e7e2ca9e19f52d0119') in 0.031542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/quiver_empty.fbx
+  artifactKey: Guid(e55dfab3de319014a90bb6fd851bf29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/quiver_empty.fbx using Guid(e55dfab3de319014a90bb6fd851bf29c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f14ca8b0f5d36534e344c2fa97f9b21') in 0.034411 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.201713 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/quiver_half_full.obj
+  artifactKey: Guid(730a3bee346a3284e99b6ee1830adbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/quiver_half_full.obj using Guid(730a3bee346a3284e99b6ee1830adbd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc64772ff26042531f0f72e2606d4fbf') in 0.044787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.100139 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/rogueHairA.fbx
+  artifactKey: Guid(6a9adb0352055804280abdaac280b511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/rogueHairA.fbx using Guid(6a9adb0352055804280abdaac280b511) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e21616bb214d121a528935583ee5d78c') in 0.027741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/extra heads/rogueHairC.obj
+  artifactKey: Guid(14a9a50d0c302194f866e8494def49f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/obj/extra heads/rogueHairC.obj using Guid(14a9a50d0c302194f866e8494def49f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e90253134bbfba7b601f175584e2a517') in 0.032061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/rogueHairC.fbx
+  artifactKey: Guid(8083a04b8eb961e41acc0024f632c5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/Characters/fbx/extra heads/rogueHairC.fbx using Guid(8083a04b8eb961e41acc0024f632c5d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a78dd3e1f5e976073679f16077031c') in 0.029808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.172258 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/RogueHooded.fbx
+  artifactKey: Guid(bcd173542f58069488f2d1833566284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/RogueHooded.fbx using Guid(bcd173542f58069488f2d1833566284f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817298a0d15410f74afce1a96ee13bae') in 0.192738 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 220
+========================================================================
+Received Import Request.
+  Time since last request: 0.024080 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_high_cornerBoth.fbx
+  artifactKey: Guid(631c0afb899d0f6428d7ce90f6132ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_high_cornerBoth.fbx using Guid(631c0afb899d0f6428d7ce90f6132ee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2e92f49b88537d4e0f777efd1d2b7d') in 0.026422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.003595 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_high_cornerRight.fbx
+  artifactKey: Guid(aa8c101a1e01ef94382b0b9d8503aa5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_high_cornerRight.fbx using Guid(aa8c101a1e01ef94382b0b9d8503aa5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba81c1ce6ab7f94a3d7f5b3765c73fd3') in 0.028274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.353159 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_low.fbx
+  artifactKey: Guid(3beeb37269645734eae4aee1260cf67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_low.fbx using Guid(3beeb37269645734eae4aee1260cf67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb2c9eb731ae5c343c696bf7bf07702') in 0.026862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.001276 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_low_cornerBoth.dae
+  artifactKey: Guid(1a16a92e0e791824d94915572ebdc34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_low_cornerBoth.dae using Guid(1a16a92e0e791824d94915572ebdc34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39f4a73fa2b3f93b16f9a6cd7569a749') in 0.031098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.038769 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_low_cornerRight.fbx
+  artifactKey: Guid(ca048b2a1d3e42f44be27d2b4cc500ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_low_cornerRight.fbx using Guid(ca048b2a1d3e42f44be27d2b4cc500ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcaa2d3561d21e84ae509e1ba354732f') in 0.026210 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000784 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_medium.obj
+  artifactKey: Guid(c0baf096b404d814cafa51e714f5bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_medium.obj using Guid(c0baf096b404d814cafa51e714f5bedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a73a5bb2087f632cf05c0f5f5b8cf035') in 0.032287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.668009 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_medium_cornerBoth.dae
+  artifactKey: Guid(0b5ac63fbc05861489f6ff0c0632d055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_medium_cornerBoth.dae using Guid(0b5ac63fbc05861489f6ff0c0632d055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bfdc49a872830ef1aebcb5e78f1c72') in 0.029504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_medium_cornerRight.obj
+  artifactKey: Guid(8c3dbcc27c33d134893e0f03aa784eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_medium_cornerRight.obj using Guid(8c3dbcc27c33d134893e0f03aa784eae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f98d2706211aad35b6021cfd2734de') in 0.047032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.023758 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_high.dae
+  artifactKey: Guid(17708a74801cbd449a65df3831fa8513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_high.dae using Guid(17708a74801cbd449a65df3831fa8513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae4be5cba68a4240867d253bbcc0e868') in 0.029954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_high_cornerLeft.obj
+  artifactKey: Guid(997660b253dd8d84dac009824f2919c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_high_cornerLeft.obj using Guid(997660b253dd8d84dac009824f2919c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1bebb8530940ded5d86f5d10d33e30') in 0.039785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.383047 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_small_high_long.fbx
+  artifactKey: Guid(bee9697381730aa4da080fdd3c6947d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_small_high_long.fbx using Guid(bee9697381730aa4da080fdd3c6947d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7922b01da80b88e523a1044742b82be2') in 0.031247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_high_railing_long.dae
+  artifactKey: Guid(224108a4d291ab549ac3273e088a2b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_high_railing_long.dae using Guid(224108a4d291ab549ac3273e088a2b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7446c82a2487f65fe6c3acd5889402e') in 0.036756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.030556 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low.dae
+  artifactKey: Guid(6647ed5f124fab74789aaefbd21469e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low.dae using Guid(6647ed5f124fab74789aaefbd21469e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b54652e4ac54747dba6569771c9744') in 0.029293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_cornerRight.dae
+  artifactKey: Guid(cb59479786bd4e54f93092928ba1e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_cornerRight.dae using Guid(cb59479786bd4e54f93092928ba1e6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2bb7cad9c186f400f67eea5bbf114f') in 0.025737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_railing.dae
+  artifactKey: Guid(4c30feac2a5344a499700cccb839bf07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_railing.dae using Guid(4c30feac2a5344a499700cccb839bf07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b4f387d18b5f2fd8e9abe7096cf8a9c') in 0.028130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_railing_long.dae
+  artifactKey: Guid(16dcfe97a10f314498c542a0a7fedbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/scaffold_small_low_railing_long.dae using Guid(16dcfe97a10f314498c542a0a7fedbc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08d0ffe8273047fd48d527d3782f48e') in 0.026634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_small_medium.fbx
+  artifactKey: Guid(aecc819b2efd33547b504b63328a09cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/scaffold_small_medium.fbx using Guid(aecc819b2efd33547b504b63328a09cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ec7629681707400ebc4df848f814f9') in 0.027584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_medium_long.obj
+  artifactKey: Guid(87b03c0e8cc44d948a6e73a72a7756e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_medium_long.obj using Guid(87b03c0e8cc44d948a6e73a72a7756e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30e6d6b41ff0f69774b2b8cd222e537') in 0.050505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.219674 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_medium_railing.obj
+  artifactKey: Guid(175cb84e837576840a36eb448a01aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/scaffold_small_medium_railing.obj using Guid(175cb84e837576840a36eb448a01aa5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2506dc44c00b660ea40da9f3554bfc61') in 0.038862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.161602 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/dae/shield_rare.dae
+  artifactKey: Guid(3da4c2fd8726c1e4091ca87ee14e17cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/dae/shield_rare.dae using Guid(3da4c2fd8726c1e4091ca87ee14e17cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03e6b608b016ad681cc708db65854c4') in 0.041086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/shield_round.fbx
+  artifactKey: Guid(2526b8c6dcb21004093b98b6c24504ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/shield_round.fbx using Guid(2526b8c6dcb21004093b98b6c24504ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38eda3ebcf427338b3310e5d24b7b74c') in 0.028204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/shield_spikes.fbx
+  artifactKey: Guid(4d611c02e61a3ae44a8ef704dc87d4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/shield_spikes.fbx using Guid(4d611c02e61a3ae44a8ef704dc87d4c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7eb22ca6d35f31bccfcf1d2d7775e5f') in 0.029184 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/shield_uncommon.obj
+  artifactKey: Guid(ecd64eb4181e60c458cba8f5797ca8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/shield_uncommon.obj using Guid(ecd64eb4181e60c458cba8f5797ca8fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c988195a6208f6ed45ab9e75ef8dfed') in 0.038238 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.385339 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/spellbook_closed.fbx
+  artifactKey: Guid(6f820bbca941add4fb72d3ac39076d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/spellbook_closed.fbx using Guid(6f820bbca941add4fb72d3ac39076d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73909142f182da6f49b0d1a205229c39') in 0.028588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_forest.obj
+  artifactKey: Guid(978d7e68bc23af644865a32611b6aafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_forest.obj using Guid(978d7e68bc23af644865a32611b6aafa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9dff10f89f73eb8414e6d34c58c553c') in 0.033259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_detail.dae
+  artifactKey: Guid(48cbdad9f04f3f5418b9f4e33c3f1933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_detail.dae using Guid(48cbdad9f04f3f5418b9f4e33c3f1933) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8e52829fd2be7412ef5c36637c5f37c') in 0.035527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_roadA.dae
+  artifactKey: Guid(737f33d2bc208584c8f1cc0f201610c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_roadA.dae using Guid(737f33d2bc208584c8f1cc0f201610c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09ae3b9254cfa65350d61ec77215941') in 0.034780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.719506 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_forest_roadB_detail.fbx
+  artifactKey: Guid(ae385ce3c64dea043b30f73cad8657f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_forest_roadB_detail.fbx using Guid(ae385ce3c64dea043b30f73cad8657f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd65417d10d6b4bed01afad536b7280b7') in 0.058364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_roadB_detail.dae
+  artifactKey: Guid(dc6defc428a18a249acb1f341845525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_roadB_detail.dae using Guid(dc6defc428a18a249acb1f341845525a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8895941eed2a5611f694221f2a3934a') in 0.047606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.001041 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_roadD.dae
+  artifactKey: Guid(0e398d5cd078c9a418beacd633550369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_roadD.dae using Guid(0e398d5cd078c9a418beacd633550369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e04114c26298ea32dc208aa1b2c750') in 0.034448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_roadD_detail.dae
+  artifactKey: Guid(68a2157bedec1e64bb9cc008b20311bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_roadD_detail.dae using Guid(68a2157bedec1e64bb9cc008b20311bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e25abae245a98b9797b71c8fca7f6268') in 0.045639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.012605 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_forest_waterInnerCorner.fbx
+  artifactKey: Guid(42866b55f60916e4196c9a22acc5b262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_forest_waterInnerCorner.fbx using Guid(42866b55f60916e4196c9a22acc5b262) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79973af33141beea876b7a491827b780') in 0.041877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_waterInnerCorner_empty.dae
+  artifactKey: Guid(7db86c66a8d3aa749a9cd6c080e2bf4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_waterInnerCorner_empty.dae using Guid(7db86c66a8d3aa749a9cd6c080e2bf4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c872b033c1706255ecae3e45491086bf') in 0.032744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1.602256 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_forest_waterOuterCorner.obj
+  artifactKey: Guid(f41b8a066f741494bbf475de791ea8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_forest_waterOuterCorner.obj using Guid(f41b8a066f741494bbf475de791ea8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58704642a8ce149c9811597ab09b3668') in 0.054856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_forest_waterOuterCorner_empty.dae
+  artifactKey: Guid(d89e6c59d6d9ff14b95cd52632910acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_forest_waterOuterCorner_empty.dae using Guid(d89e6c59d6d9ff14b95cd52632910acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a7601fc58d4edb12228d061c232c33') in 0.034310 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.049604 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_forest_waterStraight.obj
+  artifactKey: Guid(c53e061d657f53a438269de7083749a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_forest_waterStraight.obj using Guid(c53e061d657f53a438269de7083749a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4eac213fa20bdccf135133852c9d0ed') in 0.047346 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_forest_waterStraight_noSides.fbx
+  artifactKey: Guid(a3f166eafcb434f43b86d14f2bc46e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_forest_waterStraight_noSides.fbx using Guid(a3f166eafcb434f43b86d14f2bc46e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb82064844960a785d1033c2b0e00e39') in 0.040864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 4.225394 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_rock_detail.obj
+  artifactKey: Guid(e8c75521295fbad4e8e085db5de2c223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_rock_detail.obj using Guid(e8c75521295fbad4e8e085db5de2c223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba42c6aa889c347cb50702c13dd2824') in 0.064388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_rock_roadA.obj
+  artifactKey: Guid(105b77574ac52f64fa7236d72155f20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_rock_roadA.obj using Guid(105b77574ac52f64fa7236d72155f20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd771545742685bb762c0f7542114972') in 0.049899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.128388 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_roadB.fbx
+  artifactKey: Guid(ff101bd211575364e9df20107c3b8812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_roadB.fbx using Guid(ff101bd211575364e9df20107c3b8812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ca91cb18600ee4215995b2eae24106') in 0.035997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_rock_roadC.dae
+  artifactKey: Guid(1ffcf531b1b404f4eb39a85029275a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_rock_roadC.dae using Guid(1ffcf531b1b404f4eb39a85029275a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638fa5d71ac666385f16b5e51d11335c') in 0.034303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 9.750309 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_rock_roadC_detail.obj
+  artifactKey: Guid(d32877951364e2048926c817782885de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_rock_roadC_detail.obj using Guid(d32877951364e2048926c817782885de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4cb1386f2d2ab83d293e4334d8792a') in 0.096757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_rock_roadD_detail.obj
+  artifactKey: Guid(5ff5e59721b537b4aa4147bab86ef87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_rock_roadD_detail.obj using Guid(5ff5e59721b537b4aa4147bab86ef87c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccbfa65c938527079cab1feddc24c24c') in 0.098169 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 3.138728 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_rock_roadE_detail.dae
+  artifactKey: Guid(785cf715e74f57e42b7f516392524813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_rock_roadE_detail.dae using Guid(785cf715e74f57e42b7f516392524813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918a75c20e5cb5d698613ca3c97636bc') in 0.078175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_waterInnerCorner.fbx
+  artifactKey: Guid(b1e0b88b89916dc488b909f30bf59e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_waterInnerCorner.fbx using Guid(b1e0b88b89916dc488b909f30bf59e97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9ed1bd08755c80f717139f6b20b05b5') in 0.093555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.691365 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_waterInnerCorner_noSides.fbx
+  artifactKey: Guid(afbe65d6cbca95e4d83f779a6e47e21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_waterInnerCorner_noSides.fbx using Guid(afbe65d6cbca95e4d83f779a6e47e21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c248b7600bd6ed6207ff5193b9482ee4') in 0.048935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_waterOuterCorner_empty.fbx
+  artifactKey: Guid(23bfd1f3e55433f4f85a267f539f3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_waterOuterCorner_empty.fbx using Guid(23bfd1f3e55433f4f85a267f539f3ce3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9ab4a74eab44eae82e6288992a79d2') in 0.044409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.005776 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_waterOuterCorner_noSides.fbx
+  artifactKey: Guid(6ac82340af0213148b577e19055d989d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_waterOuterCorner_noSides.fbx using Guid(6ac82340af0213148b577e19055d989d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda4c89faba85dd1d538665a4ae231ae') in 0.040481 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_rock_waterStraight_empty.fbx
+  artifactKey: Guid(dc369bcba476a354c80dc9079480c732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_rock_waterStraight_empty.fbx using Guid(dc369bcba476a354c80dc9079480c732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ece3aa799f462f446c2b23e0e0ba79ad') in 0.040830 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.002413 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_rock_waterStraight_noSides.dae
+  artifactKey: Guid(758128f37d14e3943822d36e395477b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_rock_waterStraight_noSides.dae using Guid(758128f37d14e3943822d36e395477b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c914964d915ba8eee4c0f10a94cee0') in 0.039854 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand.obj
+  artifactKey: Guid(5317537865f1871448d44ea36b314157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand.obj using Guid(5317537865f1871448d44ea36b314157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77dd0a6b61164de3ffb90d87ccf18790') in 0.039291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.748852 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_sand_roadA_detail.fbx
+  artifactKey: Guid(18d754b24244a084abddb788573d15e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_sand_roadA_detail.fbx using Guid(18d754b24244a084abddb788573d15e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f136842e2158c2944bee74f44a611155') in 0.046176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_sand_roadB.fbx
+  artifactKey: Guid(d9f26498ff7c78743844ee9d0ca97268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_sand_roadB.fbx using Guid(d9f26498ff7c78743844ee9d0ca97268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4973a52b8319c454802131c368e0b86') in 0.035173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.635150 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_sand_roadC.fbx
+  artifactKey: Guid(823257ecd0d5d7d439180b005e29c24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_sand_roadC.fbx using Guid(823257ecd0d5d7d439180b005e29c24f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048d821d980169d6d5494fce93f86916') in 0.035659 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand_roadC_detail.obj
+  artifactKey: Guid(8fed73c7a1635c746960b0505509a3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand_roadC_detail.obj using Guid(8fed73c7a1635c746960b0505509a3a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a4f052736d45ce7618d28985143afd') in 0.046569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.049721 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_sand_roadE.fbx
+  artifactKey: Guid(8a99373b69b5cef4e856282fb91c60ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_sand_roadE.fbx using Guid(8a99373b69b5cef4e856282fb91c60ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba20316b2e77c4caf5d124b8ee2533c0') in 0.037962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand_roadE_detail.obj
+  artifactKey: Guid(0b601af9be68fb54ab99255179d242e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand_roadE_detail.obj using Guid(0b601af9be68fb54ab99255179d242e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70890373627fecd32abfae4874a0e664') in 0.048554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.071542 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_sand_waterInnerCorner_empty.dae
+  artifactKey: Guid(e8c6a89d01589dc49be450b70bb8310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_sand_waterInnerCorner_empty.dae using Guid(e8c6a89d01589dc49be450b70bb8310d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892c155bfe3751b5d7433052159774d8') in 0.039613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand_waterInnerCorner_empty.obj
+  artifactKey: Guid(a55024761a0689b4cb98141d7b38894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand_waterInnerCorner_empty.obj using Guid(a55024761a0689b4cb98141d7b38894b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be46fd08f7baf01d45a710efc51bc09') in 0.046918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.835025 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_sand_waterOuterCorner_empty.fbx
+  artifactKey: Guid(7d936ba55901e394c9ef80cf96791861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_sand_waterOuterCorner_empty.fbx using Guid(7d936ba55901e394c9ef80cf96791861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8c5fc5ae0e9a3bfd7c523dae37c38a') in 0.037201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand_waterStraight.obj
+  artifactKey: Guid(27216cccbc93ff7488aabfcb366503f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand_waterStraight.obj using Guid(27216cccbc93ff7488aabfcb366503f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4cc2969b7bf1df04efa147d98b8ccd') in 0.050934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.077957 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_sand_waterStraight_noSides.obj
+  artifactKey: Guid(f398cb86674d925428a93b5326debb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_sand_waterStraight_noSides.obj using Guid(f398cb86674d925428a93b5326debb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68169687e69c8249c9fd0c0dd45242b1') in 0.050717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/mapa/Models/tiles/square/obj/square_water.obj
+  artifactKey: Guid(73cdbd1a3b62f574a9e7c3d8e49d0e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/obj/square_water.obj using Guid(73cdbd1a3b62f574a9e7c3d8e49d0e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5db514fa6af83585d69f3a53f7391710') in 0.029296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.014422 seconds.
+  path: Assets/mapa/Models/tiles/square/fbx/square_water_detail_empty.fbx
+  artifactKey: Guid(d56226c674c9a704180929c5f5c6f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/fbx/square_water_detail_empty.fbx using Guid(d56226c674c9a704180929c5f5c6f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d763255ff7a39b0039db30d74d33338') in 0.025735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/mapa/Models/tiles/square/dae/square_water_empty.dae
+  artifactKey: Guid(6de4bc64215f6a749a1ee460d87a95c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/mapa/Models/tiles/square/dae/square_water_empty.dae using Guid(6de4bc64215f6a749a1ee460d87a95c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a472918a6c2ad4b836e72241d2c52f9') in 0.030278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 2.257498 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/staff_common.obj
+  artifactKey: Guid(c6e86e9dc5e80114792f89e6830d2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/staff_common.obj using Guid(c6e86e9dc5e80114792f89e6830d2b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce13565e74b246b6788d8cf501a710a') in 0.072560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/staff_rare.obj
+  artifactKey: Guid(578cd21cf2f26724c8363f30632f95bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/staff_rare.obj using Guid(578cd21cf2f26724c8363f30632f95bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c244ffc175dc8925577235036866bd') in 0.103093 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.816054 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/stairs.obj
+  artifactKey: Guid(c5509348880ffa944b795f4279fb5e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/stairs.obj using Guid(c5509348880ffa944b795f4279fb5e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82340213426d9d02f3daadf780d3146e') in 0.039040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.514110 seconds.
+  path: Assets/Low Poly Medieval Kit/Meshes/Sword.fbx
+  artifactKey: Guid(6f4bdab9bb1bc714382b98db46fa047f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low Poly Medieval Kit/Meshes/Sword.fbx using Guid(6f4bdab9bb1bc714382b98db46fa047f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704f43e39643ce2d3698179b089d0033') in 0.020115 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/sword_2handed_color.fbx
+  artifactKey: Guid(1189bf591d823534ca44f3c119f8c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Assets/fbx/sword_2handed_color.fbx using Guid(1189bf591d823534ca44f3c119f8c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ed94e8c919276de0177df2c12b3daf') in 0.030265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.924254 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/sword_rare.obj
+  artifactKey: Guid(d945ccb5443b4124eaa3e122372fbea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/sword_rare.obj using Guid(d945ccb5443b4124eaa3e122372fbea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6414f31f5e8a16b5b32c7e61900ad53') in 0.070722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.054689 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/tableMedium.obj
+  artifactKey: Guid(f69c2d55f79b9b442b56aa7e79494af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/tableMedium.obj using Guid(f69c2d55f79b9b442b56aa7e79494af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebddefcbe991593de688a322837f5ac1') in 0.042061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.998223 seconds.
+  path: Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile4.prefab
+  artifactKey: Guid(5193382618d54f84b87649b2fbadbb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile4.prefab using Guid(5193382618d54f84b87649b2fbadbb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a1f656b634417a2bc829a4de0939b42') in 0.027468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile8.prefab
+  artifactKey: Guid(1e66d2a3cc6511a49b71e7f6589a1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile8.prefab using Guid(1e66d2a3cc6511a49b71e7f6589a1d82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55958a125f2d1d843c81f4015a9196f9') in 0.023397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.119110 seconds.
+  path: Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile14.prefab
+  artifactKey: Guid(fd4823febd7d9b2429f5c3ce392bcb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/AI Navigation/1.1.4/Build And Connect NavMesh Surfaces/Prefabs/DungeonTiles/Tile14.prefab using Guid(fd4823febd7d9b2429f5c3ce392bcb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb33124f881456593e2ff90c0f70628f') in 0.022810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.007329 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/tileBrickA_medium.obj
+  artifactKey: Guid(369ec7c3fccd158468b745393944a324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/tileBrickA_medium.obj using Guid(369ec7c3fccd158468b745393944a324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db11b468d522584c22096c4ecda444e2') in 0.037606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.029854 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/tileBrickA_small.fbx
+  artifactKey: Guid(6154e7dfde56ce54eb77eb47b8d825c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/tileBrickA_small.fbx using Guid(6154e7dfde56ce54eb77eb47b8d825c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3103670e77d005f3aa98306a03bd08') in 0.030177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/obj/tileBrickB_largeCrackedA.obj
+  artifactKey: Guid(838b1231b5aa6224fa7cb208c2bb0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/obj/tileBrickB_largeCrackedA.obj using Guid(838b1231b5aa6224fa7cb208c2bb0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93200e7b3276f8427356d959ccfaacb8') in 0.030995 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
