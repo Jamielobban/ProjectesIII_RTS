@@ -6,6 +6,7 @@ TagManager:
   tags:
   - camino
   - triggerCamino
+  - Cannons
   layers:
   - Default
   - TransparentFX

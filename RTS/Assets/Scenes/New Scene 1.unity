@@ -918,8 +918,8 @@ GameObject:
   - component: {fileID: 319895600}
   - component: {fileID: 319895599}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2560,6 +2560,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0d7e2e49f323604da6ec5c241c25402, type: 3}
+--- !u!1 &655260568 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2670471398434326601, guid: 78a33966cc5639b4387c905a99a39d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 946297035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &655260571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655260568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b3147f484412a49bc82dfa0ae51b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 0}
+  parentCannon: {fileID: 0}
+  cannons: {fileID: 0}
 --- !u!1001 &662095683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3918,7 +3939,7 @@ PrefabInstance:
     - target: {fileID: 2147566298837806395, guid: 78a33966cc5639b4387c905a99a39d65,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.426969
+      value: -11.31
       objectReference: {fileID: 0}
     - target: {fileID: 2147566298837806395, guid: 78a33966cc5639b4387c905a99a39d65,
         type: 3}
@@ -3973,7 +3994,15 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3219567235672412077, guid: 78a33966cc5639b4387c905a99a39d65,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2144800481}
+    - targetCorrespondingSourceObject: {fileID: 2670471398434326601, guid: 78a33966cc5639b4387c905a99a39d65,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 655260571}
   m_SourcePrefab: {fileID: 100100000, guid: 78a33966cc5639b4387c905a99a39d65, type: 3}
 --- !u!1 &957181970
 GameObject:
@@ -7321,7 +7350,7 @@ PrefabInstance:
     - target: {fileID: 2147566298837806395, guid: 78a33966cc5639b4387c905a99a39d65,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.426969
+      value: -11.43
       objectReference: {fileID: 0}
     - target: {fileID: 2147566298837806395, guid: 78a33966cc5639b4387c905a99a39d65,
         type: 3}
@@ -7653,7 +7682,7 @@ GameObject:
   - component: {fileID: 1806661602}
   m_Layer: 0
   m_Name: Cannons
-  m_TagString: Untagged
+  m_TagString: Cannons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8939,3 +8968,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 834510492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2144800477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3219567235672412077, guid: 78a33966cc5639b4387c905a99a39d65,
+    type: 3}
+  m_PrefabInstance: {fileID: 946297035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2144800481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144800477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c2d09796ebbd44192fcd239bdddd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer: {fileID: 0}
+  playerInside: 0
+  doItOnce: 0
