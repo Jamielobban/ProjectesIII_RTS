@@ -11,6 +11,7 @@ public class MaterialController : MonoBehaviour
     public GameObject[] textura;
 
     int puesto = 0;
+    bool changing = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,38 +27,25 @@ public class MaterialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1)) 
+        if ((int)Input.mouseScrollDelta.y != 0&&!changing)
         {
-            if(puesto!= 0)
-            {
+            changing = true;
+            Invoke("Change", 0.25f);
             textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
 
-            puesto = 0;
+            puesto = (puesto + (int)Input.mouseScrollDelta.y)%3;
+            if(puesto < 0)
+            {
+                puesto = 3 + puesto;
+            }
             textura[puesto].GetComponent<Animator>().SetTrigger("Abrir");
-            }
-
-
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            if (puesto != 1)
-            {
-                textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
+       
 
-                puesto = 1;
-                textura[puesto].GetComponent<Animator>().SetTrigger("Abrir");
-            }
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            if (puesto != 2)
-            {
-                textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
-
-                puesto = 2;
-                textura[puesto].GetComponent<Animator>().SetTrigger("Abrir");
-            }
-        }
+    }
+    void Change()
+    {
+        changing = false;
 
     }
     public int GetCurrentState()

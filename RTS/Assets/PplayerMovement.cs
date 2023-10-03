@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class PplayerMovement : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class PplayerMovement : MonoBehaviour
     public float fuerza;
     mainCameraController camera;
     Vector3 look = new Vector3();
-
+    public TMP_Text text;
     private Animator myAnim;
 
     bool isRunning = false;
@@ -29,6 +30,8 @@ public class PplayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        text.text = oro.ToString();
+
         HandleMovement(); 
 
         if (isRunning)

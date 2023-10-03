@@ -25,7 +25,7 @@ public class mina : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyUp(KeyCode.Q)) && control)
+        if ((Input.GetMouseButtonUp(1)) && control)
         {
             control = false;
         }
@@ -37,15 +37,8 @@ public class mina : MonoBehaviour
         {
             canvas.SetActive(true);
 
-            if ((Input.GetKey(KeyCode.E))&& other.GetComponent<MaterialController>().GetCurrentState()==5&&recoger)
-            {
-                other.GetComponent<MaterialController>().SetTexture(0);
-                other.GetComponent<PplayerMovement>().Recoger();
-                recoger = false;
-                this.transform.GetChild(0).GetChild(0).GetChild(3).gameObject.SetActive(false);
 
-            }
-            if ((Input.GetKey(KeyCode.Q)) && !recoger && !farmeando&& !control)
+            if ((Input.GetMouseButton(1)) && !recoger && !farmeando&& !control)
             {
                 control = true;
                 farmeando = true;
@@ -53,7 +46,7 @@ public class mina : MonoBehaviour
 
                 StartCoroutine(picar());
             }
-            else if ((Input.GetKey(KeyCode.Q)) && farmeando && !control)
+            else if ((Input.GetMouseButton(1)) && farmeando && !control)
             {
                 farmeando = false;
                 bloquear = true;
@@ -61,7 +54,16 @@ public class mina : MonoBehaviour
 
                 Salir();
                 other.GetComponent<PplayerMovement>().Salir();
+            }
 
+            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 5 && recoger)
+            {
+                control = true;
+
+                other.GetComponent<MaterialController>().SetTexture(0);
+                other.GetComponent<PplayerMovement>().Recoger();
+                recoger = false;
+                this.transform.GetChild(0).GetChild(0).GetChild(3).gameObject.SetActive(false);
 
             }
         }
