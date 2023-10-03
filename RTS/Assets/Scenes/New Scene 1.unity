@@ -974,7 +974,7 @@ Transform:
   - {fileID: 816208651}
   - {fileID: 1002262715}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &319895599
 Rigidbody:
@@ -5585,32 +5585,32 @@ PrefabInstance:
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.39086035
+      value: 0.39086032
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.27905297
+      value: 0.27905294
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22463201
+      value: 0.224632
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3
+      value: 2.2999992
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.09000001
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
@@ -5625,7 +5625,7 @@ PrefabInstance:
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4944704437373001824, guid: c08f55f519db9fd418f64f4b7328b7d6,
         type: 3}
@@ -8987,5 +8987,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPlayer: {fileID: 0}
-  playerInside: 0
+  playerControlled: 0
   doItOnce: 0
+  cannonball: {fileID: 0}
+  firingPoint: {fileID: 0}
+  firingSpeed: 10

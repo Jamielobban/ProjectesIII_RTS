@@ -16,6 +16,7 @@ public class CannonCollider : MonoBehaviour
     public GameObject cannons;
 
     bool holdingOn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,7 @@ public class CannonCollider : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) {
             holdingOn = true;
+            parentCannon.playerControlled = true;
             parentCannon.ChangePlayerSpeedTrasnform(2,parentCannon.myPlayer.transform);
         }
     }
@@ -49,5 +51,7 @@ public class CannonCollider : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         collider.enabled = true;
     }
+
+
 
 }
