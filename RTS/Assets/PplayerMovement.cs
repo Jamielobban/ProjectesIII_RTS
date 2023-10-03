@@ -17,6 +17,7 @@ public class PplayerMovement : MonoBehaviour
     bool isDown = false;
     bool isInInteractionRange = false;
     bool canMove = true;
+    public int oro = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -99,13 +100,7 @@ public class PplayerMovement : MonoBehaviour
 
         }
 
-        if((Input.GetKey(KeyCode.E))/* && isInInteractionRange*/)
-        {
-            isRunning = false;
-            myAnim.SetBool("isPickingUp", true);
-            canMove = false;
-            StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
-        }
+
 
         this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed),ForceMode.Force);
 
@@ -120,6 +115,28 @@ public class PplayerMovement : MonoBehaviour
 
         
 
+    }
+    public void Recoger()
+    {
+        isRunning = false;
+        myAnim.SetBool("isPickingUp", true);
+        canMove = false;
+        StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
+    }
+
+    public void Farmear()
+    {
+        isRunning = false;
+        //myAnim.SetBool("isPickingUp", true);
+        canMove = false;
+        //StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
+    }
+    public void Salir()
+    {
+        isRunning = false;
+        //myAnim.SetBool("isPickingUp", true);
+        canMove = true;
+        //StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
     }
 
     private IEnumerator setAnimationBoolToFalse(float waitTime, string name)
