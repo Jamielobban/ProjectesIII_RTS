@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.PlasticSCM.Editor.WebApi;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PplayerMovement : MonoBehaviour
@@ -15,6 +16,7 @@ public class PplayerMovement : MonoBehaviour
     bool isRunning = false;
     bool isDown = false;
     bool isInInteractionRange = false;
+    bool canMove = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,14 +46,11 @@ public class PplayerMovement : MonoBehaviour
     {
         look = this.transform.position;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            this.GetComponent<Rigidbody>().AddForce(new Vector3(0, fuerza, 0), ForceMode.Impulse);
-        }
+  
 
         Vector3 vel = new Vector3();
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W)&&canMove)
         {
             if (GameObject.ReferenceEquals(camera.currentCamera, camera.cameras[0]))
             {
@@ -67,7 +66,7 @@ public class PplayerMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S)&&canMove)
         {
             if (GameObject.ReferenceEquals(camera.currentCamera, camera.cameras[0]))
             {
@@ -83,7 +82,7 @@ public class PplayerMovement : MonoBehaviour
 
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)&&canMove)
         {
             vel -= camera.right * movementSpeed * Time.deltaTime;
             this.transform.GetChild(0).rotation = new Quaternion(0, 90, 0, 0);
@@ -91,7 +90,7 @@ public class PplayerMovement : MonoBehaviour
             isRunning = true;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)&&canMove)
         {
             vel += camera.right * movementSpeed * Time.deltaTime;
             this.transform.GetChild(0).rotation = new Quaternion(0, -90, 0, 0);
@@ -102,11 +101,15 @@ public class PplayerMovement : MonoBehaviour
 
         if((Input.GetKey(KeyCode.E))/* && isInInteractionRange*/)
         {
+            isRunning = false;
             myAnim.SetBool("isPickingUp", true);
+            canMove = false;
             StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
         }
 
-        this.transform.position += vel.normalized * Time.deltaTime * movementSpeed;
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed),ForceMode.Force);
+
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0) ;
 
         transform.GetChild(0).LookAt(look);
 
@@ -123,5 +126,9 @@ public class PplayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTime);
         myAnim.SetBool(name, false);
+        yield return new WaitForSeconds(0.2f);
+
+        canMove = true;
+
     }
 }
