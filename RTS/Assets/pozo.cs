@@ -19,7 +19,7 @@ public class pozo : MonoBehaviour
     {
         if (other.GetComponent<MaterialController>() != null)
         {
-            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 5)
+            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 5 && other.GetComponent<PplayerMovement>().canMove)
             {
                 other.GetComponent<MaterialController>().SetTexture(2);
                 other.GetComponent<PplayerMovement>().Recoger();

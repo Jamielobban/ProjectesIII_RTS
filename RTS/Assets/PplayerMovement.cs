@@ -18,7 +18,7 @@ public class PplayerMovement : MonoBehaviour
     bool isRunning = false;
     bool isDown = false;
     bool isInInteractionRange = false;
-    bool canMove = true;
+    public bool canMove = true;
     public int oro = 0;
 
 
@@ -82,7 +82,7 @@ public class PplayerMovement : MonoBehaviour
 
 
 
-        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed), ForceMode.Force);
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed*Time.deltaTime), ForceMode.Force);
 
         this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0);
 
@@ -153,7 +153,7 @@ public class PplayerMovement : MonoBehaviour
 
 
 
-        this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed),ForceMode.Force);
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed * Time.deltaTime),ForceMode.Force);
 
         this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0) ;
 

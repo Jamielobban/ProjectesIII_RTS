@@ -9,19 +9,26 @@ public class Cultivos : MonoBehaviour
     public bool creciendo = false;
     float time;
     public float espera;
-
+    MaterialController player;
+    public int type;
     // Start is called before the first frame update
     void Start()
     {
         recoger = false;
         this.transform.GetChild(0).gameObject.SetActive(false);
         this.transform.GetChild(1).gameObject.SetActive(false);
+        player = FindObjectOfType<MaterialController>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player.GetCurrentState() == type && !recoger && !creciendo)
+            this.transform.GetChild(2).GetChild(0).gameObject.SetActive(true);
+        else
+            this.transform.GetChild(2).GetChild(0).gameObject.SetActive(false);
+
         if ((Input.GetMouseButtonUp(1)) && control)
         {
             control = false;
@@ -45,7 +52,7 @@ public class Cultivos : MonoBehaviour
     {
         if (other.GetComponent<MaterialController>() != null)
         {
-            if ((Input.GetMouseButton(1)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 2)
+            if ((Input.GetMouseButton(1)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 2 && !creciendo)
             {
                 control = true;
                 other.GetComponent<MaterialController>().SetTexture(5);
@@ -54,7 +61,7 @@ public class Cultivos : MonoBehaviour
                 time = Time.time;
                 this.transform.GetChild(1).gameObject.SetActive(true);
             }
-            else if ((Input.GetMouseButton(1)) && recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 5)
+            else if ((Input.GetMouseButton(1)) && recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 5 && other.GetComponent<PplayerMovement>().canMove)
             {
                 control = true;
                 other.GetComponent<MaterialController>().SetTexture(3);

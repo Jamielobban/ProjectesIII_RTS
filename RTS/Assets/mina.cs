@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class mina : MonoBehaviour
 {
@@ -11,15 +12,16 @@ public class mina : MonoBehaviour
     public bool control = false;
     public bool bloquear = false;
     public int impactos = 0;
+    public int impactoRomper = 4;
+
     // Start is called before the first frame update
     void Start()
     {
         boton.SetActive(false);
         canvas.SetActive(false);
-        this.transform.GetChild(0).GetChild(0).GetChild(0).gameObject.SetActive(false);
-        this.transform.GetChild(0).GetChild(0).GetChild(1).gameObject.SetActive(false);
-        this.transform.GetChild(0).GetChild(0).GetChild(2).gameObject.SetActive(false);
-        this.transform.GetChild(0).GetChild(0).GetChild(3).gameObject.SetActive(false);
+        canvas.transform.GetChild(1).gameObject.SetActive(false);
+        canvas.transform.GetChild(0).GetComponent<Slider>().value = 0;
+
     }
 
     // Update is called once per frame
@@ -56,11 +58,12 @@ public class mina : MonoBehaviour
                 other.GetComponent<PplayerMovement>().Salir();
             }
 
-            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 5 && recoger)
+            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 5 && recoger && other.GetComponent<PplayerMovement>().canMove)
             {
                 control = true;
+                canvas.transform.GetChild(1).gameObject.SetActive(false);
 
-                other.GetComponent<MaterialController>().SetTexture(0);
+                other.GetComponent<MaterialController>().SetTexture(1);
                 other.GetComponent<PplayerMovement>().Recoger();
                 recoger = false;
                 this.transform.GetChild(0).GetChild(0).GetChild(3).gameObject.SetActive(false);
@@ -101,19 +104,20 @@ public class mina : MonoBehaviour
     }
     public void farmear()
     {
-        this.transform.GetChild(0).GetChild(0).GetChild(impactos).gameObject.SetActive(true);
         impactos++;
+        canvas.transform.GetChild(0).GetComponent<Slider>().value = (float)impactos / (float)impactoRomper;
+
         bloquear = true;
-        if(impactos < 4)
+        if(impactos < impactoRomper)
             StartCoroutine(picar());
         else
         {
-            this.transform.GetChild(0).GetChild(0).GetChild(0).gameObject.SetActive(false);
-            this.transform.GetChild(0).GetChild(0).GetChild(1).gameObject.SetActive(false);
-            this.transform.GetChild(0).GetChild(0).GetChild(2).gameObject.SetActive(false);
-            this.transform.GetChild(0).GetChild(0).GetChild(3).gameObject.SetActive(true);
+
 
             impactos = 0;
+            canvas.transform.GetChild(0).GetComponent<Slider>().value = (float)impactos / (float)impactoRomper;
+            canvas.transform.GetChild(1).gameObject.SetActive(true);
+
             farmeando = false;
             recoger = true;
             Salir();
