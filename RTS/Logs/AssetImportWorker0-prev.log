@@ -1,6 +1,10 @@
 Using pre-set license
 Built from '2022.3/staging' branch; Version is '2022.3.3f1 (7cdc2969a641) revision 8182825'; Using compiler version '192829333'; Build Type 'Release'
+<<<<<<< HEAD
 OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'es' Physical Memory: 16153 MB
+=======
+OS: 'Windows 11  (10.0.22621) 64bit Enterprise' Language: 'en' Physical Memory: 32604 MB
+>>>>>>> cannons&ships
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,6 +15,7 @@ C:\Program Files\Unity 2022.3.3f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
+<<<<<<< HEAD
 C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
 -logFile
 Logs/AssetImportWorker0.log
@@ -18,6 +23,15 @@ Logs/AssetImportWorker0.log
 59088
 Successfully changed project path to: C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
 C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
+=======
+C:/Users/jamiealexander.lobba/Desktop/proj/ProjectesIII_RTS/RTS
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49970
+Successfully changed project path to: C:/Users/jamiealexander.lobba/Desktop/proj/ProjectesIII_RTS/RTS
+C:/Users/jamiealexander.lobba/Desktop/proj/ProjectesIII_RTS/RTS
+>>>>>>> cannons&ships
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,6 +63,7 @@ C:/Users/2003d/Documents/Proyecto3/Proyecto3/ProjectesIII_RTS/RTS
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [10896] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 109421332 [EditorId] 109421332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [10896] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 109421332 [EditorId] 109421332 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KGD2U4J) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
@@ -75,16 +90,56 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Registered in 0.007757 seconds.
 - Loaded All Assemblies, in  0.311 seconds
+=======
+Player connection [14900] Host "[IP] 10.40.1.230 [Port] 0 [Flags] 2 [Guid] 4293491629 [EditorId] 4293491629 [Version] 1048832 [Id] WindowsEditor(7,PB-02-21B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [14900] Host "[IP] 10.40.1.230 [Port] 0 [Flags] 2 [Guid] 4293491629 [EditorId] 4293491629 [Version] 1048832 [Id] WindowsEditor(7,PB-02-21B) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 6.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.3f1 (7cdc2969a641)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jamiealexander.lobba/Desktop/proj/ProjectesIII_RTS/RTS/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   27.21.14.5751
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.006540 seconds.
+- Loaded All Assemblies, in  0.225 seconds
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 210 ms
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  0.231 seconds
 Domain Reload Profiling: 540ms
 	BeginReloadAssembly (86ms)
+=======
+- Finished resetting the current domain, in  0.423 seconds
+Domain Reload Profiling: 647ms
+	BeginReloadAssembly (57ms)
+>>>>>>> cannons&ships
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 	RebuildCommonClasses (30ms)
 	RebuildNativeTypeToScriptingClass (10ms)
 	initialDomainReloadingComplete (59ms)
@@ -107,6 +162,30 @@ Domain Reload Profiling: 540ms
 			BeforeProcessingInitializeOnLoad (2ms)
 			ProcessInitializeOnLoadAttributes (117ms)
 			ProcessInitializeOnLoadMethodAttributes (44ms)
+=======
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (42ms)
+	LoadAllAssembliesAndSetupDomain (97ms)
+		LoadAssemblies (56ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (93ms)
+			TypeCache.Refresh (93ms)
+				TypeCache.ScanAssembly (83ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (423ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (386ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (293ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (59ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+>>>>>>> cannons&ships
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,12 +193,22 @@ Domain Reload Profiling: 540ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.924 seconds
 Refreshing native plugins compatible for Editor in 5.63 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.516 seconds
+Refreshing native plugins compatible for Editor in 2.33 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.032 seconds
 Domain Reload Profiling: 1951ms
 	BeginReloadAssembly (157ms)
@@ -161,6 +250,49 @@ Unloading 4920 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 70 unused Assets / (0.7 MB). Loaded Objects now: 5407.
 Memory consumption went from 199.7 MB to 199.0 MB.
 Total: 4.033500 ms (FindLiveObjects: 0.583600 ms CreateObjectMapping: 0.416000 ms MarkObjects: 2.628100 ms  DeleteObjects: 0.403800 ms)
+=======
+- Finished resetting the current domain, in  0.391 seconds
+Domain Reload Profiling: 906ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (14ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (373ms)
+		LoadAssemblies (211ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (204ms)
+			TypeCache.Refresh (183ms)
+				TypeCache.ScanAssembly (174ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (392ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (278ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 2.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4919 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (0.7 MB). Loaded Objects now: 5381.
+Memory consumption went from 194.0 MB to 193.3 MB.
+Total: 3.006300 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.128400 ms MarkObjects: 2.376000 ms  DeleteObjects: 0.252600 ms)
+>>>>>>> cannons&ships
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,6 +307,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
   Time since last request: 186.694956 seconds.
   path: Assets/png-transparent-stone-stone-rock-ground.png
   artifactKey: Guid(162748aee91fb2c4dac395b7e9194d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -406,8 +539,50 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyec
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.795 seconds
 Refreshing native plugins compatible for Editor in 5.07 ms, found 3 plugins.
+=======
+  Time since last request: 613.287199 seconds.
+  path: Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/Rogue.fbx
+  artifactKey: Guid(a9ab36b1550ff8e468559084726bce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit_Adventurers_1.0_FREE/Characters/fbx/Rogue.fbx using Guid(a9ab36b1550ff8e468559084726bce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162cf45542cba1d362bceacaa7276d97') in 0.302181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 220
+========================================================================
+Received Import Request.
+  Time since last request: 75.483081 seconds.
+  path: Assets/CannonCollider.cs
+  artifactKey: Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CannonCollider.cs using Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da056fb31def8464b7f80a388847b464') in 0.001908 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.969322 seconds.
+  path: Assets/CannonCollider.cs
+  artifactKey: Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CannonCollider.cs using Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6e148d6d3b14b02004701d497b0452') in 0.001176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 79.086792 seconds.
+  path: Assets/CannonCollider.cs
+  artifactKey: Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CannonCollider.cs using Guid(51b3147f484412a49bc82dfa0ae51b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19a9db03ce81664c252f30a4259c6ee3') in 0.001748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.457 seconds
+Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.268 seconds
 Domain Reload Profiling: 2058ms
 	BeginReloadAssembly (150ms)
@@ -448,6 +623,48 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5423.
 Memory consumption went from 179.5 MB to 178.9 MB.
 Total: 4.817300 ms (FindLiveObjects: 0.502700 ms CreateObjectMapping: 0.686600 ms MarkObjects: 3.227500 ms  DeleteObjects: 0.399700 ms)
+=======
+- Finished resetting the current domain, in  0.591 seconds
+Domain Reload Profiling: 1046ms
+	BeginReloadAssembly (92ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (317ms)
+		LoadAssemblies (178ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (176ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (591ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (236ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5428.
+Memory consumption went from 175.3 MB to 174.6 MB.
+Total: 2.406600 ms (FindLiveObjects: 0.214800 ms CreateObjectMapping: 0.126600 ms MarkObjects: 1.848200 ms  DeleteObjects: 0.216500 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -462,6 +679,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -530,8 +748,75 @@ Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyec
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.890 seconds
 Refreshing native plugins compatible for Editor in 5.71 ms, found 3 plugins.
+=======
+Received Import Request.
+  Time since last request: 35.231973 seconds.
+  path: Assets/Scenes/New Scene 1/NavMesh-Big Water.asset
+  artifactKey: Guid(3e97cb7f1f5d16a49be8b4b884bbae1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene 1/NavMesh-Big Water.asset using Guid(3e97cb7f1f5d16a49be8b4b884bbae1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f81285ab72bf438b3f163dd05e76f04') in 0.010775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.493182 seconds.
+  path: Assets/Scenes/New Scene/NavMesh-Dirt Cliff 2 (11).asset
+  artifactKey: Guid(d2cddf36fb7f2d342985c377fec9093a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene/NavMesh-Dirt Cliff 2 (11).asset using Guid(d2cddf36fb7f2d342985c377fec9093a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d192fa98949062e009d00628238392') in 0.001626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002261 seconds.
+  path: Assets/Scenes/New Scene/NavMesh-Dirt Cliff 2 (22).asset
+  artifactKey: Guid(a4a6566c9acab5d4eaf9fc5cfe5bc785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene/NavMesh-Dirt Cliff 2 (22).asset using Guid(a4a6566c9acab5d4eaf9fc5cfe5bc785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4806116dd98986a57cce6f8c5d0d31') in 0.001361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.679121 seconds.
+  path: Assets/Scenes/Mapa/NavMesh-GameObject (4).asset
+  artifactKey: Guid(e09838fabeaf1ea46ad40547a6069e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Mapa/NavMesh-GameObject (4).asset using Guid(e09838fabeaf1ea46ad40547a6069e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54dc98a6d49801b6050e2358ccb4959c') in 0.001397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.998032 seconds.
+  path: Assets/Scenes/NewLayer.terrainlayer
+  artifactKey: Guid(d94514aab695f9446bb66c2616bf945c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NewLayer.terrainlayer using Guid(d94514aab695f9446bb66c2616bf945c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5fd5440a585bb364e06bb4fdbee5cf3') in 0.631702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.859187 seconds.
+  path: Assets/Scenes/New Scene.unity
+  artifactKey: Guid(1b171ed93d602814ca874015ec2f380a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene.unity using Guid(1b171ed93d602814ca874015ec2f380a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9971f79f73866d23f9616693754ed402') in 0.000749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.014343 seconds.
+  path: Assets/Scenes/New Scene 1.unity
+  artifactKey: Guid(ac1ec03292ef96c458228286f9f1cddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Scene 1.unity using Guid(ac1ec03292ef96c458228286f9f1cddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c36b3ccffe0d3a05430f99e330db36b') in 0.000886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.464 seconds
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.147 seconds
 Domain Reload Profiling: 2033ms
 	BeginReloadAssembly (156ms)
@@ -572,6 +857,48 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5429.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 4.416200 ms (FindLiveObjects: 0.523800 ms CreateObjectMapping: 0.407200 ms MarkObjects: 3.158100 ms  DeleteObjects: 0.326200 ms)
+=======
+- Finished resetting the current domain, in  0.716 seconds
+Domain Reload Profiling: 1178ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (324ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (176ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (158ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (717ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (253ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5434.
+Memory consumption went from 175.3 MB to 174.6 MB.
+Total: 2.611900 ms (FindLiveObjects: 0.263000 ms CreateObjectMapping: 0.144600 ms MarkObjects: 1.930100 ms  DeleteObjects: 0.272700 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -586,14 +913,40 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 43.088584 seconds.
+  path: Assets/Stylized_Pirate_Ship/StylShip_Cannon.prefab
+  artifactKey: Guid(78a33966cc5639b4387c905a99a39d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized_Pirate_Ship/StylShip_Cannon.prefab using Guid(78a33966cc5639b4387c905a99a39d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f201439f04daa7d9bb0b70566ddfcd') in 0.065698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 8.377337 seconds.
+  path: Assets/Stylized_Pirate_Ship/StylShip_Cannon.prefab
+  artifactKey: Guid(78a33966cc5639b4387c905a99a39d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Stylized_Pirate_Ship/StylShip_Cannon.prefab using Guid(78a33966cc5639b4387c905a99a39d65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b539631e6ecbaaf40082ac31b2089f') in 0.031363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.804 seconds
 Refreshing native plugins compatible for Editor in 5.48 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.282 seconds
+Refreshing native plugins compatible for Editor in 2.27 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.281 seconds
 Domain Reload Profiling: 2080ms
 	BeginReloadAssembly (156ms)
@@ -634,6 +987,48 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5432.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 4.193500 ms (FindLiveObjects: 0.479200 ms CreateObjectMapping: 0.502700 ms MarkObjects: 2.571800 ms  DeleteObjects: 0.638700 ms)
+=======
+- Finished resetting the current domain, in  7.907 seconds
+Domain Reload Profiling: 11187ms
+	BeginReloadAssembly (118ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (3025ms)
+		LoadAssemblies (2780ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (307ms)
+			TypeCache.Refresh (298ms)
+				TypeCache.ScanAssembly (290ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (7908ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (232ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (132ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5437.
+Memory consumption went from 175.4 MB to 174.6 MB.
+Total: 4.776400 ms (FindLiveObjects: 0.700900 ms CreateObjectMapping: 0.198700 ms MarkObjects: 3.493200 ms  DeleteObjects: 0.382400 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -650,19 +1045,35 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.800 seconds
 Refreshing native plugins compatible for Editor in 5.26 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.762 seconds
+Refreshing native plugins compatible for Editor in 4.10 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.142 seconds
 Domain Reload Profiling: 1937ms
 	BeginReloadAssembly (158ms)
+=======
+- Finished resetting the current domain, in  1.034 seconds
+Domain Reload Profiling: 1793ms
+	BeginReloadAssembly (159ms)
+>>>>>>> cannons&ships
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 		CreateAndSetChildDomain (47ms)
 	RebuildCommonClasses (32ms)
 	RebuildNativeTypeToScriptingClass (12ms)
@@ -758,6 +1169,41 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5438.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 4.685100 ms (FindLiveObjects: 0.485700 ms CreateObjectMapping: 0.517600 ms MarkObjects: 3.094700 ms  DeleteObjects: 0.586300 ms)
+=======
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (518ms)
+		LoadAssemblies (296ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (300ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (273ms)
+			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1035ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (424ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (247ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 5.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5440.
+Memory consumption went from 175.4 MB to 174.6 MB.
+Total: 4.629900 ms (FindLiveObjects: 0.963800 ms CreateObjectMapping: 0.206500 ms MarkObjects: 2.965400 ms  DeleteObjects: 0.492500 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -774,19 +1220,35 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.788 seconds
 Refreshing native plugins compatible for Editor in 5.15 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.811 seconds
+Refreshing native plugins compatible for Editor in 5.10 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.285 seconds
 Domain Reload Profiling: 2068ms
 	BeginReloadAssembly (152ms)
+=======
+- Finished resetting the current domain, in  1.102 seconds
+Domain Reload Profiling: 1910ms
+	BeginReloadAssembly (138ms)
+>>>>>>> cannons&ships
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 		CreateAndSetChildDomain (38ms)
 	RebuildCommonClasses (34ms)
 	RebuildNativeTypeToScriptingClass (13ms)
@@ -820,6 +1282,41 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5441.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 3.703100 ms (FindLiveObjects: 0.612900 ms CreateObjectMapping: 0.475400 ms MarkObjects: 2.261800 ms  DeleteObjects: 0.352200 ms)
+=======
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (588ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (313ms)
+			TypeCache.Refresh (293ms)
+				TypeCache.ScanAssembly (281ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1103ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (393ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (262ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5443.
+Memory consumption went from 175.4 MB to 174.6 MB.
+Total: 3.570100 ms (FindLiveObjects: 0.573800 ms CreateObjectMapping: 0.176000 ms MarkObjects: 2.480500 ms  DeleteObjects: 0.338700 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -836,19 +1333,35 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.769 seconds
 Refreshing native plugins compatible for Editor in 5.47 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.455 seconds
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.249 seconds
 Domain Reload Profiling: 2013ms
 	BeginReloadAssembly (145ms)
+=======
+- Finished resetting the current domain, in  0.573 seconds
+Domain Reload Profiling: 1026ms
+	BeginReloadAssembly (94ms)
+>>>>>>> cannons&ships
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 		CreateAndSetChildDomain (35ms)
 	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (12ms)
@@ -882,6 +1395,41 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5444.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 4.329800 ms (FindLiveObjects: 0.465200 ms CreateObjectMapping: 0.471800 ms MarkObjects: 2.954200 ms  DeleteObjects: 0.437000 ms)
+=======
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (313ms)
+		LoadAssemblies (180ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (573ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (236ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (135ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5446.
+Memory consumption went from 175.4 MB to 174.6 MB.
+Total: 2.503500 ms (FindLiveObjects: 0.242900 ms CreateObjectMapping: 0.135100 ms MarkObjects: 1.879900 ms  DeleteObjects: 0.244900 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -898,12 +1446,22 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.827 seconds
 Refreshing native plugins compatible for Editor in 5.32 ms, found 3 plugins.
+=======
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jamiealexander.lobba\Desktop\proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.456 seconds
+Refreshing native plugins compatible for Editor in 3.59 ms, found 3 plugins.
+Native extension for UWP target not found
+>>>>>>> cannons&ships
 Native extension for WindowsStandalone target not found
+Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Finished resetting the current domain, in  1.465 seconds
 Domain Reload Profiling: 2286ms
 	BeginReloadAssembly (148ms)
@@ -944,6 +1502,48 @@ Unloading 4837 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5447.
 Memory consumption went from 179.6 MB to 178.9 MB.
 Total: 6.703700 ms (FindLiveObjects: 0.607000 ms CreateObjectMapping: 0.784300 ms MarkObjects: 4.785700 ms  DeleteObjects: 0.525200 ms)
+=======
+- Finished resetting the current domain, in  0.593 seconds
+Domain Reload Profiling: 1047ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (184ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (155ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (593ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (249ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4835 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (0.7 MB). Loaded Objects now: 5449.
+Memory consumption went from 175.4 MB to 174.6 MB.
+Total: 2.676600 ms (FindLiveObjects: 0.216200 ms CreateObjectMapping: 0.124500 ms MarkObjects: 2.086200 ms  DeleteObjects: 0.249000 ms)
+>>>>>>> cannons&ships
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -958,6 +1558,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -7600,3 +8201,321 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+Received Import Request.
+  Time since last request: 1350.069951 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0
+  artifactKey: Guid(ce0a41921fd5d2b43a9410a79a89caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0 using Guid(ce0a41921fd5d2b43a9410a79a89caee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2509049c33794b749348ab6f1c729c') in 0.009937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.055801 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/CharacterOverview.png
+  artifactKey: Guid(7ad1186bb6fb4ac4bbeaca3c4bcab5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/CharacterOverview.png using Guid(7ad1186bb6fb4ac4bbeaca3c4bcab5b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ac430c47ebae58cd1e1da360cab1cea') in 0.039662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.953575 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models
+  artifactKey: Guid(e528253d59a4fe643a83f2045ad2a68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models using Guid(e528253d59a4fe643a83f2045ad2a68e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d00784c0e8fa0b68fe44cd2bea6c71') in 0.000576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.491907 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx
+  artifactKey: Guid(230922d7ad066d945a93f04a1225cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx using Guid(230922d7ad066d945a93f04a1225cb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53665f09240a897ef11149c8d068ac0b') in 0.000506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.617268 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/arrow.fbx
+  artifactKey: Guid(ed4dcc601b992464c9e0b80c68e1c06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/arrow.fbx using Guid(ed4dcc601b992464c9e0b80c68e1c06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '274c31ebf5f9fdc12771d41fa68995e2') in 0.144057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseWide.fbx
+  artifactKey: Guid(193eeb5b81646f04a86f6cb9b1debba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseWide.fbx using Guid(193eeb5b81646f04a86f6cb9b1debba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11dcc8736e9fff52e874520cc957de07') in 0.022576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookF.fbx
+  artifactKey: Guid(ac3be9a397608a94099735986fe55d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookF.fbx using Guid(ac3be9a397608a94099735986fe55d37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f808b535a86acad1971d74b8c6a07c8c') in 0.043130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_common_empty.fbx
+  artifactKey: Guid(f47847bf18f84c7479722ac08863593d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_common_empty.fbx using Guid(f47847bf18f84c7479722ac08863593d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6755e312a138378c29b72dfc9534b40') in 0.020196 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bench.fbx
+  artifactKey: Guid(13a3e89128f231d4f832bd3d145dc75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bench.fbx using Guid(13a3e89128f231d4f832bd3d145dc75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dc034dc7ec6a8ae50e3fbcb31e411f') in 0.018844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsMedium.fbx
+  artifactKey: Guid(288f2627ef8b01f4ab362592319a930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsMedium.fbx using Guid(288f2627ef8b01f4ab362592319a930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec4133349d02d88858de4a99c9dd162') in 0.021369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/door_gate.fbx
+  artifactKey: Guid(e38761f6a3905fb44ad6897b37022d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/door_gate.fbx using Guid(e38761f6a3905fb44ad6897b37022d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3f1cfba9ea2bd5247acba63ba822259') in 0.037766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coin.fbx
+  artifactKey: Guid(0c2727714849b0144aba96cbffacdb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coin.fbx using Guid(0c2727714849b0144aba96cbffacdb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ac587fe0e7d3070d26c2d632e27feb') in 0.020780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_tilesSmall.fbx
+  artifactKey: Guid(14fbd4558bd07614ea84afb82f8c1de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_tilesSmall.fbx using Guid(14fbd4558bd07614ea84afb82f8c1de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f195c9fc13b8ad535a884913cc632d4') in 0.050341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/hammer_common.fbx
+  artifactKey: Guid(1e7a2c6c655ced94ea70ceb60181b7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/hammer_common.fbx using Guid(1e7a2c6c655ced94ea70ceb60181b7fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd649cd74ceae4300a29fd1d7e0887c7') in 0.021775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/axe_common.fbx
+  artifactKey: Guid(7b5acedba1b82ae45af3e1d105aa29fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/axe_common.fbx using Guid(7b5acedba1b82ae45af3e1d105aa29fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edbe163d4e52abe385e6efed73e8557') in 0.022383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_small.fbx
+  artifactKey: Guid(d92f5bee9b3510e48bedb110d1fdbc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/cratePlatform_small.fbx using Guid(d92f5bee9b3510e48bedb110d1fdbc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52023d4654e5f519569a91fccb2b914') in 0.023630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseFilled.fbx
+  artifactKey: Guid(d839ea1e500c14044bdc7f39733c571d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseFilled.fbx using Guid(d839ea1e500c14044bdc7f39733c571d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7946194fecdbe72cb846490301b289bd') in 0.048800 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare.fbx
+  artifactKey: Guid(2f0c8ade0b5f4394ab5b925625ae3580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_rare.fbx using Guid(2f0c8ade0b5f4394ab5b925625ae3580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e39990b23a8ecd513aa32401a0fc89') in 0.022503 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsSmall.fbx
+  artifactKey: Guid(26fedb8e0510c6f49952af46a4dea548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/coinsSmall.fbx using Guid(26fedb8e0510c6f49952af46a4dea548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c810118378f20f80c3f7c606d3f8ae90') in 0.019263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/axeDouble_common.fbx
+  artifactKey: Guid(9f7bcb42ea5e67343b21e68cec6fbfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/axeDouble_common.fbx using Guid(9f7bcb42ea5e67343b21e68cec6fbfce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82022c6340eeeaa9709ab2dd91eec384') in 0.021874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_wood.fbx
+  artifactKey: Guid(81fad1599198f4f4188378885902e195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_wood.fbx using Guid(81fad1599198f4f4188378885902e195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b5a3d9df98db3d6b20b9dab1515fea') in 0.021254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chair.fbx
+  artifactKey: Guid(7362cc728d060f440abe3d4ff3daca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chair.fbx using Guid(7362cc728d060f440abe3d4ff3daca53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca34f01f5b29f15516351ea0ad1751fc') in 0.020500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/banner.fbx
+  artifactKey: Guid(8bf4d527b3e4ccb4cae05786c4f3fdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/banner.fbx using Guid(8bf4d527b3e4ccb4cae05786c4f3fdd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f066aedb83c5b7eca4722e21f173495c') in 0.038842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_common.fbx
+  artifactKey: Guid(2892d0e3f2f65a8469d590e87bf86097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/crossbow_common.fbx using Guid(2892d0e3f2f65a8469d590e87bf86097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a349d6c6b799d99e450660fc4358a3') in 0.024918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseWideFilled.fbx
+  artifactKey: Guid(2ffaf81811cd365478c2efd4e8ec5879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcaseWideFilled.fbx using Guid(2ffaf81811cd365478c2efd4e8ec5879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6df460539565d56595eeb0464db939d') in 0.046795 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon_mimic.fbx
+  artifactKey: Guid(2424ce6551785514dbeb9213af7e30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_uncommon_mimic.fbx using Guid(2424ce6551785514dbeb9213af7e30c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd1c7d2c3a8b4a11fd1fe8b9076939f') in 0.031363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/crate.fbx
+  artifactKey: Guid(377f7e0ce9167c64bb41d9e2268fc9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/crate.fbx using Guid(377f7e0ce9167c64bb41d9e2268fc9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7620a2827d867a546a0999b3eb080689') in 0.025240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_shatteredBricks.fbx
+  artifactKey: Guid(2d4e34dec9057374f8f71f11bbbaa0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_shatteredBricks.fbx using Guid(2d4e34dec9057374f8f71f11bbbaa0d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd0d08aa65e0223134601976b60144e') in 0.021252 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/barrelDark.fbx
+  artifactKey: Guid(39d9250739369f148a9eca6bed25c806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/barrelDark.fbx using Guid(39d9250739369f148a9eca6bed25c806) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2bbf829eba7daa701b5adf0929d1ff') in 0.029086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/axeDouble_rare.fbx
+  artifactKey: Guid(0c56d3d587caf354a801ead3c84146ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/axeDouble_rare.fbx using Guid(0c56d3d587caf354a801ead3c84146ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3daa37f9c90465e075d11222f4b0145d') in 0.027014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_tilesLarge.fbx
+  artifactKey: Guid(32b9a4f446323624aa3cb1082c63a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_tilesLarge.fbx using Guid(32b9a4f446323624aa3cb1082c63a661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f777d5ad5c36f820dd364bbe244e9c3') in 0.016807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_woodLeft.fbx
+  artifactKey: Guid(2203f5a7571b1774ca3b56906c27be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/floorDecoration_woodLeft.fbx using Guid(2203f5a7571b1774ca3b56906c27be3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6558524e414a6ac94327b1abad63c27') in 0.018340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common_empty.fbx
+  artifactKey: Guid(5db3e55b3eb79e2468c7c5403ccc6928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common_empty.fbx using Guid(5db3e55b3eb79e2468c7c5403ccc6928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b24d40359aa8ac4dd594fbd46a31c51') in 0.028940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_uncommon.fbx
+  artifactKey: Guid(e0229201096f6cb48950baf7d799ef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chestTop_uncommon.fbx using Guid(e0229201096f6cb48950baf7d799ef34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c03a07c2093f18b3c49f3541087006') in 0.022604 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcase.fbx
+  artifactKey: Guid(82a5e95f5b0127a4ca7efc8a1a45f2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookcase.fbx using Guid(82a5e95f5b0127a4ca7efc8a1a45f2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c445b5d1af821ae0240a80be07704cce') in 0.019490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare_mimic.fbx
+  artifactKey: Guid(e6c9fcfa66d1b89418a4813a37260a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_rare_mimic.fbx using Guid(e6c9fcfa66d1b89418a4813a37260a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cbeb1216be9e8afefe47412cfc83821') in 0.044375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common.fbx
+  artifactKey: Guid(8de1516f0b216ee4bb32e84d65ed686d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/chest_common.fbx using Guid(8de1516f0b216ee4bb32e84d65ed686d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27fb10d9ec1ac788c51a0e64c4b961f7') in 0.035808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/door.fbx
+  artifactKey: Guid(071d29f3864b3134cb96b48ea86db64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/door.fbx using Guid(071d29f3864b3134cb96b48ea86db64a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72c885c0b81694464ccec8329b155ecb') in 0.025105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookOpenB.fbx
+  artifactKey: Guid(53f4ad9fb434e3c439ab15f8423eed8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KayKit Dungeon Pack 1.0/Models/fbx/bookOpenB.fbx using Guid(53f4ad9fb434e3c439ab15f8423eed8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2576cad632644a8e38781aa7602db0d2') in 0.025737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> cannons&ships

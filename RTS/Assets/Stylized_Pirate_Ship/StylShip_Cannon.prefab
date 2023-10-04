@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &674303603541463250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6831070974800712277}
+  m_Layer: 0
+  m_Name: FiringPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6831070974800712277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674303603541463250}
+  m_LocalRotation: {x: -0.07115694, y: -0, z: -0, w: 0.9974652}
+  m_LocalPosition: {x: 0, y: 0.7499995, z: 2.8009999}
+  m_LocalScale: {x: 1.4285713, y: 1.4285713, z: 1.4285713}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2147566298837806395}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: -8.161, y: 0, z: 0}
 --- !u!1 &2670471398434326601
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6774871048503275487}
   - component: {fileID: 5243021136007767490}
+  - component: {fileID: 638625015615792672}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -53,6 +85,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &638625015615792672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2670471398434326601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51b3147f484412a49bc82dfa0ae51b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collider: {fileID: 0}
+  parentCannon: {fileID: 0}
+  cannons: {fileID: 0}
 --- !u!1 &3219567235672412077
 GameObject:
   m_ObjectHideFlags: 0
@@ -65,6 +112,7 @@ GameObject:
   - component: {fileID: 8423422212207828698}
   - component: {fileID: 5314273234268098688}
   - component: {fileID: 3219567235672412076}
+  - component: {fileID: 5023763440417048595}
   m_Layer: 0
   m_Name: StylShip_Cannon
   m_TagString: Untagged
@@ -85,6 +133,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6774871048503275487}
+  - {fileID: 6831070974800712277}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,3 +208,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8149264, y: 1.5310771, z: 3.4784567}
   m_Center: {x: -0.00016757846, y: 0.13911536, z: 0.605271}
+--- !u!114 &5023763440417048595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219567235672412077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c2d09796ebbd44192fcd239bdddd1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer: {fileID: 0}
+  playerControlled: 0
+  doItOnce: 0
+  cannonball: {fileID: 3675743305686428971, guid: 979938d479c84254eb13bead7e20c417,
+    type: 3}
+  firingPoint: {fileID: 6831070974800712277}
+  firingSpeed: 10

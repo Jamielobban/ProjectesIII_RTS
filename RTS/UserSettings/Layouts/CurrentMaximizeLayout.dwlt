@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
+<<<<<<< HEAD
   - {fileID: 16}
+=======
+  - {fileID: 15}
+>>>>>>> cannons&ships
   m_Position:
     serializedVersion: 2
     x: 0
@@ -24,7 +28,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 19013
+=======
+  controlID: 1000
+>>>>>>> cannons&ships
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,10 +54,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 819.2
     y: 402.4
     width: 317.99994
     height: 381
+=======
+    x: 1057
+    y: 496
+    width: 526
+    height: 495
+>>>>>>> cannons&ships
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -66,7 +81,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 397.49994, y: 224}
+=======
+  m_TargetSize: {x: 526, y: 296}
+>>>>>>> cannons&ships
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -81,10 +100,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -158.99998
     m_HBaseRangeMax: 158.99998
     m_VBaseRangeMin: -89.6
     m_VBaseRangeMax: 89.6
+=======
+    m_HBaseRangeMin: -263
+    m_HBaseRangeMax: 263
+    m_VBaseRangeMin: -148
+    m_VBaseRangeMax: 148
+>>>>>>> cannons&ships
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -102,16 +128,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 317.99994
       height: 360
     m_Scale: {x: 0.9999999, y: 0.99999994}
     m_Translation: {x: 158.99997, y: 180}
+=======
+      width: 526
+      height: 474
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 263, y: 237}
+>>>>>>> cannons&ships
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -158.99998
       y: -180.00002
       width: 317.99997
@@ -119,6 +153,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.9999999
   m_LastWindowPixelSize: {x: 397.49994, y: 476.25}
+=======
+      x: -263
+      y: -237
+      width: 526
+      height: 474
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 526, y: 495}
+>>>>>>> cannons&ships
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -148,7 +191,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 19014
+=======
+  controlID: 1001
+>>>>>>> cannons&ships
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +220,11 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 18958
+=======
+  controlID: 932
+>>>>>>> cannons&ships
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -191,8 +242,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 316.8
     height: 328.8
+=======
+    width: 441
+    height: 423
+>>>>>>> cannons&ships
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -237,10 +293,17 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 149.20001}
       m_SelectedIDs: 3823ffff4a23ffff6623ffff1a28ffff9829ffff98f9ffff
       m_LastClickedID: -1640
       m_ExpandedIDs: 1c5bffff3c5bffffa65effffa85effffb6d2ffff82edffffc0f6ffff2afbffffd26a0000dc6c0000066d0000
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 14afffff4ef7ffff
+>>>>>>> cannons&ships
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -281,16 +344,27 @@ MonoBehaviour:
     serializedVersion: 2
     x: 316.8
     y: 0
+<<<<<<< HEAD
     width: 822.39996
     height: 328.8
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 1144
+    height: 423
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> cannons&ships
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
   - {fileID: 9}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 1
+=======
+  m_LastSelected: 0
+>>>>>>> cannons&ships
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -687,9 +761,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -3.2906935, y: 5.992704, z: -5.766263}
     speed: 2
     m_Value: {x: -3.2906935, y: 5.992704, z: -5.766263}
+=======
+    m_Target: {x: -9.926981, y: 7.6534977, z: 14.519492}
+    speed: 2
+    m_Value: {x: -9.926981, y: 7.6534977, z: 14.519492}
+>>>>>>> cannons&ships
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -735,6 +815,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.37559506, y: -0.09128051, z: 0.03717045, w: 0.9215879}
     speed: 2
     m_Value: {x: 0.37557447, y: -0.091275506, z: 0.037168413, w: 0.92153734}
@@ -742,6 +823,15 @@ MonoBehaviour:
     m_Target: 1.5652057
     speed: 2
     m_Value: 1.5652057
+=======
+    m_Target: {x: 0.3691205, y: -0.11802568, z: 0.04732629, w: 0.920659}
+    speed: 2
+    m_Value: {x: 0.3691145, y: -0.11802375, z: 0.047325518, w: 0.920644}
+  m_Size:
+    m_Target: 12.773987
+    speed: 2
+    m_Value: 12.773987
+>>>>>>> cannons&ships
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -887,6 +977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 11}
+<<<<<<< HEAD
   - {fileID: 15}
   m_Position:
     serializedVersion: 2
@@ -898,6 +989,19 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 19015
+=======
+  - {fileID: 14}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 423
+    width: 1585
+    height: 516
+  m_MinSize: {x: 200, y: 50}
+  m_MaxSize: {x: 16192, y: 8096}
+  vertical: 0
+  controlID: 1002
+>>>>>>> cannons&ships
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -915,6 +1019,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 819.2
     height: 402
   m_MinSize: {x: 231, y: 271}
@@ -926,6 +1031,18 @@ MonoBehaviour:
   - {fileID: 14}
   m_Selected: 1
   m_LastSelected: 0
+=======
+    width: 1057
+    height: 516
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 12}
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> cannons&ships
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -948,9 +1065,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 402.4
     width: 552.6
     height: 381
+=======
+    y: 496
+    width: 1056
+    height: 495
+>>>>>>> cannons&ships
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -983,9 +1106,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 402.4
     width: 818.2
     height: 381
+=======
+    y: 496
+    width: 1056
+    height: 495
+>>>>>>> cannons&ships
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1017,6 +1146,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 64
+<<<<<<< HEAD
   m_LastProjectPath: C:\Users\2003d\Documents\Proyecto3\Proyecto3\ProjectesIII_RTS\RTS
   m_LockTracker:
     m_IsLocked: 0
@@ -1025,6 +1155,16 @@ MonoBehaviour:
     m_SelectedIDs: 12740000
     m_LastClickedID: 29714
     m_ExpandedIDs: 000000004e72000050720000527200005472000056720000587200005a7200005c7200005e72000060720000627200006472000000ca9a3b
+=======
+  m_LastProjectPath: C:\Users\jamiealexander.lobba\Desktop\r\ProjectesIII_RTS\RTS
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 19}
+    m_SelectedIDs: 96730000
+    m_LastClickedID: 29590
+    m_ExpandedIDs: 0000000096730000987300009a73000000ca9a3bffffff7f
+>>>>>>> cannons&ships
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1040,7 +1180,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1052,7 +1192,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 100}
     m_SelectedIDs: 408f0100
     m_LastClickedID: 102208
+<<<<<<< HEAD
     m_ExpandedIDs: 000000004e72000050720000527200005472000056720000587200005a7200005c7200005e72000060720000627200006472000000ca9a3b
+=======
+    m_ExpandedIDs: 0000000096730000987300009a73000000ca9a3bffffff7f
+>>>>>>> cannons&ships
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1077,10 +1221,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 3823ffff4a23ffff6623ffff1a28ffff9829ffff98f9ffff
     m_LastClickedInstanceID: -56520
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000127e0000d82d000000000000
+=======
+    m_SelectedInstanceIDs: d2e1ffff
+    m_LastClickedInstanceID: -7726
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c623000000000000127e0000d82d0000
+>>>>>>> cannons&ships
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1104,7 +1255,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 131}
+=======
+    m_ScrollPosition: {x: 0, y: 38}
+>>>>>>> cannons&ships
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 153.8
@@ -1117,6 +1272,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1155,16 +1311,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+=======
+>>>>>>> cannons&ships
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 819.2
     y: 0
     width: 319.99994
     height: 402
+=======
+    x: 1057
+    y: 0
+    width: 528
+    height: 516
+>>>>>>> cannons&ships
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -1172,7 +1337,11 @@ MonoBehaviour:
   - {fileID: 2}
   m_Selected: 0
   m_LastSelected: 0
+<<<<<<< HEAD
 --- !u!114 &16
+=======
+--- !u!114 &15
+>>>>>>> cannons&ships
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1189,6 +1358,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1139.2
     y: 0
+<<<<<<< HEAD
     width: 396.80005
     height: 730.8
   m_MinSize: {x: 276, y: 71}
@@ -1199,6 +1369,18 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &17
+=======
+    width: 335
+    height: 939
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &16
+>>>>>>> cannons&ships
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
