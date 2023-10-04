@@ -4,6 +4,7 @@ using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class PplayerMovement : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class PplayerMovement : MonoBehaviour
     bool isInInteractionRange = false;
     bool canMove = true;
     public int oro = 0;
+
+
+    public bool controllingCannon = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +36,14 @@ public class PplayerMovement : MonoBehaviour
     {
         text.text = oro.ToString();
 
-        HandleMovement(); 
+        if(!controllingCannon)
+        {
+            HandleMovement(); 
+        }
+        else
+        {
+            HandleCannonMovement();
+        }
 
         if (isRunning)
         {
@@ -45,6 +56,43 @@ public class PplayerMovement : MonoBehaviour
 
     }
 
+    private void HandleCannonMovement()
+    {
+
+        look = this.transform.position;
+        Vector3 vel = new Vector3();
+
+
+        if (Input.GetKey(KeyCode.A) && canMove)
+        {
+            vel -= camera.right * movementSpeed * Time.deltaTime;
+            this.transform.GetChild(0).rotation = new Quaternion(0, 90, 0, 0);
+            look -= camera.right;
+            isRunning = true;
+        }
+
+        if (Input.GetKey(KeyCode.D) && canMove)
+        {
+            vel += camera.right * movementSpeed * Time.deltaTime;
+            this.transform.GetChild(0).rotation = new Quaternion(0, -90, 0, 0);
+            look += camera.right;
+            isRunning = true;
+
+        }
+
+
+
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed), ForceMode.Force);
+
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0);
+
+        transform.GetChild(0).LookAt(look);
+
+        if (((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.D))) == false)
+        {
+            isRunning = false;
+        }
+    }
 
     public void HandleMovement()
     {
