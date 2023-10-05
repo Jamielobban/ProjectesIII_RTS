@@ -7,6 +7,9 @@ TagManager:
   - camino
   - triggerCamino
   - Cannons
+  - LeftSideCannon
+  - RightSideCannon
+  - Cannonball
   layers:
   - Default
   - TransparentFX

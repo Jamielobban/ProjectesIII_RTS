@@ -44,7 +44,7 @@ public class CannonController : MonoBehaviour
     void SpawnCannonShot()
     {
         cannonball = Instantiate(cannonball, firingPoint.transform.position, Quaternion.identity);
-        cannonball.GetComponent<Rigidbody>().AddForce(new Vector3(0f, cannonball.GetComponent<Rigidbody>().velocity.y, 20.0f), ForceMode.Impulse);
+        cannonball.GetComponent<Rigidbody>().AddForce(new Vector3(0f, cannonball.GetComponent<Rigidbody>().velocity.y, 40.0f), ForceMode.Impulse);
     }
 
 }

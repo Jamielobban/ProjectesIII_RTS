@@ -36,9 +36,9 @@ public class PplayerMovement : MonoBehaviour
     {
         text.text = oro.ToString();
 
-        if(!controllingCannon)
+        if (!controllingCannon)
         {
-            HandleMovement(); 
+            HandleMovement();
         }
         else
         {

@@ -16,7 +16,7 @@ public class CannonCollider : MonoBehaviour
     [SerializeField]
     public GameObject cannons;
 
-    bool holdingOn = false;
+    public bool holdingOn = false;
 
 
     [SerializeField]
@@ -37,7 +37,7 @@ public class CannonCollider : MonoBehaviour
         {
             //collider.enabled = false;
             StartCoroutine(DisableCollider(1f));
-            parentCannon.ChangePlayerSpeedTrasnform(30, cannons.transform);
+            parentCannon.ChangePlayerSpeedTrasnform(20000, cannons.transform);
             holdingOn = false;
             myPlayer.controllingCannon = false;
         }
@@ -50,7 +50,7 @@ public class CannonCollider : MonoBehaviour
             parentCannon.playerControlled = true;
             ///parentCannon.transform.GetComponentInParent<PplayerMovement>().controllingCannon = true;
             myPlayer.controllingCannon = true;
-            parentCannon.ChangePlayerSpeedTrasnform(15,parentCannon.myPlayer.transform);
+            parentCannon.ChangePlayerSpeedTrasnform(5000,parentCannon.myPlayer.transform);
         }
     }
 

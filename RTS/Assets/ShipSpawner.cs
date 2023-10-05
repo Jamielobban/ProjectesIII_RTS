@@ -16,6 +16,7 @@ public class ShipSpawner : MonoBehaviour
     Quaternion spawnRotation = Quaternion.Euler(0, 90, 0);
     //Quaternion spawnQuaternion = Quaternion.Euler(;
     // Start is called before the first frame update
+    bool passed = false;
     void Start()
     {
         StartCoroutine(SpawnEnemies());
@@ -29,14 +30,22 @@ public class ShipSpawner : MonoBehaviour
 
     IEnumerator SpawnEnemies()
     {
-        while (true)
-        {
-            float randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
-            Debug.Log(randomSpawnTime);
-            yield return new WaitForSeconds(randomSpawnTime);
+        if(!passed) {
+            //while (true)
+            //{
+                float randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
+                Debug.Log(randomSpawnTime);
+                yield return new WaitForSeconds(randomSpawnTime);
 
-            //Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-            Instantiate(enemyPrefab, spawnPosition.transform.position, spawnRotation);
+                //Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
+                Instantiate(enemyPrefab, spawnPosition.transform.position, spawnRotation);
+                passed = true;
+            //}
         }
+        else
+        {
+            StopCoroutine(SpawnEnemies());
+        }
+       
     }
 }
