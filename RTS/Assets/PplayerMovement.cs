@@ -152,7 +152,6 @@ public class PplayerMovement : MonoBehaviour
         }
 
 
-
         this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed * Time.deltaTime),ForceMode.Force);
 
         this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0) ;
@@ -172,7 +171,7 @@ public class PplayerMovement : MonoBehaviour
         isRunning = false;
         myAnim.SetBool("isPickingUp", true);
         canMove = false;
-        StartCoroutine(setAnimationBoolToFalse(1.10f, "isPickingUp"));
+        StartCoroutine(setAnimationBoolToFalse(0.5f, "isPickingUp"));
     }
 
     public void Farmear()

@@ -57,7 +57,7 @@ public class MaterialController : MonoBehaviour
     {
         if(texture != 5)
         {
-            this.GetComponent<PplayerMovement>().movementSpeed -= 2000;
+            this.GetComponent<PplayerMovement>().movementSpeed -= 3000;
             textura[puesto].transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
 
             inventario[puesto] = (Objects)texture;
@@ -65,7 +65,7 @@ public class MaterialController : MonoBehaviour
         }
         else
         {
-            this.GetComponent<PplayerMovement>().movementSpeed += 2000;
+            this.GetComponent<PplayerMovement>().movementSpeed += 3000;
             textura[puesto].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
             inventario[puesto] = (Objects)texture;
 
