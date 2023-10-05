@@ -36,7 +36,7 @@ public class castillo : MonoBehaviour
             if(Time.time-timer > 0.2f)
             {
                 timer = Time.time;
-                if(other.GetComponent<PplayerMovement>().oro > 0 && rellenarBarra < 1)
+                if(other.GetComponent<PplayerMovement>().oro > 0 && rellenarBarra < 0.95f)
                 {
                     other.GetComponent<PplayerMovement>().oro--;
                     rellenarBarra += 0.05f;

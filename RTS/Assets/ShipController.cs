@@ -18,7 +18,7 @@ public class ShipController : MonoBehaviour
         casas = GameObject.FindGameObjectWithTag("Casas");
         startPoint = this.gameObject.transform;
         this.gameObject.transform.DOMove(new Vector3(startPoint.transform.position.x + 39.59f,startPoint.transform.position.y,startPoint.transform.position.z),3.0f);
-        StartCoroutine(quemar(Random.RandomRange(10, 15)));
+        StartCoroutine(quemar(Random.RandomRange(1, 2)));
 
     }
     private IEnumerator quemar(float time)

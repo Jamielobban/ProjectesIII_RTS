@@ -32,6 +32,7 @@ public class house : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         switch (state)
         {
             case State.fuego:
@@ -55,6 +56,8 @@ public class house : MonoBehaviour
                 if (currentTime > waitTime && !genteFuera)
                 {
                     genteFuera = true;
+                    this.transform.GetChild(3).GetComponent<Citizen>().SalirAfuera();
+
                 }
 
                 break;
@@ -96,6 +99,7 @@ public class house : MonoBehaviour
     }
     public void AcabarPedir()
     {
+        this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
         this.transform.GetChild(1).gameObject.SetActive(false);
         this.transform.GetChild(0).gameObject.SetActive(false);
 
@@ -115,16 +119,20 @@ public class house : MonoBehaviour
             this.transform.GetChild(1).gameObject.SetActive(true);
             timer = Time.time;
 
+            if (timer < waitTime)
+            {
+                this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
+
+                genteFuera = false;
+            }
         }
-        if (timer < waitTime)
-        {
-            genteFuera = false;
-        }
+
     }
     public void PrenderFuego()
     {
         this.transform.GetChild(1).gameObject.SetActive(false);
         this.transform.GetChild(2).gameObject.SetActive(true);
+        this.transform.GetChild(3).GetComponent<Citizen>().SalirAfuera();
 
         lastState = state;
         state = State.fuego;
