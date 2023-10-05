@@ -21,6 +21,8 @@ public class PplayerMovement : MonoBehaviour
     public bool canMove = true;
     public int oro = 0;
 
+    public bool isOnLeftSide = false;
+    public bool isOnRightSide = false;
 
     public bool controllingCannon = false;
     // Start is called before the first frame update
@@ -29,7 +31,7 @@ public class PplayerMovement : MonoBehaviour
         camera = FindObjectOfType<mainCameraController>();
         myAnim = transform.GetChild(0).GetComponent<Animator>();
     }
-    
+
 
     // Update is called once per frame
     void Update()
@@ -42,8 +44,17 @@ public class PplayerMovement : MonoBehaviour
         }
         else
         {
-            HandleCannonMovement();
+            if (isOnLeftSide)
+            {
+                HandleCannonMovementLeft();
+
+            }
+            else if (isOnRightSide)
+            {
+                HandleCannonMovementRight();
+            }
         }
+
 
         if (isRunning)
         {
@@ -56,7 +67,7 @@ public class PplayerMovement : MonoBehaviour
 
     }
 
-    private void HandleCannonMovement()
+    private void HandleCannonMovementRight()
     {
 
         look = this.transform.position;
@@ -71,18 +82,8 @@ public class PplayerMovement : MonoBehaviour
             isRunning = true;
         }
 
-        if (Input.GetKey(KeyCode.D) && canMove)
-        {
-            vel += camera.right * movementSpeed * Time.deltaTime;
-            this.transform.GetChild(0).rotation = new Quaternion(0, -90, 0, 0);
-            look += camera.right;
-            isRunning = true;
 
-        }
-
-
-
-        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed*Time.deltaTime), ForceMode.Force);
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed * Time.deltaTime), ForceMode.Force);
 
         this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0);
 
@@ -94,7 +95,33 @@ public class PplayerMovement : MonoBehaviour
         }
     }
 
-    public void HandleMovement()
+    private void HandleCannonMovementLeft(){
+
+        look = this.transform.position;
+        Vector3 vel = new Vector3();
+
+        if (Input.GetKey(KeyCode.D) && canMove)
+        {
+            vel += camera.right * movementSpeed * Time.deltaTime;
+            this.transform.GetChild(0).rotation = new Quaternion(0, -90, 0, 0);
+            look += camera.right;
+            isRunning = true;
+
+        }
+
+        this.GetComponent<Rigidbody>().AddForce((vel.normalized * movementSpeed * Time.deltaTime), ForceMode.Force);
+
+        this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0);
+
+        transform.GetChild(0).LookAt(look);
+
+        if (((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.D))) == false)
+        {
+            isRunning = false;
+        }
+    }
+      
+public void HandleMovement()
     {
         look = this.transform.position;
 
@@ -198,4 +225,31 @@ public class PplayerMovement : MonoBehaviour
         canMove = true;
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("LeftSideCannon"))
+        {
+            isOnLeftSide = true;
+            isOnRightSide = false;
+        }
+        if (other.gameObject.CompareTag("RightSideCannon"))
+        {
+            isOnRightSide = true;
+            isOnLeftSide = false;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("LeftSideCannon"))
+        {
+            isOnLeftSide = false;
+        }
+        if (other.gameObject.CompareTag("RightSideCannon"))
+        {
+            isOnRightSide = false;
+        }
+    }
+
+
 }

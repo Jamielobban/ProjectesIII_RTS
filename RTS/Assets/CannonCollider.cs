@@ -42,15 +42,17 @@ public class CannonCollider : MonoBehaviour
             myPlayer.controllingCannon = false;
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player")) {
-            
+        if (other.gameObject.CompareTag("Player"))
+        {
+
             holdingOn = true;
             parentCannon.playerControlled = true;
             ///parentCannon.transform.GetComponentInParent<PplayerMovement>().controllingCannon = true;
             myPlayer.controllingCannon = true;
-            parentCannon.ChangePlayerSpeedTrasnform(5000,parentCannon.myPlayer.transform);
+            parentCannon.ChangePlayerSpeedTrasnform(5000, parentCannon.myPlayer.transform);
         }
     }
 
