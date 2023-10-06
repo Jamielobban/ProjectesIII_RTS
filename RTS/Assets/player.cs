@@ -74,7 +74,7 @@ public class player : MonoBehaviour
 
             int pos = mousePos - (int)Input.mousePosition.x;
 
-            this.transform.Rotate(new Vector3(0, -pos*Time.deltaTime* rotationSpeed, 0));
+            this.transform.Rotate(new Vector3(0, -pos * Time.deltaTime * rotationSpeed, 0));
             mousePos = (int)Input.mousePosition.x;
         }
 

@@ -5,6 +5,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
 using System;
+using LP.FDG.Units;
+using UnityEngine.UI;
 
 public class PplayerMovement : MonoBehaviour
 {
@@ -14,6 +16,12 @@ public class PplayerMovement : MonoBehaviour
     Vector3 look = new Vector3();
     public TMP_Text text;
     private Animator myAnim;
+
+
+    public UnitStatTypes.Base baseStats;
+    public GameObject unitStatDisplay;
+    public Image healthBarAmount;
+    public float currentHealth;
 
     bool isRunning = false;
     bool isDown = false;
@@ -198,5 +206,24 @@ public class PplayerMovement : MonoBehaviour
 
         canMove = true;
 
+    }
+
+    public void HandleHealth()
+    {
+        Camera camera = Camera.main;
+        unitStatDisplay.transform.LookAt(unitStatDisplay.transform.position + camera.transform.rotation * Vector3.forward,
+            camera.transform.rotation* Vector3.up);
+
+        healthBarAmount.fillAmount = currentHealth / baseStats.health;
+
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        Destroy(this.gameObject);
     }
 }

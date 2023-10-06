@@ -291,46 +291,46 @@ public class MapaConstrucciones : MonoBehaviour
                     break;
            
             }
-            if (Input.GetMouseButtonUp(0))
-            {
-                crear = false;
+            //if (Input.GetMouseButtonUp(0))
+            //{
+            //    crear = false;
 
-                construirCamino = false;
-                if (visualizacionCamino != null)
-                {
-                    actualHexagon.SetActive(true);
-                    Destroy(visualizacionCamino);
-                }
-            }
+            //    construirCamino = false;
+            //    if (visualizacionCamino != null)
+            //    {
+            //        actualHexagon.SetActive(true);
+            //        Destroy(visualizacionCamino);
+            //    }
+            //}
 
-            if ((int)Input.mouseScrollDelta.y != 0)
-            {
-                int a = (((int)camino) + (int)Input.mouseScrollDelta.y) % tiposTerreno.Length;
-                if (a < 0)
-                    a = tiposTerreno.Length + a;
+            //if ((int)Input.mouseScrollDelta.y != 0)
+            //{
+            //    int a = (((int)camino) + (int)Input.mouseScrollDelta.y) % tiposTerreno.Length;
+            //    if (a < 0)
+            //        a = tiposTerreno.Length + a;
 
-                camino = (typeCamino)a;
-                crear = false;
-            }
+            //    camino = (typeCamino)a;
+            //    crear = false;
+            //}
         }
         else
         {
-         if (Input.GetMouseButtonUp(0))
-                {
-                    if (!construir)
-                    {
-                        construir = true;
-                    }
-                    else
-                    {
-                        if (!pos[(int)player.GetPos().x][(int)player.GetPos().y].CompareTag("camino"))
-                        {
-                            construir = false;
-                            Establecer(player.GetPos());
-                            crear = false;
-                        }
-                    }
-                }
+         //if (Input.GetMouseButtonUp(0))
+         //       {
+         //           if (!construir)
+         //           {
+         //               construir = true;
+         //           }
+         //           else
+         //           {
+         //               if (!pos[(int)player.GetPos().x][(int)player.GetPos().y].CompareTag("camino"))
+         //               {
+         //                   construir = false;
+         //                   Establecer(player.GetPos());
+         //                   crear = false;
+         //               }
+         //           }
+         //       }
         }
        
 

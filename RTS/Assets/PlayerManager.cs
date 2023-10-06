@@ -18,13 +18,13 @@ namespace LP.FDG.Player
         private void Awake()
         {
             instance = this;
+            Units.UnitHandler.instance.SetBasicUnitStats(playerUnits);
+            Units.UnitHandler.instance.SetBasicUnitStats(enemyUnits);
         }
         // Start is called before the first frame update
         private void Start()
         {
             //instance = this;
-            Units.UnitHandler.instance.SetBasicUnitStats(playerUnits);
-            Units.UnitHandler.instance.SetBasicUnitStats(enemyUnits);
         }
 
         // Update is called once per frame
