@@ -30,7 +30,7 @@ public class Comercio : MonoBehaviour
             this.transform.parent.GetChild(1).gameObject.SetActive(true);
 
 
-            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() != 5 && other.GetComponent<PplayerMovement>().canMove)
+            if ((Input.GetMouseButton(0)) && other.GetComponent<MaterialController>().GetCurrentState() != 5 && other.GetComponent<PplayerMovement>().canMove)
             {
                 switch(other.GetComponent<MaterialController>().GetCurrentState())
                 {

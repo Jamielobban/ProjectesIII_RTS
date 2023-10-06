@@ -14,18 +14,27 @@ public class house : MonoBehaviour
     public float timer = 0;
     public float currentTime = 0;
 
+    public float timerOro = 0;
+    public float currentTimeOro = 0;
+
     float waitTime = 30;
     public bool genteFuera = false;
 
     MaterialController player;
+    PplayerMovement playerOro;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerOro = FindObjectOfType<PplayerMovement>();
         player = FindObjectOfType<MaterialController>();
         state = State.nada;
         this.transform.GetChild(1).gameObject.SetActive(false);
         this.transform.GetChild(2).gameObject.SetActive(false);
+
+
+        timerOro = Time.time;
+        currentTimeOro = 0;
 
     }
 
@@ -60,24 +69,40 @@ public class house : MonoBehaviour
 
                 }
 
+
                 break;
             case State.nada:
                 genteFuera = false;
 
+
                 break;
+        }
+
+        if(!genteFuera)
+        {
+            currentTimeOro += Time.time - timerOro;
+            timerOro = Time.time;
+
+            if (currentTimeOro > 5)
+            {
+                this.transform.GetChild(4).GetComponent<ParticleSystem>().Play();
+
+                currentTimeOro = 0;
+                playerOro.oro++;
+            }
         }
     }
     private void OnTriggerStay(Collider other)
     {
         if (other.GetComponent<MaterialController>() != null)
         {
-            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 4 && state == State.pidiendo)
+            if ((Input.GetMouseButton(0)) && other.GetComponent<MaterialController>().GetCurrentState() == 4 && state == State.pidiendo)
             {
                 other.GetComponent<MaterialController>().SetTexture(5);
                 other.GetComponent<PplayerMovement>().Recoger();
                 AcabarPedir();
             }
-            if ((Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 2 && state == State.fuego)
+            if ((Input.GetMouseButton(0)) && other.GetComponent<MaterialController>().GetCurrentState() == 2 && state == State.fuego)
             {
                 other.GetComponent<MaterialController>().SetTexture(5);
                 other.GetComponent<PplayerMovement>().Recoger();
@@ -102,6 +127,7 @@ public class house : MonoBehaviour
         this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
         this.transform.GetChild(1).gameObject.SetActive(false);
         this.transform.GetChild(0).gameObject.SetActive(false);
+        timerOro = Time.time;
 
         lastState = state;
         state = State.nada;
@@ -125,6 +151,12 @@ public class house : MonoBehaviour
 
                 genteFuera = false;
             }
+        }
+        else
+        {
+            this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
+            timerOro = Time.time;
+
         }
 
     }

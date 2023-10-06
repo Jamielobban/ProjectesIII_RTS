@@ -15,7 +15,7 @@ public class housesController : MonoBehaviour
         houses[3] = this.transform.GetChild(3).GetChild(0).gameObject;
         houses[4] = this.transform.GetChild(4).GetChild(0).gameObject;
         houses[5] = this.transform.GetChild(5).GetChild(0).gameObject;
-        StartCoroutine(pedir(Random.RandomRange(10, 20)));
+        StartCoroutine(pedir(Random.RandomRange(5, 10)));
     }
 
     // Update is called once per frame
@@ -52,6 +52,6 @@ public class housesController : MonoBehaviour
         }
 
 
-        StartCoroutine(pedir(Random.RandomRange(25, 40)));
+        StartCoroutine(pedir(Random.RandomRange(15, 20)));
     }
 }

@@ -29,8 +29,8 @@ public class MaterialController : MonoBehaviour
     {
         if ((int)Input.mouseScrollDelta.y != 0&&!changing)
         {
-            changing = true;
-            Invoke("Change", 0.25f);
+            //changing = true;
+            //Invoke("Change", 0.25f);
             textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
 
             puesto = (puesto + (int)Input.mouseScrollDelta.y)%3;
@@ -57,7 +57,7 @@ public class MaterialController : MonoBehaviour
     {
         if(texture != 5)
         {
-            this.GetComponent<PplayerMovement>().movementSpeed -= 3000;
+            this.GetComponent<PplayerMovement>().movementSpeed -= 2;
             textura[puesto].transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
 
             inventario[puesto] = (Objects)texture;
@@ -65,7 +65,7 @@ public class MaterialController : MonoBehaviour
         }
         else
         {
-            this.GetComponent<PplayerMovement>().movementSpeed += 3000;
+            this.GetComponent<PplayerMovement>().movementSpeed += 2;
             textura[puesto].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
             inventario[puesto] = (Objects)texture;
 

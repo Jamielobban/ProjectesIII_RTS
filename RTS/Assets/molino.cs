@@ -37,6 +37,10 @@ public class molino : MonoBehaviour
         {
             control = false;
         }
+        if ((Input.GetMouseButtonUp(0)) && control)
+        {
+            control = false;
+        }
         if (creciendo)
         {
             float value = (float)(Time.time - time) / espera;
@@ -58,7 +62,7 @@ public class molino : MonoBehaviour
         if (other.GetComponent<MaterialController>() != null)
         {
 
-            if ((Input.GetMouseButton(1)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 3 && !creciendo && recursos ==1 && other.GetComponent<PplayerMovement>().canMove)
+            if ((Input.GetMouseButton(0)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 3 && !creciendo && other.GetComponent<PplayerMovement>().canMove)
             {
                 control = true;
                 other.GetComponent<MaterialController>().SetTexture(5);
@@ -66,7 +70,7 @@ public class molino : MonoBehaviour
                 this.transform.GetChild(1).gameObject.SetActive(true);
                 time = Time.time;
                 creciendo = true;
-                this.transform.GetChild(4).gameObject.SetActive(true);
+                //this.transform.GetChild(4).gameObject.SetActive(true);
 
             }
             else if ((Input.GetMouseButton(1)) && recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 5 && other.GetComponent<PplayerMovement>().canMove)
@@ -79,14 +83,14 @@ public class molino : MonoBehaviour
                 this.transform.GetChild(4).gameObject.SetActive(false);
                 recoger = false;
             }
-            else if(recursos == 0 && (Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 3 && !creciendo && other.GetComponent<PplayerMovement>().canMove && !recoger)
-            {
-                this.transform.GetChild(3).gameObject.SetActive(true);
-                control = true;
-                other.GetComponent<MaterialController>().SetTexture(5);
-                other.GetComponent<PplayerMovement>().Recoger();
-                recursos = 1;
-            }
+            //else if(recursos == 0 && (Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 3 && !creciendo && other.GetComponent<PplayerMovement>().canMove && !recoger)
+            //{
+            //    this.transform.GetChild(3).gameObject.SetActive(true);
+            //    control = true;
+            //    other.GetComponent<MaterialController>().SetTexture(5);
+            //    other.GetComponent<PplayerMovement>().Recoger();
+            //    recursos = 1;
+            //}
 
         }
     }

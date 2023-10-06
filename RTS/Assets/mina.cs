@@ -31,6 +31,10 @@ public class mina : MonoBehaviour
         {
             control = false;
         }
+        if ((Input.GetMouseButtonUp(0)) && control)
+        {
+            control = false;
+        }
     }
     
     private void OnTriggerStay(Collider other)
@@ -40,7 +44,7 @@ public class mina : MonoBehaviour
             canvas.SetActive(true);
 
 
-            if ((Input.GetMouseButton(1)) && !recoger && !farmeando&& !control)
+            if ((Input.GetMouseButton(0)) && !recoger && !farmeando&& !control)
             {
                 control = true;
                 farmeando = true;

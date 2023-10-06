@@ -52,7 +52,7 @@ public class Cultivos : MonoBehaviour
     {
         if (other.GetComponent<MaterialController>() != null)
         {
-            if ((Input.GetMouseButton(1)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 2 && !creciendo)
+            if ((Input.GetMouseButton(0)) && !recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 2 && !creciendo)
             {
                 control = true;
                 other.GetComponent<MaterialController>().SetTexture(5);

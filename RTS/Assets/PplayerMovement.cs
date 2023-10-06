@@ -150,11 +150,12 @@ public class PplayerMovement : MonoBehaviour
             isRunning = true;
 
         }
+        vel.y -= 9.81f * Time.deltaTime;
 
+        this.GetComponent<CharacterController>().Move(vel.normalized * movementSpeed * Time.deltaTime);
+        //this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed * Time.deltaTime),ForceMode.Acceleration);
 
-        this.GetComponent<Rigidbody>().AddForce((vel.normalized* movementSpeed * Time.deltaTime),ForceMode.Force);
-
-        this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0) ;
+        //this.GetComponent<Rigidbody>().velocity = new Vector3(0, this.GetComponent<Rigidbody>().velocity.y, 0) ;
 
         transform.GetChild(0).LookAt(look);
 

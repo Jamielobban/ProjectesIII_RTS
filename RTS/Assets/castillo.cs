@@ -7,9 +7,14 @@ public class castillo : MonoBehaviour
 {
     [SerializeField]
     public Slider oro;
+    public Slider tiempo;
+
     public float rellenarBarra = 1;
     public float velocidadVaciar = 0.01f;
     float timer = 0;
+    float oroTotal = 0;
+    float oroMax = 100;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +25,8 @@ public class castillo : MonoBehaviour
     void Update()
     {
         rellenarBarra -= velocidadVaciar * Time.deltaTime;
-        oro.value = rellenarBarra;
+        oro.value = oroTotal;
+        tiempo.value = rellenarBarra;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -36,13 +42,13 @@ public class castillo : MonoBehaviour
             if(Time.time-timer > 0.2f)
             {
                 timer = Time.time;
-                if(other.GetComponent<PplayerMovement>().oro > 0 && rellenarBarra < 0.95f)
+                if(other.GetComponent<PplayerMovement>().oro > 0 && oroTotal < 0.95f)
                 {
                     other.GetComponent<PplayerMovement>().oro--;
-                    rellenarBarra += 0.05f;
+                    oroTotal += (float)1/ (float)oroMax;
 
-                    if(rellenarBarra >= 1)
-                        rellenarBarra = 1;
+                    if(oroTotal >= 1)
+                        oroTotal = 1;
 
                 }
 

@@ -32,6 +32,10 @@ public class Aserradero : MonoBehaviour
         {
             control = false;
         }
+        if ((Input.GetMouseButtonUp(0)) && control)
+        {
+            control = false;
+        }
         if (Input.GetMouseButtonDown(0) && farmeando && !bloquear)
         {
             bloquear = true;
@@ -80,7 +84,7 @@ public class Aserradero : MonoBehaviour
             canvas.SetActive(true);
 
 
-            if ((Input.GetMouseButton(1)) && !recoger && !farmeando && !control)
+            if ((Input.GetMouseButton(0)) && !recoger && !farmeando && !control)
             {
                 control = true;
                 farmeando = true;
