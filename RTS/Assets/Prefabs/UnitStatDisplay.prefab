@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 1581354579682370501}
   - component: {fileID: 3600577840852723083}
   - component: {fileID: 4865742354650224310}
+  - component: {fileID: 5618539204466280388}
   m_Layer: 5
   m_Name: UnitStatDisplay
   m_TagString: Untagged
@@ -186,11 +187,11 @@ RectTransform:
   - {fileID: 2265172224132758442}
   - {fileID: 9129890277505235110}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 23.067, y: 1.7064}
+  m_AnchoredPosition: {x: 23.066986, y: 1.7064056}
   m_SizeDelta: {x: 0.2703, y: 0.248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &1581354579682370501
@@ -238,7 +239,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &4865742354650224310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,3 +257,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5618539204466280388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9161955168518339312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9b56e6af49d8a4c8d721844a9d994c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  armor: 0
+  currentHealth: 0
+  healthBarAmount: {fileID: 2824191387655766971}
