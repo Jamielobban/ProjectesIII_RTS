@@ -9,10 +9,17 @@ namespace LP.FDG.Buildings
     {
         public BuildingStatTypes.Base baseStats;
 
-        public Transform attackPoints;
+        // In your Tower/Building script
+        public Transform attackPoint1;
+        public Transform attackPoint2;
+
         private void Start()
         {
-            
+            attackPoint1 = gameObject.transform.GetChild(0);
+            attackPoint2 = gameObject.transform.GetChild(1);
+            // Register attack points with the AttackPointManager
+            AttackPointManager.instance.availableAttackPoints.Add(attackPoint1);
+            AttackPointManager.instance.availableAttackPoints.Add(attackPoint2);
         }
     }
 

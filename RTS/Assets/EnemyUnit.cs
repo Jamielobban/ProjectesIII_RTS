@@ -26,62 +26,19 @@ namespace LP.FDG.Units.Enemy
 
         private float atkCooldown;
 
-
-        public List<GameObject> taggedObjectsList = new List<GameObject>();
-        public GameObject buildingToAttack;
+        public Transform attackPoint;
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();
-            GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("BuildingAttackPosition");
-            taggedObjectsList.AddRange(objectsWithTag);
-            //foreach (GameObject obj in objectsWithTag)
-            //{
-            //    attackPosition.Add(obj);
-
-            //}
 
         }
 
-        GameObject FindClosestAttackPoint(Vector3 referencePoint)
-        {
-            GameObject closestObject = null;
-            float closestDistance = Mathf.Infinity;
-
-            foreach (GameObject obj in taggedObjectsList)
-            {
-                float distance2 = Vector3.Distance(referencePoint, obj.transform.position);
-
-                if(distance2 < closestDistance)
-                {
-                    closestDistance = distance2;
-                    closestObject = obj;
-                }
-            }
-            return closestObject;
-        }
+       
 
         private void Update()
         {
 
-            Vector3 characterPosition = transform.position;
-            GameObject closestObject = FindClosestAttackPoint(characterPosition);
-
-            if(closestObject != null)
-            {
-                navAgent.SetDestination(closestObject.transform.position);
-            }
-            //atkCooldown -= Time.deltaTime;
-
-
-            //if(!hasAggro)
-            //{
-            //    CheckForEnemyTargets();
-            //}
-            //else
-            //{
-            //    Attack();
-            //    MoveToAggroTarget();
-            //}
+            AttackBuilding(attackPoint);
         }
 
 
@@ -133,7 +90,31 @@ namespace LP.FDG.Units.Enemy
             }
         }
 
-      
+        private void AttackBuilding(Transform buildingTransform)
+        {
+            attackPoint = AttackPointManager.instance.ReserveAttackPoint();
+
+            if (attackPoint != null)
+            {
+                // Move to the attack point
+                navAgent.SetDestination(attackPoint.position);
+            }
+            else
+            {
+                // No available attack points; handle accordingly
+            }
+        }
+
+        // When the attack is done
+        private void FinishAttack()
+        {
+            if (attackPoint != null)
+            {
+                // Release the attack point
+                AttackPointManager.instance.ReleaseAttackPoint(attackPoint);
+                attackPoint = null;
+            }
+        }
     }
 }
 
