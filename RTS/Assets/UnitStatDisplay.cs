@@ -28,7 +28,7 @@ namespace LP.FDG.Units
             }
             catch (System.Exception)
             {
-                Debug.Log("nO PLAYER UNIT");
+                Debug.Log("Unit is Enemy");
                 try
                 {
                     maxHealth = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.health;
@@ -76,11 +76,11 @@ namespace LP.FDG.Units
 
         public void Die()
         {
-            //if(isPlayerUnit)
-            //{
-            //    InputManager.InputHandler.instance.selectedUnits.Remove(gameObject.transform.parent.gameObject.transform);
-            //}
-            //Destroy(gameObject.transform.parent.gameObject);
+            if (isPlayerUnit)
+            {
+                InputManager.InputHandler.instance.selectedUnits.Remove(gameObject.transform.parent.gameObject.transform);
+            }
+            Destroy(gameObject.transform.parent.gameObject);
         }
     }
 }

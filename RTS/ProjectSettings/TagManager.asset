@@ -11,6 +11,7 @@ TagManager:
   - RightSideCannon
   - Cannonball
   - Casas
+  - BuildingAttackPosition
   layers:
   - Default
   - TransparentFX

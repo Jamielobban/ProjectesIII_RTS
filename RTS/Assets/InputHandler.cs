@@ -42,7 +42,7 @@ namespace LP.FDG.InputManager {
             if(Input.GetMouseButtonDown(0))
             {
                 mousePos = Input.mousePosition;
-                Debug.Log("DO");
+                //Debug.Log("DO");
                 //create a ray
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 //shoot that ray to see if we hit our units
@@ -66,7 +66,7 @@ namespace LP.FDG.InputManager {
 
             if(Input.GetMouseButtonUp(0))
             {
-                Debug.Log("Wow");
+                //Debug.Log("Wow");
                 foreach(Transform child in Player.PlayerManager.instance.playerUnits)
                 {
                     foreach(Transform unit in child)
