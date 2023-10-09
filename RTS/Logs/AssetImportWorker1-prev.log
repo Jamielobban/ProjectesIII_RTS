@@ -15,7 +15,7 @@ C:/Users/jlobb/Desktop/Proj/ProjectesIII_RTS/RTS
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49850
+51379
 Successfully changed project path to: C:/Users/jlobb/Desktop/Proj/ProjectesIII_RTS/RTS
 C:/Users/jlobb/Desktop/Proj/ProjectesIII_RTS/RTS
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/jlobb/Desktop/Proj/ProjectesIII_RTS/RTS
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3556] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 3122792190 [EditorId] 3122792190 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ABID18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [27860] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 778198934 [EditorId] 778198934 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ABID18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3556] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 3122792190 [EditorId] 3122792190 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ABID18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27860] Host "[IP] 169.254.83.107 [Port] 0 [Flags] 2 [Guid] 778198934 [EditorId] 778198934 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2ABID18) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 17.27 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 16.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013366 seconds.
-- Loaded All Assemblies, in  0.373 seconds
+Registered in 0.013284 seconds.
+- Loaded All Assemblies, in  0.390 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.261 seconds
-Domain Reload Profiling: 630ms
-	BeginReloadAssembly (91ms)
+- Finished resetting the current domain, in  0.252 seconds
+Domain Reload Profiling: 639ms
+	BeginReloadAssembly (95ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (163ms)
-		LoadAssemblies (88ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (77ms)
+	LoadAllAssembliesAndSetupDomain (164ms)
+		LoadAssemblies (90ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (152ms)
-			TypeCache.Refresh (152ms)
-				TypeCache.ScanAssembly (140ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (154ms)
+				TypeCache.ScanAssembly (142ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (261ms)
+	FinalizeReload (252ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (207ms)
+		SetupLoadedEditorAssemblies (192ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
+			InitializePlatformSupportModulesInManaged (13ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (142ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,123 +116,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jlobb\Desktop\Proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jlobb\Desktop\Proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.899 seconds
-Refreshing native plugins compatible for Editor in 5.93 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.875 seconds
+Refreshing native plugins compatible for Editor in 7.69 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.615 seconds
-Domain Reload Profiling: 1508ms
-	BeginReloadAssembly (146ms)
+- Finished resetting the current domain, in  0.660 seconds
+Domain Reload Profiling: 1529ms
+	BeginReloadAssembly (142ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (59ms)
-	LoadAllAssembliesAndSetupDomain (631ms)
-		LoadAssemblies (368ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (633ms)
+		LoadAssemblies (340ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (325ms)
-			TypeCache.Refresh (289ms)
-				TypeCache.ScanAssembly (274ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (616ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (443ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (80ms)
-			ProcessInitializeOnLoadAttributes (272ms)
-			ProcessInitializeOnLoadMethodAttributes (64ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 6.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4945 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 70 unused Assets / (0.7 MB). Loaded Objects now: 5420.
-Memory consumption went from 203.0 MB to 202.3 MB.
-Total: 3.807800 ms (FindLiveObjects: 0.457600 ms CreateObjectMapping: 0.454000 ms MarkObjects: 2.520500 ms  DeleteObjects: 0.374800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 120302.902028 seconds.
-  path: Assets/ShipUnity.prefab
-  artifactKey: Guid(5eb4a6e9d141e88488418409d189ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShipUnity.prefab using Guid(5eb4a6e9d141e88488418409d189ab89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b447cd386f1987d5a2e4d3ae836260') in 0.348549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 300
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jlobb\Desktop\Proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jlobb\Desktop\Proj\ProjectesIII_RTS\RTS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.224 seconds
-Refreshing native plugins compatible for Editor in 6.84 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.585 seconds
-Domain Reload Profiling: 2798ms
-	BeginReloadAssembly (226ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (57ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (836ms)
-		LoadAssemblies (587ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (341ms)
-			TypeCache.Refresh (323ms)
+		AnalyzeDomain (358ms)
+			TypeCache.Refresh (320ms)
 				TypeCache.ScanAssembly (306ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
+			ScanForSourceGeneratedMonoScriptInfo (25ms)
 			ResolveRequiredComponents (13ms)
-	FinalizeReload (1586ms)
+	FinalizeReload (660ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (592ms)
+		SetupLoadedEditorAssemblies (470ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (111ms)
-			ProcessInitializeOnLoadAttributes (328ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
-			AfterProcessingInitializeOnLoad (21ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (292ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
+			AfterProcessingInitializeOnLoad (13ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Refreshing native plugins compatible for Editor in 7.65 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 8.13 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4849 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 45 unused Assets / (0.7 MB). Loaded Objects now: 5433.
-Memory consumption went from 183.7 MB to 183.0 MB.
-Total: 3.673600 ms (FindLiveObjects: 0.445200 ms CreateObjectMapping: 0.549200 ms MarkObjects: 2.280800 ms  DeleteObjects: 0.397600 ms)
+Unloading 4946 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (0.7 MB). Loaded Objects now: 5421.
+Memory consumption went from 202.8 MB to 202.1 MB.
+Total: 3.290200 ms (FindLiveObjects: 0.356200 ms CreateObjectMapping: 0.392000 ms MarkObjects: 2.227900 ms  DeleteObjects: 0.312900 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
@@ -247,196 +176,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.617230 seconds.
-  path: Assets/UnitStatDisplay.cs
-  artifactKey: Guid(3c9b56e6af49d8a4c8d721844a9d994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnitStatDisplay.cs using Guid(3c9b56e6af49d8a4c8d721844a9d994c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed6e5212df11bfb9e7ce8f04be23218') in 0.002040 seconds
+  Time since last request: 123772.818578 seconds.
+  path: Assets/Units/WarriorUnit.asset
+  artifactKey: Guid(923adb13f7bf24b4db4d891cecd2172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Units/WarriorUnit.asset using Guid(923adb13f7bf24b4db4d891cecd2172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a77216c18e1dd82bffbad6d284bd21') in 0.018553 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 48
 ========================================================================
 Received Import Request.
-  Time since last request: 50.901089 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Objects/Book 4.prefab
-  artifactKey: Guid(f2b3bf4f49e68b84e99961da052aa63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Objects/Book 4.prefab using Guid(f2b3bf4f49e68b84e99961da052aa63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a05b30a47d3a7e5f58757b873012b0') in 0.064574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Environment/Cactus 4.prefab
-  artifactKey: Guid(b8d7fb9dc8ec1244ebf6b0ecaba34c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Environment/Cactus 4.prefab using Guid(b8d7fb9dc8ec1244ebf6b0ecaba34c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f92225648ec8ed01fe6e92bf2077855') in 0.013318 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Carpets.fbx
-  artifactKey: Guid(97c8d4f573a9adb4e81781906f729586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Carpets.fbx using Guid(97c8d4f573a9adb4e81781906f729586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dfd96ec228bbd1dc555c389dc31976') in 0.094757 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 78
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Buildings Parts/Gate Wall 4.prefab
-  artifactKey: Guid(e0a13f15359ca5648846b111d6e74d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Buildings Parts/Gate Wall 4.prefab using Guid(e0a13f15359ca5648846b111d6e74d7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a13776240a1e0ad168c108929a6c90d') in 0.013124 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Flower Pots.fbx
-  artifactKey: Guid(9347228c6d19ae34ea0392bf30220598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Flower Pots.fbx using Guid(9347228c6d19ae34ea0392bf30220598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e19370159ea259a2e162b55d196a0d5') in 0.041349 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Grass.fbx
-  artifactKey: Guid(417fd66e8085e3647b346898244f2f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Grass.fbx using Guid(417fd66e8085e3647b346898244f2f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '007a4c85acb767dedb68da8ca2c49987') in 0.048794 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Handpainted_Grass_and_Ground_Textures/Demo/terrain_layers/NewLayer 4.terrainlayer
-  artifactKey: Guid(2a1ab16f1ef6a1c49ab0b6dea49c39f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Grass_and_Ground_Textures/Demo/terrain_layers/NewLayer 4.terrainlayer using Guid(2a1ab16f1ef6a1c49ab0b6dea49c39f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0763309e22fc3c88268c9082bcc7de2') in 0.028618 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Castle.fbx
-  artifactKey: Guid(dfb4fa96d5164464b8f0f2e679026d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Castle.fbx using Guid(dfb4fa96d5164464b8f0f2e679026d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2733503c7b0cf6fc32187764c7e9359') in 0.234521 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 162
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/House 4.fbx
-  artifactKey: Guid(e08dcb2ea4704a74882fdceef2a74d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/House 4.fbx using Guid(e08dcb2ea4704a74882fdceef2a74d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b635ecda6f202b4dfbed80e0303b3b99') in 0.125907 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Floor Bricks.fbx
-  artifactKey: Guid(2eb34d922cd11e84d9360254547f85ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Floor Bricks.fbx using Guid(2eb34d922cd11e84d9360254547f85ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a3e55ec11c1bb91a3e65b3bd3a7e5b') in 0.104790 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Objects/Chair 4.prefab
-  artifactKey: Guid(7167dbce2803e5149a8fce6164227f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Objects/Chair 4.prefab using Guid(7167dbce2803e5149a8fce6164227f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aff99755b17ddd5c497eca1342c2d66') in 0.022014 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Grass Hills.fbx
-  artifactKey: Guid(f66c97d9920e8ee44983105fa445352a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Grass Hills.fbx using Guid(f66c97d9920e8ee44983105fa445352a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '381c4ec2f15a1abe89520c9cb4ff436b') in 0.074111 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Cactuses.fbx
-  artifactKey: Guid(95e02d8cda688b347b602548db2274ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Cactuses.fbx using Guid(95e02d8cda688b347b602548db2274ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0485eecadcc8db5b2c156b08f70ac9') in 0.057077 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Environment/Flower 4.prefab
-  artifactKey: Guid(78000ad8793b13749a830b39c8329009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Environment/Flower 4.prefab using Guid(78000ad8793b13749a830b39c8329009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14de7391cbd99b8ae8ef035bece1059') in 0.014429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Handpainted_Grass_and_Ground_Textures/Demo/Materials/Material_snow_super_dark_step_004.mat
-  artifactKey: Guid(5e9ad28433587f74ca570aadedc565b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Handpainted_Grass_and_Ground_Textures/Demo/Materials/Material_snow_super_dark_step_004.mat using Guid(5e9ad28433587f74ca570aadedc565b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ea5f4124d96d7c543f6412f0fa1cda5') in 0.049141 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Buildings/House 4.prefab
-  artifactKey: Guid(265723f615766e844b595454dd6351d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Buildings/House 4.prefab using Guid(265723f615766e844b595454dd6351d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5825582de6331619b3ffa529f06463c7') in 0.015860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 97
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Flags.fbx
-  artifactKey: Guid(942990001bbcc78408e059bae95ef55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Flags.fbx using Guid(942990001bbcc78408e059bae95ef55c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afd9e25e00b21704597b27073a4c9da') in 0.093782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Bushes.fbx
-  artifactKey: Guid(f4aba403e9a9fb74e89da704d3748328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Bushes.fbx using Guid(f4aba403e9a9fb74e89da704d3748328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6f55e09104b7fe2ac3f014e556de9f') in 0.099528 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Objects/Ladder 4.prefab
-  artifactKey: Guid(93a7bb13c6ebbbb468756c40b8983435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Objects/Ladder 4.prefab using Guid(93a7bb13c6ebbbb468756c40b8983435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6337385e34cddd2794e7f6021240403d') in 0.013644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Objects/Lantern 4.prefab
-  artifactKey: Guid(ec1d4e380df5faa41adc77648931a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Objects/Lantern 4.prefab using Guid(ec1d4e380df5faa41adc77648931a4fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52a92d17c35d8267e54ae610ba371c5') in 0.013871 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 13
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Low Poly Medieval Kit/Prefabs/Objects/Log 14.prefab
-  artifactKey: Guid(2dc60be175528224a822633bb9dea5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Prefabs/Objects/Log 14.prefab using Guid(2dc60be175528224a822633bb9dea5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e48471fb7cd2087d7561d0d8910f7de') in 0.011648 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Low Poly Medieval Kit/Meshes/Books.fbx
-  artifactKey: Guid(89890915cfe7c064e9ba5cd9577015e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Low Poly Medieval Kit/Meshes/Books.fbx using Guid(89890915cfe7c064e9ba5cd9577015e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1940c4a88522d07e9a248620c6fa83') in 0.081670 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 66
-========================================================================
-Received Import Request.
-  Time since last request: 0.345637 seconds.
+  Time since last request: 0.000026 seconds.
   path: Assets/Prefabs/enemyUnit.prefab
   artifactKey: Guid(834544fccfb1e3144b57125d787533e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/enemyUnit.prefab using Guid(834544fccfb1e3144b57125d787533e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e65db32b7e8aaa9f97be05182c9de102') in 0.035399 seconds
+Start importing Assets/Prefabs/enemyUnit.prefab using Guid(834544fccfb1e3144b57125d787533e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0000bbd9c89165795499fd38bbe24ed3') in 0.079390 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 38
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Units/WorkerUnit.asset
+  artifactKey: Guid(edee210ee1850d8488912b9a13bb22be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Units/WorkerUnit.asset using Guid(edee210ee1850d8488912b9a13bb22be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967d893c2005d8c826343118d35fe79a') in 0.002471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 48
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Prefabs/playerUnit.prefab
+  artifactKey: Guid(ecce17982fd46ea4da4e92a649b45587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/playerUnit.prefab using Guid(ecce17982fd46ea4da4e92a649b45587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e501f6a8c12ba68df736ca6bc15ea9') in 0.008322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
