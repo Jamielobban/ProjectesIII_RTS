@@ -1,3 +1,4 @@
+using LP.FDG.Buildings;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,10 @@ namespace LP.FDG.Units.Enemy
         private float atkCooldown;
 
         public Transform attackPoint;
+
+        public bool hasTarget = false;
+        public bool hasArrived = false;
+        public bool isAttacking = false;
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();
@@ -37,8 +42,23 @@ namespace LP.FDG.Units.Enemy
 
         private void Update()
         {
-
-            AttackBuilding(attackPoint);
+            if(!hasTarget)
+            {
+                AttackBuilding(attackPoint);
+            }
+            else if(!hasArrived)
+            {
+                if(Vector3.Distance(this.transform.position,attackPoint.transform.position) < 3)
+                {
+                    hasArrived=true;
+                    Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
+                    isAttacking = true;
+                }
+            }
+            else if (isAttacking)
+            {
+                AttackBuilding(baseStats.attack);
+            }
         }
 
 
@@ -63,7 +83,19 @@ namespace LP.FDG.Units.Enemy
         {
             if(atkCooldown <= 0 && distance <= baseStats.atkRange + 1)
             {
+
                 aggroUnit.TakeDamage(baseStats.attack);
+                atkCooldown = baseStats.atkSpeed;
+            }
+        }
+
+        void AttackBuilding(float damage)
+        {
+            atkCooldown -= Time.deltaTime;
+            if(atkCooldown <= 0)
+            {
+                Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
+                attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health -= damage;
                 atkCooldown = baseStats.atkSpeed;
             }
         }
@@ -98,10 +130,11 @@ namespace LP.FDG.Units.Enemy
             {
                 // Move to the attack point
                 navAgent.SetDestination(attackPoint.position);
+                hasTarget = true;
             }
             else
             {
-                // No available attack points; handle accordingly
+                
             }
         }
 

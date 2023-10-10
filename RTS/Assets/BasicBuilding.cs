@@ -21,6 +21,11 @@ namespace LP.FDG.Buildings
             AttackPointManager.instance.availableAttackPoints.Add(attackPoint1);
             AttackPointManager.instance.availableAttackPoints.Add(attackPoint2);
         }
+
+        private void Update()
+        {
+
+        }
     }
 
 }
