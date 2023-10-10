@@ -12,6 +12,7 @@ TagManager:
   - Cannonball
   - Casas
   - BuildingAttackPosition
+  - Citizen
   layers:
   - Default
   - TransparentFX

@@ -294,4 +294,14 @@ public class PplayerMovement : MonoBehaviour
         //myAnim.SetBool("cancelAttack", true);
         myAnim.SetBool(function, false);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Citizen"))
+        {
+            Farmear();
+            Invoke("Salir", 1);
+        }
+    }
+
 }
