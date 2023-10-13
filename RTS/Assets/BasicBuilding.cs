@@ -21,14 +21,14 @@ namespace LP.FDG.Buildings
         private void Start()
         {
             maxHealth = baseStats.health;
-            attackPoint1 = gameObject.transform.GetChild(0);
-            attackPoint2 = gameObject.transform.GetChild(1);
+            //attackPoint1 = gameObject.transform.GetChild(0);
+            //attackPoint2 = gameObject.transform.GetChild(1);
             // Register attack points with the AttackPointManager
             AttackPointManager.instance.availableAttackPoints.Add(attackPoint1);
             AttackPointManager.instance.availableAttackPoints.Add(attackPoint2);
 
-            healthBarAmount.enabled = false;
-            healtBarBackground.enabled = false;
+            //healthBarAmount.enabled = false;
+            //healtBarBackground.enabled = false;
         }
 
         private void Update()

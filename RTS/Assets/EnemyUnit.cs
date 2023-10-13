@@ -32,6 +32,8 @@ namespace LP.FDG.Units.Enemy
         public bool hasTarget = false;
         public bool hasArrived = false;
         public bool isAttacking = false;
+
+
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();

@@ -70,16 +70,16 @@ public class PplayerMovement : MonoBehaviour
       
         HandleMovement();
 
-        if(isInCombat)
-        {
-            myAnim.runtimeAnimatorController = combatController;
-            //axeToEnable.SetActive(true);
-        }
-        else
-        {
-            myAnim.runtimeAnimatorController = playingController;
-            //axeToEnable.SetActive(false);
-        }
+        //if(isInCombat)
+        //{
+        //    myAnim.runtimeAnimatorController = combatController;
+        //    //axeToEnable.SetActive(true);
+        //}
+        //else
+        //{
+        //    myAnim.runtimeAnimatorController = playingController;
+        //    //axeToEnable.SetActive(false);
+        //}
       
         if (isRunning)
         {

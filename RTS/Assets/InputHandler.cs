@@ -20,11 +20,11 @@ namespace LP.FDG.InputManager {
 
         private void Awake()
         {
-            instance = this;
         }
         private void Start()
         {
             //instance = this;
+            instance = this;
         }
 
         private void OnGUI()
