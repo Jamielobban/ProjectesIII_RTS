@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,8 +15,10 @@ namespace LP.FDG.Units
         [SerializeField] private Image healthBarAmount;
 
         private bool isPlayerUnit;
+            bool resume = false;
+            float timer = 0;
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             try
             {
@@ -28,7 +31,7 @@ namespace LP.FDG.Units
             }
             catch (System.Exception)
             {
-                Debug.Log("nO PLAYER UNIT");
+                Debug.Log("Unit is Enemy");
                 try
                 {
                     maxHealth = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.health;
@@ -47,11 +50,17 @@ namespace LP.FDG.Units
             currentHealth = maxHealth;
         }
 
+
+
         // Update is called once per frame
         void Update()
         {
+            DelayStart();
+            if (resume)
+            {
 
-            HandleHealth();
+                HandleHealth();
+            }
         }
 
         public void TakeDamage(float damage)
@@ -76,11 +85,21 @@ namespace LP.FDG.Units
 
         public void Die()
         {
-            //if(isPlayerUnit)
-            //{
-            //    InputManager.InputHandler.instance.selectedUnits.Remove(gameObject.transform.parent.gameObject.transform);
-            //}
-            //Destroy(gameObject.transform.parent.gameObject);
+            if (isPlayerUnit)
+            {
+                InputManager.InputHandler.instance.selectedUnits.Remove(gameObject.transform.parent.gameObject.transform);
+            }
+            Debug.Log("Dead");
+            Destroy(gameObject.transform.parent.gameObject);
+        }
+
+        void DelayStart()
+        {
+            timer = +Time.deltaTime;
+            if(timer > 0.2f)
+            {
+                resume = true;
+            }
         }
     }
 }

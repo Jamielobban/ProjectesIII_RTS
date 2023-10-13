@@ -20,8 +20,7 @@ public class molino : MonoBehaviour
         recoger = false;
         this.transform.GetChild(1).gameObject.SetActive(false);
         player = FindObjectOfType<MaterialController>();
-        this.transform.GetChild(3).gameObject.SetActive(false);
-        this.transform.GetChild(4).gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -76,12 +75,12 @@ public class molino : MonoBehaviour
             else if ((Input.GetMouseButton(1)) && recoger && !control && other.GetComponent<MaterialController>().GetCurrentState() == 5 && other.GetComponent<PplayerMovement>().canMove)
             {
                 control = true;
+                recoger = false;
+
                 other.GetComponent<MaterialController>().SetTexture(4);
                 other.GetComponent<PplayerMovement>().Recoger();
                 this.transform.GetChild(0).GetComponent<Animator>().SetTrigger("End");
-                this.transform.GetChild(3).gameObject.SetActive(false);
-                this.transform.GetChild(4).gameObject.SetActive(false);
-                recoger = false;
+
             }
             //else if(recursos == 0 && (Input.GetMouseButton(1)) && other.GetComponent<MaterialController>().GetCurrentState() == 3 && !creciendo && other.GetComponent<PplayerMovement>().canMove && !recoger)
             //{

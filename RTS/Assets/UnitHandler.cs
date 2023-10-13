@@ -19,12 +19,13 @@ namespace LP.FDG.Units
         
         private void Awake()
         {
+
             instance = this;
+            eUnitLayer = LayerMask.NameToLayer("EnemyUnits");
+            pUnitLayer = LayerMask.NameToLayer("Units"); 
         }
         private void Start()
         {
-            eUnitLayer = LayerMask.NameToLayer("EnemyUnits");
-            pUnitLayer = LayerMask.NameToLayer("Units"); 
         }
         public UnitStatTypes.Base GetBasicUnitStats(string type)
         {

@@ -39,7 +39,7 @@ public class CannonCollider : MonoBehaviour
             StartCoroutine(DisableCollider(1f));
             parentCannon.ChangePlayerSpeedTrasnform(20000, cannons.transform);
             holdingOn = false;
-            myPlayer.controllingCannon = false;
+            //myPlayer.controllingCannon = false;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -49,7 +49,7 @@ public class CannonCollider : MonoBehaviour
             holdingOn = true;
             parentCannon.playerControlled = true;
             ///parentCannon.transform.GetComponentInParent<PplayerMovement>().controllingCannon = true;
-            myPlayer.controllingCannon = true;
+            //myPlayer.controllingCannon = true;
             parentCannon.ChangePlayerSpeedTrasnform(5000,parentCannon.myPlayer.transform);
         }
     }

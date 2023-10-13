@@ -5,16 +5,16 @@ using UnityEngine;
 public class housesController : MonoBehaviour
 {
     GameObject[] houses = new GameObject[6];
-
+    public int houseNumber;
     // Start is called before the first frame update
     void Start()
     {
-        houses[0] = this.transform.GetChild(0).GetChild(0).gameObject;
-        houses[1] = this.transform.GetChild(1).GetChild(0).gameObject;
-        houses[2] = this.transform.GetChild(2).GetChild(0).gameObject;
-        houses[3] = this.transform.GetChild(3).GetChild(0).gameObject;
-        houses[4] = this.transform.GetChild(4).GetChild(0).gameObject;
-        houses[5] = this.transform.GetChild(5).GetChild(0).gameObject;
+        houseNumber = this.transform.childCount;
+        for (int i = 0; i < houseNumber; i++)
+        {
+        houses[i] = this.transform.GetChild(i).GetChild(0).gameObject;
+        }
+       
         StartCoroutine(pedir(Random.RandomRange(5, 10)));
     }
 
@@ -28,7 +28,7 @@ public class housesController : MonoBehaviour
         yield return new WaitForSeconds(time);
         int total = 0;
         int[] a = new int[0];
-        for (int i = 0; i < houses.Length; i++)
+        for (int i = 0; i < houseNumber; i++)
         {
             if (houses[i].GetComponent<house>().GetState() == 2)
             {
