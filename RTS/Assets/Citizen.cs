@@ -43,7 +43,7 @@ public class Citizen : MonoBehaviour
 
                 if (Vector3.Distance(this.transform.GetChild(1).position, SpotsToGo[currentPoint].transform.position) < 0.5f)
                 {
-                    Debug.Log("sgfsdg");
+                    //Debug.Log("sgfsdg");
 
                     int a = currentPoint;
                     currentPoint = Random.RandomRange(0, SpotsToGo.Count);

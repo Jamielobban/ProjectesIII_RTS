@@ -1,3 +1,4 @@
+using DG.Tweening;
 using LP.FDG.Buildings;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,6 +35,10 @@ namespace LP.FDG.Units.Enemy
         public bool isAttacking = false;
 
 
+        Vector3 targetPosition;
+        Quaternion targetRotation;
+
+
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();
@@ -46,20 +51,26 @@ namespace LP.FDG.Units.Enemy
         {
             if(!hasTarget)
             {
-                AttackBuilding(attackPoint);
+                WalkToBuilding(attackPoint);
             }
             else if(!hasArrived)
             {
-                if(Vector3.Distance(this.transform.position,attackPoint.transform.position) < 3)
+                if(Vector3.Distance(this.transform.position,attackPoint.transform.position) < 1 && !hasArrived)
                 {
                     hasArrived=true;
-                    Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
-                    isAttacking = true;
+                    navAgent.updateRotation = false;
+                    targetPosition = attackPoint.transform.parent.transform.position;
+                    targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
+                    targetRotation.x= transform.rotation.x;
+                    //transform.LookAt(attackPoint.transform.parent);
+                    //Debug.Log(attackPoint.transform.parent);
+
+                    transform.DORotateQuaternion(targetRotation,1f).OnComplete(() => isAttacking = true);
                 }
             }
             else if (isAttacking)
             {
-                AttackBuilding(baseStats.attack);
+                //AttackBuilding(baseStats.attack);
             }
         }
 
@@ -124,7 +135,7 @@ namespace LP.FDG.Units.Enemy
             }
         }
 
-        private void AttackBuilding(Transform buildingTransform)
+        private void WalkToBuilding(Transform buildingTransform)
         {
             attackPoint = AttackPointManager.instance.ReserveAttackPoint();
 

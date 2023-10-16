@@ -46,8 +46,8 @@ public class housesController : MonoBehaviour
         {
             int result = Random.Range(0, total-1);
             houses[a[result]].GetComponent<house>().StartPedir();
-            Debug.Log(result);
-            Debug.Log(a[result]);
+            //Debug.Log(result);
+            //Debug.Log(a[result]);
 
         }
 
