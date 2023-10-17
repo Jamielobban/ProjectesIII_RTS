@@ -70,7 +70,7 @@ namespace LP.FDG.Units.Enemy
             }
             else if (isAttacking)
             {
-                //AttackBuilding(baseStats.attack);
+                AttackBuilding(baseStats.attack);
             }
         }
 

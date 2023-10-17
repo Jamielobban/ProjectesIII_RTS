@@ -36,7 +36,7 @@ Transform:
   - {fileID: 5187278077474570081}
   - {fileID: 1830459282865958656}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1224746352438410561
 MonoBehaviour:
@@ -73,21 +73,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 15
   fuerza: 0
-  text: {fileID: 0}
   baseStats:
-    cost: 0
-    aggroRange: 0
-    atkRange: 0
-    atkSpeed: 0
-    attack: 0
-    health: 0
+    cost: 1
+    aggroRange: 2
+    atkRange: 2
+    atkSpeed: 2.2
+    attack: 20
+    health: 250
     armor: 0
-  unitStatDisplay: {fileID: 0}
+  aggroTarget: {fileID: 0}
+  rangeColliders: []
+  aggroUnit: {fileID: 0}
+  distance: 0
   healthBarAmount: {fileID: 0}
   currentHealth: 0
+  hasAggro: 0
   canMove: 1
   oro: 0
-  controllingCannon: 0
+  combatController: {fileID: 0}
+  playingController: {fileID: 0}
+  axeToEnable: {fileID: 0}
+  firstAttack: 0
+  secondAttack: 0
+  thirdAttack: 0
+  returnToIdle: 0
 --- !u!136 &1057468648669143336
 CapsuleCollider:
   m_ObjectHideFlags: 0

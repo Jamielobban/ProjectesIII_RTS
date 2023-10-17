@@ -18,36 +18,10 @@ namespace LP.FDG.Units
             bool resume = false;
             float timer = 0;
         // Start is called before the first frame update
-        void Awake()
+        void Start  ()
         {
-            try
-            {
-                maxHealth = gameObject.GetComponentInParent<Player.PlayerUnit>().baseStats.health;
-
-                armor = gameObject.GetComponentInParent<Player.PlayerUnit>().baseStats.armor;
-
-                isPlayerUnit = true;
-
-            }
-            catch (System.Exception)
-            {
-                Debug.Log("Unit is Enemy");
-                try
-                {
-                    maxHealth = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.health;
-
-                    armor = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.armor;
-
-                    isPlayerUnit = false;
-                }
-                catch (System.Exception)
-                {
-
-                    Debug.Log("No unit scripts found");
-                }
-  
-            }
-            currentHealth = maxHealth;
+            DelayStart();
+            
         }
 
 
@@ -55,12 +29,13 @@ namespace LP.FDG.Units
         // Update is called once per frame
         void Update()
         {
-            DelayStart();
+            if(!resume)DelayStart();
             if (resume)
             {
 
                 HandleHealth();
             }
+            //HandleHealth();
         }
 
         public void TakeDamage(float damage)
@@ -89,16 +64,47 @@ namespace LP.FDG.Units
             {
                 InputManager.InputHandler.instance.selectedUnits.Remove(gameObject.transform.parent.gameObject.transform);
             }
-            Debug.Log("Dead");
+            //Debug.Log("Dead");
             Destroy(gameObject.transform.parent.gameObject);
         }
 
         void DelayStart()
         {
-            timer = +Time.deltaTime;
+            //Debug.Log(timer);
+            timer += Time.deltaTime;
             if(timer > 0.2f)
             {
+                try
+                {
+                    maxHealth = gameObject.GetComponentInParent<Player.PlayerUnit>().baseStats.health;
+
+                    armor = gameObject.GetComponentInParent<Player.PlayerUnit>().baseStats.armor;
+
+                    isPlayerUnit = true;
+
+                }
+                catch (System.Exception)
+                {
+                    //Debug.Log("Unit is Enemy from handle");
+                    try
+                    {
+                        maxHealth = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.health;
+
+                        armor = gameObject.GetComponentInParent<Enemy.EnemyUnit>().baseStats.armor;
+
+                        isPlayerUnit = false;
+                    }
+                    catch (System.Exception)
+                    {
+
+                        Debug.Log("No unit scripts found");
+                    }
+
+                }
+                //Debug.Log("reachiong");
+                currentHealth = maxHealth;
                 resume = true;
+
             }
         }
     }
