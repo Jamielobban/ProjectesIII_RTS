@@ -19,25 +19,44 @@ public class house : MonoBehaviour
 
     float waitTime = 30;
     public bool genteFuera = false;
-
+    public bool recoger;
     MaterialController player;
     PplayerMovement playerOro;
-
+    public GameObject oro;
+    public bool puedeRecog;
     // Start is called before the first frame update
     void Start()
     {
+        puedeRecog = true;
+        recoger = false;
         playerOro = FindObjectOfType<PplayerMovement>();
         player = FindObjectOfType<MaterialController>();
         state = State.nada;
-        this.transform.GetChild(1).gameObject.SetActive(false);
+        this.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
         this.transform.GetChild(2).gameObject.SetActive(false);
 
 
         timerOro = Time.time;
         currentTimeOro = 0;
+        oro.SetActive(false);
+        Invoke("PuedeRecoger", 7);
+    }
+
+    void PuedeRecoger()
+    {
+        recoger = true;
+        oro.SetActive(true);
+        Invoke("PuedeRecoger", 7);
 
     }
 
+    void recogerOro()
+    {
+        GameObject.FindAnyObjectByType<castillo>().recoger();
+        recoger = false;
+        oro.SetActive(false);
+
+    }
     // Update is called once per frame
     void Update()
     {
@@ -50,6 +69,10 @@ public class house : MonoBehaviour
                     this.transform.GetChild(0).gameObject.SetActive(true);
                 else
                     this.transform.GetChild(0).gameObject.SetActive(false);
+
+                puedeRecog = false;
+                oro.SetActive(false);
+
                 break; 
             case State.pidiendo:
                 if (player.GetCurrentState() == 4)
@@ -60,37 +83,46 @@ public class house : MonoBehaviour
                 currentTime += Time.time - timer;
                 timer = Time.time;
 
-                this.transform.GetChild(1).GetChild(0).GetComponent<Slider>().value = (float)currentTime / (float)waitTime;
+                this.transform.GetChild(1).GetChild(0).GetChild(0).GetComponent<Slider>().value = (float)currentTime / (float)waitTime;
 
                 if (currentTime > waitTime && !genteFuera)
                 {
                     genteFuera = true;
                     this.transform.GetChild(3).GetComponent<Citizen>().SalirAfuera();
+                puedeRecog = false;
+                    oro.SetActive(false);
 
                 }
+                else
+                {
+                    puedeRecog = true;
+                    if(recoger)
+                    oro.SetActive(true);
 
+                }
 
                 break;
             case State.nada:
                 genteFuera = false;
-
-
+                puedeRecog = true;
+                if (recoger)
+                    oro.SetActive(true);
                 break;
         }
 
-        if(!genteFuera)
-        {
-            currentTimeOro += Time.time - timerOro;
-            timerOro = Time.time;
+        //if(!genteFuera)
+        //{
+        //    currentTimeOro += Time.time - timerOro;
+        //    timerOro = Time.time;
 
-            if (currentTimeOro > 5)
-            {
-                this.transform.GetChild(4).GetComponent<ParticleSystem>().Play();
+        //    if (currentTimeOro > 5)
+        //    {
+        //        this.transform.GetChild(4).GetComponent<ParticleSystem>().Play();
 
-                currentTimeOro = 0;
-                playerOro.oro++;
-            }
-        }
+        //        currentTimeOro = 0;
+        //        playerOro.oro++;
+        //    }
+        //}
     }
     private void OnTriggerStay(Collider other)
     {
@@ -108,6 +140,11 @@ public class house : MonoBehaviour
                 other.GetComponent<PplayerMovement>().Recoger();
                 ApagarFuego();
             }
+
+            if(Input.GetMouseButton(1) && recoger && puedeRecog)
+            {
+                recogerOro();
+            }
         }
     }
     public int GetState()
@@ -116,7 +153,7 @@ public class house : MonoBehaviour
     }
     public void StartPedir()
     {
-        this.transform.GetChild(1).gameObject.SetActive(true);
+        this.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
         lastState = state;
         state = State.pidiendo;
         timer = Time.time;
@@ -125,7 +162,7 @@ public class house : MonoBehaviour
     public void AcabarPedir()
     {
         this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
-        this.transform.GetChild(1).gameObject.SetActive(false);
+        this.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
         this.transform.GetChild(0).gameObject.SetActive(false);
         timerOro = Time.time;
 
@@ -142,7 +179,7 @@ public class house : MonoBehaviour
 
         if (state == State.pidiendo)
         {
-            this.transform.GetChild(1).gameObject.SetActive(true);
+            this.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
             timer = Time.time;
 
             if (timer < waitTime)
@@ -162,7 +199,7 @@ public class house : MonoBehaviour
     }
     public void PrenderFuego()
     {
-        this.transform.GetChild(1).gameObject.SetActive(false);
+        this.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
         this.transform.GetChild(2).gameObject.SetActive(true);
         this.transform.GetChild(3).GetComponent<Citizen>().SalirAfuera();
 
