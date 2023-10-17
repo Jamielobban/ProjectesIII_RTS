@@ -27,19 +27,19 @@ public class MaterialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((int)Input.mouseScrollDelta.y != 0&&!changing)
-        {
-            //changing = true;
-            //Invoke("Change", 0.25f);
-            textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
+        //if ((int)Input.mouseScrollDelta.y != 0&&!changing)
+        //{
+        //    //changing = true;
+        //    //Invoke("Change", 0.25f);
+        //    textura[puesto].GetComponent<Animator>().SetTrigger("Cerrar");
 
-            puesto = (puesto + (int)Input.mouseScrollDelta.y)%3;
-            if(puesto < 0)
-            {
-                puesto = 3 + puesto;
-            }
-            textura[puesto].GetComponent<Animator>().SetTrigger("Abrir");
-        }
+        //    puesto = (puesto + (int)Input.mouseScrollDelta.y)%3;
+        //    if(puesto < 0)
+        //    {
+        //        puesto = 3 + puesto;
+        //    }
+        //    textura[puesto].GetComponent<Animator>().SetTrigger("Abrir");
+        //}
        
 
     }

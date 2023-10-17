@@ -18,7 +18,7 @@ public class ShipController : MonoBehaviour
         casas = GameObject.FindGameObjectWithTag("Casas");
         startPoint = this.gameObject.transform;
         this.gameObject.transform.DOMove(new Vector3(startPoint.transform.position.x + 39.59f,startPoint.transform.position.y,startPoint.transform.position.z),3.0f);
-        StartCoroutine(quemar(Random.RandomRange(1, 2)));
+        StartCoroutine(quemar(Random.RandomRange(10, 15)));
 
     }
     private IEnumerator quemar(float time)
@@ -49,7 +49,7 @@ public class ShipController : MonoBehaviour
         }
 
 
-        StartCoroutine(quemar(Random.RandomRange(15, 25)));
+        StartCoroutine(quemar(Random.RandomRange(45, 60)));
     }
     // Update is called once per frame
     void Update()
