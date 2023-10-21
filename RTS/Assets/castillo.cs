@@ -44,7 +44,11 @@ public class castillo : MonoBehaviour
 
         if (rellenarBarra <= 0 && oroTotal == oroMax)
         {
-            SceneManager.LoadScene(sceneNumber+2);
+            if(sceneNumber + 2 == 5)
+                SceneManager.LoadScene(0);
+            else 
+                SceneManager.LoadScene(sceneNumber + 2);
+
         }
         else if (rellenarBarra <= 0 && oroTotal < oroMax)
         {

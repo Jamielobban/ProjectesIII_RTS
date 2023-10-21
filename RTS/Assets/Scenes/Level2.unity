@@ -17364,6 +17364,9 @@ MonoBehaviour:
   timerOro: 0
   currentTimeOro: 0
   genteFuera: 0
+  recoger: 0
+  oro: {fileID: 0}
+  puedeRecog: 0
 --- !u!65 &169241922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27712,6 +27715,9 @@ MonoBehaviour:
   timerOro: 0
   currentTimeOro: 0
   genteFuera: 0
+  recoger: 0
+  oro: {fileID: 0}
+  puedeRecog: 0
 --- !u!65 &485003469
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51564,6 +51570,9 @@ MonoBehaviour:
   timerOro: 0
   currentTimeOro: 0
   genteFuera: 0
+  recoger: 0
+  oro: {fileID: 0}
+  puedeRecog: 0
 --- !u!65 &1367688517
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54939,6 +54948,9 @@ MonoBehaviour:
   timerOro: 0
   currentTimeOro: 0
   genteFuera: 0
+  recoger: 0
+  oro: {fileID: 0}
+  puedeRecog: 0
 --- !u!65 &1607592153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61767,7 +61779,9 @@ MonoBehaviour:
   tiempo: {fileID: 1237587900}
   rellenarBarra: 1
   velocidadVaciar: 0.01
-  sceneNumber: 2
+  oroTotal: 0
+  oroMax: 100
+  sceneNumber: 3
 --- !u!65 &1740598053
 BoxCollider:
   m_ObjectHideFlags: 0

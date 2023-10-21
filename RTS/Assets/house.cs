@@ -17,7 +17,7 @@ public class house : MonoBehaviour
     public float timerOro = 0;
     public float currentTimeOro = 0;
 
-    float waitTime = 30;
+    float waitTime = 20;
     public bool genteFuera = false;
     public bool recoger;
     MaterialController player;
