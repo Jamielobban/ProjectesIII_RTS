@@ -24194,7 +24194,7 @@ MonoBehaviour:
   velocidadVaciar: 0.01
   oroTotal: 0
   oroMax: 50
-  sceneNumber: 0
+  sceneNumber: 1
   player: {fileID: 1710867739}
   menu: {fileID: 1949032851}
   menu1: {fileID: 2138696909}
