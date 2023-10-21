@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3191382889337599318}
   m_Layer: 6
   m_Name: Citizen
-  m_TagString: Citizen
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,11 +145,11 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.6233132
+  m_Radius: 1.83
   m_Height: 7.410995
   m_Direction: 1
   m_Center: {x: 0.07978925, y: -0.09964706, z: 0.000003877095}

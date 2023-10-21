@@ -27,6 +27,10 @@ public class MaterialController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetMouseButton(2)&& (int)inventario[puesto] != 5)
+        {
+            SetTexture(5);
+        }
         //if ((int)Input.mouseScrollDelta.y != 0&&!changing)
         //{
         //    //changing = true;

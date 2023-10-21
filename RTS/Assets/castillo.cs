@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class castillo : MonoBehaviour
 {
@@ -17,38 +18,113 @@ public class castillo : MonoBehaviour
     public float oroMax = 100;
     public int sceneNumber;
 
+    public PplayerMovement player;
+    bool acabado;
+    public GameObject menu;
+    public GameObject menu1;
+    public GameObject menu2;
+
+    public TMP_Text tiempoTotal;
+    public TMP_Text tiempoActual;
+    public TMP_Text tiempoActualMenu;
+
+    public TMP_Text oroTotalUI;
+    public TMP_Text oroActual;
+    public TMP_Text oroActualMenu;
+    public TMP_Text oroMaxMenu;
+    int tiempoInt;
+    float tiempoStart;
+
+    public int tiempoTotalInt;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        tiempoStart = Time.time;
+        acabado = false;
+        menu.SetActive(false);
+        menu1.SetActive(false);
+        menu2.SetActive(false);
+
     }
 
     public void recoger()
     {
         oroTotal += 5;
-        if(oroTotal > oroMax)
+        if(oroTotal >= oroMax)
         {
             oroTotal = oroMax;
-
+            acabado = true;
+            player.Acabar();
         }
         oro.value = (float)((float)oroTotal / (float)oroMax);
+
 
 
     }
     // Update is called once per frame
     void Update()
     {
-        rellenarBarra -= velocidadVaciar * Time.deltaTime;
-        tiempo.value = rellenarBarra;
+        if(tiempoInt != tiempoTotalInt && !acabado)
+        tiempoInt = (int)(Time.time - tiempoStart);
 
-        if (rellenarBarra <= 0 && oroTotal == oroMax)
+        tiempoTotal.text = tiempoTotalInt.ToString();
+        tiempoActual.text = tiempoInt.ToString();
+        tiempoActualMenu.text = tiempoInt.ToString();
+       
+        oroTotalUI.text = oroMax.ToString();
+        oroActual.text = oroTotal.ToString();
+        oroActualMenu.text = oroTotal.ToString();
+        oroMaxMenu.text = oroMax.ToString();
+
+        if(!acabado)
         {
-            SceneManager.LoadScene(sceneNumber+2);
+            rellenarBarra -= velocidadVaciar * Time.deltaTime;
+            tiempo.value = rellenarBarra;
+
+            if (tiempoTotalInt <= tiempoInt)
+            {
+                acabado = true;
+                player.Acabar();
+
+            }
+
         }
-        else if (rellenarBarra <= 0 && oroTotal < oroMax)
+        else
         {
-            SceneManager.LoadScene(sceneNumber+1);
+            if(player.HaLlegado())
+            {
+                if (oroTotal == oroMax)
+                {
+                    menu.SetActive(true);
+                    menu1.SetActive(true);
+
+                }
+                else if (oroTotal < oroMax)
+                {
+                    menu.SetActive(true);
+                    menu2.SetActive(true);
+
+                }
+
+                Invoke("cambiar", 3);
+            }
+
+        }
+
+
+
+
+    }
+    void cambiar()
+    {
+        if (oroTotal == oroMax)
+        {
+            SceneManager.LoadScene(sceneNumber + 2);
+        }
+        else if (oroTotal < oroMax)
+        {
+            SceneManager.LoadScene(sceneNumber + 1);
 
         }
     }

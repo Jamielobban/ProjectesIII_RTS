@@ -11,6 +11,7 @@ using UnityEngine.Rendering;
 using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using Unity.VisualScripting.FullSerializer;
 using System.Net.Mime;
+using UnityEngine.AI;
 
 public class PplayerMovement : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class PplayerMovement : MonoBehaviour
     //public TMP_Text text;
     private Animator myAnim;
 
-
+    public Transform castilloPos;
     public UnitStatTypes.Base baseStats;
     public Transform aggroTarget;
     public Collider[] rangeColliders;
@@ -57,17 +58,19 @@ public class PplayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         camera = FindObjectOfType<mainCameraController>();
         myAnim = transform.GetChild(0).GetComponent<Animator>();
+        this.transform.GetChild(0).rotation = new Quaternion();
     }
-    
 
+    bool acabado = false;
     // Update is called once per frame
     void Update()
     {
         //text.text = oro.ToString();
-
-      
+        if (acabado)
+            return;
         HandleMovement();
 
         //if(isInCombat)
@@ -98,6 +101,8 @@ public class PplayerMovement : MonoBehaviour
     }
     private void LateUpdate()
     {
+        if (acabado)
+            return;
         CheckForEnemyTargets();
         if(hasAggro)
         {
@@ -183,6 +188,19 @@ public class PplayerMovement : MonoBehaviour
             axeToEnable.SetActive(false);
             isInCombat = false;
         }
+    }
+    public void Acabar()
+    {
+        acabado = true;
+        this.gameObject.transform.GetChild(0).GetComponent<NavMeshAgent>().enabled = true;
+        this.gameObject.GetComponent<MaterialController>().enabled = false;
+        this.gameObject.transform.GetChild(0).GetComponent<NavMeshAgent>().SetDestination(castilloPos.position);
+        this.transform.GetChild(0).GetComponent<Animator>().Play("Walking_A 0");
+    }
+    public bool HaLlegado()
+    {
+
+        return Vector3.Distance(this.transform.GetChild(0).position, castilloPos.position) < 2;
     }
     public void Recoger()
     {
