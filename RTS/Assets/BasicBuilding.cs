@@ -20,6 +20,8 @@ namespace LP.FDG.Buildings
 
         private void Start()
         {
+            baseStats.health = 200;
+            currentHealth = baseStats.health;
             maxHealth = baseStats.health;
             //attackPoint1 = gameObject.transform.GetChild(0);
             //attackPoint2 = gameObject.transform.GetChild(1);

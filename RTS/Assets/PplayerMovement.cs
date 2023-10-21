@@ -220,7 +220,7 @@ public class PplayerMovement : MonoBehaviour
     private void CheckForEnemyTargets()
     {
         rangeColliders = Physics.OverlapSphere(transform.position, baseStats.aggroRange);
-        Debug.Log("Doing this");
+        //Debug.Log("Doing this");
         for (int i = 0; i < rangeColliders.Length; i++)
         {
             if (rangeColliders[i].gameObject.layer == UnitHandler.instance.eUnitLayer)
@@ -228,7 +228,7 @@ public class PplayerMovement : MonoBehaviour
                 aggroTarget = rangeColliders[i].gameObject.transform;
                 aggroUnit = aggroTarget.gameObject.GetComponentInChildren<UnitStatDisplay>();
                 hasAggro = true;
-                Debug.Log("Enemy found");
+                //Debug.Log("Enemy found");
                  distance = Vector3.Distance(aggroTarget.position, transform.position);
                 //Debug.Log(distance);
                 
@@ -259,7 +259,7 @@ public class PplayerMovement : MonoBehaviour
     {
         if (atkCooldown <= 0 && distance <= baseStats.atkRange + 1)
         {
-            Debug.Log("In here");
+            //Debug.Log("In here");
 
             if (myAnim.runtimeAnimatorController == combatController && firstAttack == false)
             {

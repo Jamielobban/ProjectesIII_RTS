@@ -34,7 +34,7 @@ public class ShipSpawner : MonoBehaviour
             //while (true)
             //{
                 float randomSpawnTime = Random.Range(minSpawnTime, maxSpawnTime);
-                Debug.Log(randomSpawnTime);
+                //Debug.Log(randomSpawnTime);
                 yield return new WaitForSeconds(randomSpawnTime);
 
                 //Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));

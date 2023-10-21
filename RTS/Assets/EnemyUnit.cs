@@ -42,7 +42,6 @@ namespace LP.FDG.Units.Enemy
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();
-
         }
 
        
@@ -51,7 +50,8 @@ namespace LP.FDG.Units.Enemy
         {
             if(!hasTarget)
             {
-                WalkToBuilding(attackPoint);
+                FindAndGoToClosestAttackPoint();
+                //WalkToBuilding(attackPoint);
             }
             else if(!hasArrived)
             {
@@ -74,6 +74,37 @@ namespace LP.FDG.Units.Enemy
             }
         }
 
+        private void FindAndGoToClosestAttackPoint()
+        {
+            Transform closestAttackPoint = AttackPointManager.instance.ReserveClosestAttackPoint(transform.position);
+            if (closestAttackPoint != null)
+            {
+                attackPoint = closestAttackPoint;
+
+                // Move to the closest attack point
+                navAgent.SetDestination(attackPoint.position);
+                hasTarget = true;
+            }
+        }
+
+        private Transform FindClosestAttackPoint()
+        {
+            Transform closestPoint = null;
+            float closestDistance = float.MaxValue;
+
+            foreach (Transform point in AttackPointManager.instance.availableAttackPoints)
+            {
+                float distance = Vector3.Distance(transform.position, point.position);
+
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestPoint = point;
+                }
+            }
+            //Debug.Log(closestPoint);
+            return closestPoint;
+        }
 
         private void CheckForEnemyTargets()
         {
@@ -107,7 +138,7 @@ namespace LP.FDG.Units.Enemy
             atkCooldown -= Time.deltaTime;
             if(atkCooldown <= 0)
             {
-                Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
+                //Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
                 attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health -= damage;
                 atkCooldown = baseStats.atkSpeed;
             }
@@ -135,21 +166,21 @@ namespace LP.FDG.Units.Enemy
             }
         }
 
-        private void WalkToBuilding(Transform buildingTransform)
-        {
-            attackPoint = AttackPointManager.instance.ReserveAttackPoint();
+        //private void WalkToBuilding(Transform buildingTransform)
+        //{
+        //    attackPoint = AttackPointManager.instance.ReserveAttackPoint();
 
-            if (attackPoint != null)
-            {
-                // Move to the attack point
-                navAgent.SetDestination(attackPoint.position);
-                hasTarget = true;
-            }
-            else
-            {
+        //    if (attackPoint != null)
+        //    {
+        //        // Move to the attack point
+        //        navAgent.SetDestination(attackPoint.position);
+        //        hasTarget = true;
+        //    }
+        //    else
+        //    {
                 
-            }
-        }
+        //    }
+        //}
 
         // When the attack is done
         private void FinishAttack()

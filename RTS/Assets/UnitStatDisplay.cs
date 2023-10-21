@@ -20,6 +20,7 @@ namespace LP.FDG.Units
         // Start is called before the first frame update
         void Start  ()
         {
+
             DelayStart();
             
         }
@@ -54,6 +55,8 @@ namespace LP.FDG.Units
 
             if (currentHealth <= 0)
             {
+                AttackPointManager.instance.DecrementEnemyCount();
+                Debug.Log(AttackPointManager.instance.AreAllEnemiesDefeated());
                 Die();
             }
         }
