@@ -4,7 +4,7 @@ using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
-using System;
+//using System;
 using LP.FDG.Units;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
@@ -12,7 +12,7 @@ using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using Unity.VisualScripting.FullSerializer;
 using System.Net.Mime;
 using UnityEngine.AI;
-
+using DG.Tweening;
 public class PplayerMovement : MonoBehaviour
 {
     public float movementSpeed;
@@ -39,8 +39,7 @@ public class PplayerMovement : MonoBehaviour
     bool isInInteractionRange = false;
     public bool canMove = true;
     public int oro = 0;
-    bool isInCombat = false;
-
+    public bool isInCombat;
 
     [SerializeField]
     private RuntimeAnimatorController combatController;
@@ -49,16 +48,29 @@ public class PplayerMovement : MonoBehaviour
     [SerializeField]
     private GameObject axeToEnable;
 
+    [SerializeField]
+    private BoxCollider attackCollider;
 
     public bool firstAttack;
     public bool secondAttack;
     public bool thirdAttack;
     public bool returnToIdle;
-    
+    public bool isAttacking;
+
+    int RandomNumber;
+
+    public AttackScript attackScript;
+
+    public AudioSource audioSource;
+    public AudioClip running;
+    public AudioClip swordSwing;
+    public AudioClip interact;
+    bool doOnce;
     // Start is called before the first frame update
     void Start()
     {
-
+        doOnce = true;
+        firstAttack = false;
         camera = FindObjectOfType<mainCameraController>();
         myAnim = transform.GetChild(0).GetComponent<Animator>();
         this.transform.GetChild(0).rotation = new Quaternion();
@@ -70,45 +82,169 @@ public class PplayerMovement : MonoBehaviour
     {
         //text.text = oro.ToString();
         if (acabado)
+        {
+
             return;
+        }
         HandleMovement();
 
-        //if(isInCombat)
-        //{
-        //    myAnim.runtimeAnimatorController = combatController;
-        //    //axeToEnable.SetActive(true);
-        //}
-        //else
-        //{
-        //    myAnim.runtimeAnimatorController = playingController;
-        //    //axeToEnable.SetActive(false);
-        //}
-      
+        if (isInCombat)
+        {
+            myAnim.runtimeAnimatorController = combatController;
+            axeToEnable.SetActive(true);
+        }
+        else
+        {
+            myAnim.runtimeAnimatorController = playingController;
+            axeToEnable.SetActive(false);
+        }
+
         if (isRunning)
         {
+            if (audioSource.clip != running || !audioSource.isPlaying)
+            {
+                audioSource.volume = 1.0f;
+                audioSource.clip = running;
+                audioSource.loop = true;
+                audioSource.Play();
+            }
+
             myAnim.SetBool("isRunning", true);
         }
         else
         {
+            if (audioSource.clip == running && audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+
             myAnim.SetBool("isRunning", false);
         }
-
     }
 
-    private void CombatAnimations()
-    {
-
-    }
     private void LateUpdate()
     {
         if (acabado)
-            return;
-        CheckForEnemyTargets();
-        if(hasAggro)
         {
-            atkCooldown -= Time.deltaTime;
-            Attack();
+            return;
+
         }
+
+       
+
+        if (isInCombat && canMove && Input.GetMouseButtonDown(0))
+        {
+            if (isRunning)
+            {
+                Debug.Log("Wait a second noo");
+                StartCoroutine(WaitDelay(0.3f));
+            }
+            else
+            {
+                canMove = false; // Prevent movement during the attack
+                // Trigger the attack
+                //attackScript.StartAttack();
+                //var myTween = myAnim.SetBool("isAttacking1", true);
+                isAttacking = true;
+
+                RandomNumber = Random.Range(0, 3);
+            }
+
+            //DOVirtual.DelayedCall(delay, () => {
+            //    myAnim.SetBool("isAttacking2", true); // Set the animation bool to false when the animation is done
+            //});
+        }
+
+        if(isAttacking)
+        {
+            attackScript.StartAttack();
+            //audioSource.clip = swordSwing;
+            audioSource.clip = swordSwing;
+            audioSource.loop = false;
+            audioSource.volume = 0.1f;
+            audioSource.Play();
+            switch (RandomNumber)
+            {
+                case 0:
+                    myAnim.SetBool("isAttacking1", true);
+                    isAttacking = false;
+                    StartCoroutine(CancelAnim("isAttacking1"));
+                    break;
+                case 1:
+                    myAnim.SetBool("isAttacking2", true);
+                    isAttacking = false;
+                    StartCoroutine(CancelAnim("isAttacking2"));
+                    break;
+                case 2:
+                    myAnim.SetBool("isAttacking3", true);
+                    isAttacking = false;
+                    StartCoroutine(CancelAnim("isAttacking3"));
+                    break;
+                default:
+                    break;
+            }
+        }
+        //if (isAttacking)
+        //{
+        //    //flagCheck = true;
+        //    if (!firstAttack)
+        //    {
+        //        firstAttack = true;
+        //        myAnim.SetBool("isAttacking1", true);
+        //    }
+        //    animationLength = myAnim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+        //    delay = animationLength + 0.2f;
+        //    chainAttackTimer1 += Time.deltaTime;
+        //    if ((chainAttackTimer1 > delay / 2) && (chainAttackTimer1 < delay))
+        //    {
+        //        //Debug.Log("When");
+        //        if (Input.GetMouseButtonDown(0) && !secondAttackClick)
+        //        {
+        //            secondAttackClick = true;
+        //            Debug.Log("Somehow");
+        //        }
+        //    }
+        //    else if (!secondAttackClick)
+        //    {
+        //        //DOVirtual.DelayedCall(delay, () =>
+        //        //{
+        //        //    myAnim.SetBool("backToIdle", true); // Set the animation bool to false when the animation is done
+        //        //});
+        //        //Debug.Log("Done attack i guess");
+        //        Debug.Log("Doingt this");
+        //        DOVirtual.DelayedCall(delay, () =>
+        //        {
+        //            myAnim.SetBool("isAttacking1", false); isAttacking = false; firstAttack = false; canMove = true;// Set the animation bool to false when the animation is done
+        //        });
+        //    }
+
+        //    if (secondAttackClick)
+        //    {
+        //        //Debug.Log("Wow");
+        //    }
+        //}
+        //CheckForEnemyTargets();
+        //if (hasAggro)
+        //{
+        //    atkCooldown -= Time.deltaTime;
+        //    Attack();
+        //}
+
+    }
+
+    private IEnumerator CancelAnim(string type)
+    {
+        yield return new WaitForSeconds(myAnim.GetCurrentAnimatorClipInfo(0)[0].clip.length + 0.2f);
+        myAnim.SetBool(type, false);
+        canMove = true;
+    }
+
+    private IEnumerator WaitDelay(float waitTime)
+    {
+        canMove = false;
+        yield return new WaitForSeconds(waitTime);
+        isAttacking = true;
+        RandomNumber = Random.Range(0, 3);
     }
     public void HandleMovement()
     {
@@ -154,6 +290,7 @@ public class PplayerMovement : MonoBehaviour
             this.transform.GetChild(0).rotation = new Quaternion(0, 90, 0, 0);
             look -= camera.right;
             isRunning = true;
+            //doOnce = true;
         }
 
         if (Input.GetKey(KeyCode.D)&&canMove)
@@ -178,16 +315,16 @@ public class PplayerMovement : MonoBehaviour
             isRunning = false;
         }
 
-        if(!isInCombat && Input.GetKey(KeyCode.R))
-        {
-            axeToEnable.SetActive(true);
-            isInCombat = true;
-        }
-        if(isInCombat && Input.GetKey(KeyCode.T))
-        {
-            axeToEnable.SetActive(false);
-            isInCombat = false;
-        }
+        //if(!isInCombat && Input.GetKey(KeyCode.R))
+        //{
+        //    axeToEnable.SetActive(true);
+        //    isInCombat = true;
+        //}
+        //if(isInCombat && Input.GetKey(KeyCode.T))
+        //{
+        //    axeToEnable.SetActive(false);
+        //    isInCombat = false;
+        //}
     }
     public void Acabar()
     {
@@ -206,6 +343,10 @@ public class PplayerMovement : MonoBehaviour
     {
         isRunning = false;
         myAnim.SetBool("isPickingUp", true);
+        audioSource.clip = interact;
+        audioSource.loop = false;
+        audioSource.volume = 1.0f;
+        audioSource.Play();
         canMove = false;
         StartCoroutine(setAnimationBoolToFalse(0.5f, "isPickingUp"));
     }
@@ -235,75 +376,75 @@ public class PplayerMovement : MonoBehaviour
 
     }
 
-    private void CheckForEnemyTargets()
-    {
-        rangeColliders = Physics.OverlapSphere(transform.position, baseStats.aggroRange);
-        //Debug.Log("Doing this");
-        for (int i = 0; i < rangeColliders.Length; i++)
-        {
-            if (rangeColliders[i].gameObject.layer == UnitHandler.instance.eUnitLayer)
-            {
-                aggroTarget = rangeColliders[i].gameObject.transform;
-                aggroUnit = aggroTarget.gameObject.GetComponentInChildren<UnitStatDisplay>();
-                hasAggro = true;
-                //Debug.Log("Enemy found");
-                 distance = Vector3.Distance(aggroTarget.position, transform.position);
-                //Debug.Log(distance);
+    //private void CheckForEnemyTargets()
+    //{
+    //    rangeColliders = Physics.OverlapSphere(transform.position, baseStats.aggroRange);
+    //    //Debug.Log("Doing this");
+    //    for (int i = 0; i < rangeColliders.Length; i++)
+    //    {
+    //        if (rangeColliders[i].gameObject.layer == UnitHandler.instance.eUnitLayer)
+    //        {
+    //            aggroTarget = rangeColliders[i].gameObject.transform;
+    //            aggroUnit = aggroTarget.gameObject.GetComponentInChildren<UnitStatDisplay>();
+    //            hasAggro = true;
+    //            //Debug.Log("Enemy found");
+    //             distance = Vector3.Distance(aggroTarget.position, transform.position);
+    //            //Debug.Log(distance);
                 
-                //Debug.Log(("ENEMY LOCATED"));
-                break;
-            }
-            else
-            {
-                //if(myAnim.runtimeAnimatorController == combatController)
-                //{
-                //    firstAttack = false;
-                //    secondAttack = false;
-                //    thirdAttack = false;
-                //    myAnim.SetBool("cancelAttack", true);
-                //}
+    //            //Debug.Log(("ENEMY LOCATED"));
+    //            break;
+    //        }
+    //        else
+    //        {
+    //            //if(myAnim.runtimeAnimatorController == combatController)
+    //            //{
+    //            //    firstAttack = false;
+    //            //    secondAttack = false;
+    //            //    thirdAttack = false;
+    //            //    myAnim.SetBool("cancelAttack", true);
+    //            //}
 
-                distance = 0.0f;
-                hasAggro = false;
-                aggroTarget = null; 
-                aggroUnit = null;
-                myAnim.SetBool("cancelAttack", true);
-                StartCoroutine(ReturnToWeaponIdle(1.5f, "cancelAttack"));
-            }
-        }
-    }
+    //            distance = 0.0f;
+    //            hasAggro = false;
+    //            aggroTarget = null; 
+    //            aggroUnit = null;
+    //            //myAnim.SetBool("cancelAttack", true);
+    //            //StartCoroutine(ReturnToWeaponIdle(1.5f, "cancelAttack"));
+    //        }
+    //    }
+    //}
 
     private void Attack()
     {
-        if (atkCooldown <= 0 && distance <= baseStats.atkRange + 1)
-        {
-            //Debug.Log("In here");
+        //if (atkCooldown <= 0 /*&& distance <= baseStats.atkRange + 1*/ )
+        ////{
+        ////    //Debug.Log("In here");
 
-            if (myAnim.runtimeAnimatorController == combatController && firstAttack == false)
-            {
-                myAnim.SetBool("isAttacking1", true);
-                firstAttack = true;
-            }
-            else if (myAnim.runtimeAnimatorController == combatController && secondAttack == false && firstAttack == true)
-            {
-                myAnim.SetBool("isAttacking2", true);
-                myAnim.SetBool("isAttacking1", false);
-                secondAttack = true;
-            }
-            else if(myAnim.runtimeAnimatorController == combatController && thirdAttack == false && firstAttack == true && secondAttack == true)
-            {
-                myAnim.SetBool("isAttacking3", true);
-                //Debug.Log("CancelAttack");
-                myAnim.SetBool("isAttacking2", false);
-                StartCoroutine(ReturnToWeaponIdle(1.5f,"isAttacking3"));
-                thirdAttack = true;
-                firstAttack = false;
-                secondAttack = false;
-                thirdAttack = false;
-            }
-            aggroUnit.TakeDamage(baseStats.attack);
-            atkCooldown = baseStats.atkSpeed;
-        }
+        ////    if (myAnim.runtimeAnimatorController == combatController && firstAttack == false)
+        ////    {
+        ////        myAnim.SetBool("isAttacking1", true);
+        ////        firstAttack = true;
+        ////    }
+        ////    else if (myAnim.runtimeAnimatorController == combatController && secondAttack == false && firstAttack == true)
+        ////    {
+        ////        myAnim.SetBool("isAttacking2", true);
+        ////        myAnim.SetBool("isAttacking1", false);
+        ////        secondAttack = true;
+        ////    }
+        ////    else if(myAnim.runtimeAnimatorController == combatController && thirdAttack == false && firstAttack == true && secondAttack == true)
+        ////    {
+        ////        myAnim.SetBool("isAttacking3", true);
+        ////        //Debug.Log("CancelAttack");
+        ////        myAnim.SetBool("isAttacking2", false);
+        ////        StartCoroutine(ReturnToWeaponIdle(1.5f,"isAttacking3"));
+        ////        thirdAttack = true;
+        ////        firstAttack = false;
+        ////        secondAttack = false;
+        ////        thirdAttack = false;
+        //    }
+        //}
+        aggroUnit.TakeDamage(baseStats.attack);
+        atkCooldown = baseStats.atkSpeed;
     }
 
     private IEnumerator ReturnToWeaponIdle(float waitTime, string function)

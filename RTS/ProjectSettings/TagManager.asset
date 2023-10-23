@@ -13,6 +13,8 @@ TagManager:
   - Casas
   - BuildingAttackPosition
   - Citizen
+  - Enemy
+  - Axe
   layers:
   - Default
   - TransparentFX

@@ -2907,10 +2907,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 1729221490}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!4 &344188966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4521404770085940, guid: 89956e675b749204c8e10395ce2b5fb9,
@@ -3583,6 +3588,10 @@ MonoBehaviour:
   recoger: 0
   oro: {fileID: 0}
   puedeRecog: 0
+  audioSource: {fileID: 0}
+  onFire: {fileID: 0}
+  money: {fileID: 0}
+  extinguish: {fileID: 0}
 --- !u!65 &395084055
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4681,13 +4690,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547076190}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c64301f438e14a4ba34440007c9ec5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerUnits: {fileID: 1336289090}
   enemyUnits: {fileID: 245183828}
+  units: {fileID: 0}
 --- !u!4 &569086586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7861776642519618081, guid: 2d536ad89b8579b48b452184c746b1ef,
@@ -5623,10 +5633,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 108244907}
   attackPoint2: {fileID: 1526960108}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!1 &694564750
 GameObject:
   m_ObjectHideFlags: 0
@@ -11887,6 +11902,10 @@ MonoBehaviour:
   recoger: 0
   oro: {fileID: 0}
   puedeRecog: 0
+  audioSource: {fileID: 0}
+  onFire: {fileID: 0}
+  money: {fileID: 0}
+  extinguish: {fileID: 0}
 --- !u!65 &1547370338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19992,10 +20011,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 0}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!1 &1966474572
 GameObject:
   m_ObjectHideFlags: 0

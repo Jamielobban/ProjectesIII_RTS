@@ -1,10 +1,10 @@
+using LP.FDG.Units.Enemy;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-
 namespace LP.FDG.Units
 {
     public class UnitStatDisplay : MonoBehaviour
@@ -53,10 +53,20 @@ namespace LP.FDG.Units
 
             healthBarAmount.fillAmount = currentHealth / maxHealth;
 
-            if (currentHealth <= 0)
+            if (currentHealth <= 0 && !isPlayerUnit)
             {
+                gameObject.GetComponentInParent<EnemyUnit>().isDead = true;
                 AttackPointManager.instance.DecrementEnemyCount();
-                Debug.Log(AttackPointManager.instance.AreAllEnemiesDefeated());
+
+                //if (AttackPointManager.instance.AreAllEnemiesDefeated()) {
+                //    SceneManager.LoadScene(sceneIndex);
+                //}
+                
+                this.gameObject.SetActive(false);
+                //Die();
+            }
+            if(currentHealth <= 0 && isPlayerUnit)
+            {
                 Die();
             }
         }

@@ -14,7 +14,7 @@ namespace LP.FDG.Player
         public Transform playerUnits;
 
         public Transform enemyUnits;
-
+        public PplayerMovement units;
         private void Awake()
         {
             instance = this;
@@ -23,6 +23,7 @@ namespace LP.FDG.Player
         private void Start()
         {
             //instance = this;
+            units = FindAnyObjectByType<PplayerMovement>();
             Units.UnitHandler.instance.SetBasicUnitStats(playerUnits);
             Units.UnitHandler.instance.SetBasicUnitStats(enemyUnits);
         }
@@ -30,7 +31,15 @@ namespace LP.FDG.Player
         // Update is called once per frame
         private void Update()
         {
-            InputHandler.instance.HandleUnitMovement();
+            if (units.isInCombat)
+            {
+                InputHandler.instance.HandleUnitMovement();
+
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

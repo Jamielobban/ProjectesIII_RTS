@@ -15,12 +15,12 @@ public class MaterialController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        textura[0].GetComponent<Animator>().SetTrigger("Abrir");
-        textura[1].GetComponent<Animator>().SetTrigger("Cerrar");
-        textura[2].GetComponent<Animator>().SetTrigger("Cerrar");
+        //textura[0].GetComponent<Animator>().SetTrigger("Abrir");
+        //textura[1].GetComponent<Animator>().SetTrigger("Cerrar");
+        //textura[2].GetComponent<Animator>().SetTrigger("Cerrar");
         textura[0].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
-        textura[1].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
-        textura[2].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+        //textura[1].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+        //textura[2].transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
 
     }
 

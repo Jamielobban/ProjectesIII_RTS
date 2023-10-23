@@ -2,6 +2,7 @@ using DG.Tweening;
 using LP.FDG.Buildings;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -30,6 +31,8 @@ namespace LP.FDG.Units.Enemy
 
         public Transform attackPoint;
 
+        public Animator animController;
+
         public bool hasTarget = false;
         public bool hasArrived = false;
         public bool isAttacking = false;
@@ -38,39 +41,78 @@ namespace LP.FDG.Units.Enemy
         Vector3 targetPosition;
         Quaternion targetRotation;
 
+        public bool isDead;
+
+
+        public AudioSource audioSource;
+        public AudioClip attackSound;
+        public AudioClip hitSound;
+        public AudioClip runSound;
 
         private void Start()
         {
             navAgent = gameObject.GetComponent<NavMeshAgent>();
+            //animController = gameObject.GetComponent<Animator>();
         }
 
        
 
         private void Update()
         {
-            if(!hasTarget)
+            if (!isDead)
             {
-                FindAndGoToClosestAttackPoint();
-                //WalkToBuilding(attackPoint);
-            }
-            else if(!hasArrived)
-            {
-                if(Vector3.Distance(this.transform.position,attackPoint.transform.position) < 1 && !hasArrived)
+                if(!hasTarget)
                 {
-                    hasArrived=true;
-                    navAgent.updateRotation = false;
-                    targetPosition = attackPoint.transform.parent.transform.position;
-                    targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
-                    targetRotation.x= transform.rotation.x;
-                    //transform.LookAt(attackPoint.transform.parent);
-                    //Debug.Log(attackPoint.transform.parent);
-
-                    transform.DORotateQuaternion(targetRotation,1f).OnComplete(() => isAttacking = true);
+                    FindAndGoToClosestAttackPoint();
+                    //WalkToBuilding(attackPoint);
                 }
+                else if(!hasArrived)
+                {
+                    if (!audioSource.isPlaying || audioSource.clip != runSound)
+                    {
+                        audioSource.clip = runSound;
+                        audioSource.volume = 1.0f;
+                        audioSource.loop = true;
+                        audioSource.Play();
+                    }
+
+                    if (Vector3.Distance(this.transform.position,attackPoint.transform.position) < 1 && !hasArrived)
+                    {
+                        hasArrived=true;
+                        navAgent.updateRotation = false;
+                        targetPosition = attackPoint.transform.parent.transform.position;
+                        targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
+                        targetRotation.x= transform.rotation.x;
+                        //transform.LookAt(attackPoint.transform.parent);
+                        //Debug.Log(attackPoint.transform.parent);
+
+                        transform.DORotateQuaternion(targetRotation,1f).OnComplete(() => isAttacking = true);
+                    }
+                }
+                else if (isAttacking)
+                {
+                    //if(attackPoint == null)
+                    //{
+                    //    isAttacking = false;
+                    //    hasTarget = false;
+                    //}
+                    if (audioSource.clip == runSound && audioSource.isPlaying)
+                    {
+                        audioSource.Stop();
+                    }
+                    AttackBuilding(baseStats.attack);
+                }
+                
             }
-            else if (isAttacking)
+            else
             {
-                AttackBuilding(baseStats.attack);
+                animController.SetBool("isDead", true);
+                audioSource.clip = hitSound;
+                audioSource.volume = 1.0f;
+                audioSource.loop = false;
+                audioSource.Play();
+                this.gameObject.GetComponent<BoxCollider>().enabled = false;
+                //audioSource.Stop();
             }
         }
 
@@ -135,12 +177,31 @@ namespace LP.FDG.Units.Enemy
 
         void AttackBuilding(float damage)
         {
+            if (attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health <=0)
+            {
+                attackPoint = null;
+                isAttacking = false;
+                hasArrived = false;
+                hasTarget = false;
+                navAgent.updateRotation = true;
+                animController.SetBool("isShooting", false);
+                //Debug.Log("is it there");
+                return;
+            }
             atkCooldown -= Time.deltaTime;
             if(atkCooldown <= 0)
             {
+                animController.SetBool("isShooting",true);
                 //Debug.Log(attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health);
                 attackPoint.transform.GetComponentInParent<BasicBuilding>().baseStats.health -= damage;
                 atkCooldown = baseStats.atkSpeed;
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.clip = attackSound;  // Set the audio clip
+                    audioSource.volume = 0.2f;
+                    audioSource.loop = true;        // Enable looping
+                    audioSource.Play();             // Play the audio
+                }
             }
         }
     
@@ -190,6 +251,19 @@ namespace LP.FDG.Units.Enemy
                 // Release the attack point
                 AttackPointManager.instance.ReleaseAttackPoint(attackPoint);
                 attackPoint = null;
+            }
+        }
+
+        public void TakeDamage()
+        {
+
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Axe"))
+            {
+                Debug.Log("hit");
             }
         }
     }

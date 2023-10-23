@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class AttackPointManager : MonoBehaviour
@@ -73,12 +74,19 @@ public class AttackPointManager : MonoBehaviour
     }
 
     // Add a method to release an attack point
-    public void ReleaseAttackPoint(Transform attackPoint)
+    public void ReleaseAttackPoint(Transform attackPoint/*, bool addToAvailableList*/)
     {
         if (takenAttackPoints.Contains(attackPoint))
         {
             takenAttackPoints.Remove(attackPoint);
-            availableAttackPoints.Add(attackPoint);
+            //if (addToAvailableList)
+            //{
+            //    availableAttackPoints.Add(attackPoint);
+            //}
+        }
+        if(availableAttackPoints.Contains(attackPoint) )
+        {
+            availableAttackPoints.Remove(attackPoint);
         }
     }
 
@@ -98,6 +106,6 @@ public class AttackPointManager : MonoBehaviour
     // Function to check if there are no enemies left
     public bool AreAllEnemiesDefeated()
     {
-        return enemyCount == 0;
+        return enemyCount == 0; 
     }
 }

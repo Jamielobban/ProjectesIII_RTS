@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditorInternal.VersionControl.ListControl;
 using UnityEngine.UI;
+//sing static Unity.VisualScripting.Round<TInput, TOutput>;
 
 public class house : MonoBehaviour
 {
@@ -24,9 +25,15 @@ public class house : MonoBehaviour
     PplayerMovement playerOro;
     public GameObject oro;
     public bool puedeRecog;
+
+    public AudioSource audioSource;
+    public AudioClip onFire;
+    public AudioClip money;
+    public AudioClip extinguish;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         puedeRecog = true;
         recoger = false;
         playerOro = FindObjectOfType<PplayerMovement>();
@@ -53,6 +60,11 @@ public class house : MonoBehaviour
     void recogerOro()
     {
         GameObject.FindAnyObjectByType<castillo>().recoger();
+        audioSource.clip = money;
+        audioSource.loop = false;
+        audioSource.volume = 1.0f;
+        audioSource.Play();
+        //audio
         recoger = false;
         oro.SetActive(false);
 
@@ -173,6 +185,11 @@ public class house : MonoBehaviour
 
     public void ApagarFuego()
     {
+        audioSource.volume = 1.0f;
+        audioSource.clip = extinguish;
+        audioSource.loop = false;
+        audioSource.Play();
+
         state = lastState;
         this.transform.GetChild(2).gameObject.SetActive(false);
         this.transform.GetChild(0).gameObject.SetActive(false);
@@ -193,12 +210,19 @@ public class house : MonoBehaviour
         {
             this.transform.GetChild(3).GetComponent<Citizen>().VolverAdentro();
             timerOro = Time.time;
-
         }
 
     }
     public void PrenderFuego()
     {
+        if (audioSource.clip != onFire || !audioSource.isPlaying)
+        {
+            audioSource.volume = 0.1f;
+            audioSource.clip = onFire;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+
         this.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
         this.transform.GetChild(2).gameObject.SetActive(true);
         this.transform.GetChild(3).GetComponent<Citizen>().SalirAfuera();

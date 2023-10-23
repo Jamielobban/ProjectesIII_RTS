@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using LP.FDG.InputManager;
-
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 namespace LP.FDG.Units
 {
 
     public class PirateSpawner : MonoBehaviour
     {
+        public int Scene;
         public GameObject enemyUnitPrefab;
         public float spawnInterval = 5.0f;
         public Transform[] spawnPoints;
@@ -22,11 +24,29 @@ namespace LP.FDG.Units
 
         public AttackPointManager attackPointManager; // Reference to the AttackPointManager
 
+        public Image winText;
+
         private void Start()
         {
             spawnCoroutine = StartCoroutine(SpawnEnemyUnits());
             attackPointManager = FindAnyObjectByType<AttackPointManager>();
         }
+
+
+        private void Update()
+        {
+            if(spawnedEnemies == maxEnemiesToSpawn)
+            {
+                if (attackPointManager.AreAllEnemiesDefeated())
+                {
+                    //SceneManager.LoadScene(Scene);
+                    winText.gameObject.SetActive(true);
+                    StartCoroutine(NextDay());
+                }
+
+            }
+        }
+
 
         private IEnumerator SpawnEnemyUnits()
         {
@@ -66,7 +86,11 @@ namespace LP.FDG.Units
                 Debug.Log("No enemies left.");
             }
         }
-
+        private IEnumerator NextDay()
+        {
+            yield return new WaitForSeconds(2.0f);
+            SceneManager.LoadScene(Scene);
+        }
     }
 }
 
