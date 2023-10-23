@@ -14180,10 +14180,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 0}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!65 &492094893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21782,10 +21787,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 108244907}
   attackPoint2: {fileID: 1526960108}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!1001 &685326275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30440,10 +30450,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 0}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!65 &898500700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35016,10 +35031,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 0}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!65 &1164469191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38165,10 +38185,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 1890741}
   attackPoint2: {fileID: 2025859594}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!114 &1367424043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44707,7 +44732,7 @@ MonoBehaviour:
   oroActual: {fileID: 1916344324}
   oroActualMenu: {fileID: 1095387907}
   oroMaxMenu: {fileID: 1633566893}
-  tiempoTotalInt: 100
+  tiempoTotalInt: 120
 --- !u!65 &1740598053
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52613,10 +52638,15 @@ MonoBehaviour:
     attack: 0
   attackPoint1: {fileID: 0}
   attackPoint2: {fileID: 0}
+  attackPoint3: {fileID: 0}
+  attackPoint4: {fileID: 0}
+  attackPoint5: {fileID: 0}
+  isCastle: 0
   maxHealth: 0
   currentHealth: 0
   healthBarAmount: {fileID: 0}
   healtBarBackground: {fileID: 0}
+  youLose: {fileID: 0}
 --- !u!1001 &1958365785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56728,7 +56758,7 @@ PrefabInstance:
     - target: {fileID: 6884844427872907459, guid: 7a511a4aa9f2b04478f3e9ef6779fbcc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.52
+      value: 2.23
       objectReference: {fileID: 0}
     - target: {fileID: 6884844427872907459, guid: 7a511a4aa9f2b04478f3e9ef6779fbcc,
         type: 3}
@@ -56738,7 +56768,7 @@ PrefabInstance:
     - target: {fileID: 6884844427872907459, guid: 7a511a4aa9f2b04478f3e9ef6779fbcc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.74
+      value: -1.82
       objectReference: {fileID: 0}
     - target: {fileID: 6884844427872907459, guid: 7a511a4aa9f2b04478f3e9ef6779fbcc,
         type: 3}

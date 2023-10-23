@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.PlasticSCM.Editor.WebApi;
+//using Unity.PlasticSCM.Editor.WebApi;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
@@ -8,7 +8,7 @@ using TMPro;
 using LP.FDG.Units;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
-using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
+//using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 using Unity.VisualScripting.FullSerializer;
 using System.Net.Mime;
 using UnityEngine.AI;
